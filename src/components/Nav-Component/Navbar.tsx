@@ -16,7 +16,7 @@ export default function Navbar() {
     return (
         <>
             <div className=" shadow-lg z-50 fixed top-0 left-0 right-0 bg-white ">
-                <div className="container mx-auto flex justify-between items-center py-2 pb-5">
+                <div className="container mx-auto flex justify-between items-center py-2">
                     <NavigationMenu viewport={false}>
                         <NavigationMenuList>
                             <NavigationMenuItem className="relative">

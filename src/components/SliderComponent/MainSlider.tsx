@@ -84,7 +84,7 @@ export default function MainSlider() {
                         </h3>
                         
                         <div
-                            className={`buttons flex gap-48 justify-center items-center ${
+                            className={`buttons flex gap-32 justify-center items-center ${
                                 activeIndex === 0
                                     ? "font-bold text-8xl block"
                                     : "hidden"
@@ -124,7 +124,7 @@ export default function MainSlider() {
                         <div className="buttons"></div>
 
                         <div
-                            className={`buttons flex gap-48 justify-center items-center ${
+                            className={`buttons flex gap-32 justify-center items-center ${
                                 activeIndex === 1
                                     ? "font-bold text-8xl block"
                                     : "hidden"
@@ -167,7 +167,7 @@ export default function MainSlider() {
                         </h3>
 
                         <div
-                            className={`buttons flex gap-40 justify-center items-center ${
+                            className={`buttons flex gap-32 justify-center items-center ${
                                 activeIndex === 2
                                     ? "font-bold text-8xl block"
                                     : "hidden"
@@ -208,7 +208,7 @@ export default function MainSlider() {
                         </h3>
 
                         <div
-                            className={`buttons flex gap-48 justify-center items-center ${
+                            className={`buttons flex gap-32 justify-center items-center ${
                                 activeIndex === 3
                                     ? "font-bold text-8xl block"
                                     : "hidden"
