@@ -148,7 +148,7 @@ export default function MainSlider() {
 
                     <div className="third">
                         <h3
-                            className={`transition-all duration-300 mb-12 ${
+                            className={`transition-all duration-300 mb-20 ${
                                 activeIndex === 2 ? "block ms-72" : "hidden"
                             }`}
                         >
@@ -167,7 +167,7 @@ export default function MainSlider() {
                         </h3>
 
                         <div
-                            className={`buttons flex gap-48 justify-center items-center ${
+                            className={`buttons flex gap-40 justify-center items-center ${
                                 activeIndex === 2
                                     ? "font-bold text-8xl block"
                                     : "hidden"

@@ -141,9 +141,9 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <Link href="/" className="w-1/4 pb-1">
+                    <Link href="/" className="pb-1">
                         <div className=" flex flex-col justify-center items-center gap-1">
-                            <div className="relative h-10 w-[50%]">
+                            <div className="relative h-10 w-full">
                                 <Image
                                     className="object-contain w-full h-full"
                                     fill
