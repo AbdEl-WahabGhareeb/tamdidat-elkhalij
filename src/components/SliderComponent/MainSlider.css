@@ -1,0 +1,33 @@
+.mySwiper {
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-color: #fff;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+    z-index: 99999 !important;
+    pointer-events: auto;
+}
+
+.swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 8px !important;
+    background-color: white !important;
+    opacity: 0.7 !important;
+    position: relative !important;
+    z-index: 99999 !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background-color: white !important;
+}
+
+/* Force the pagination container to stay on top */
+.swiper > .swiper-pagination {
+    position: absolute !important;
+    z-index: 99999 !important;
+}
