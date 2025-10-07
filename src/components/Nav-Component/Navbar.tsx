@@ -147,7 +147,7 @@ export default function Navbar() {
                                 <Image
                                     className="object-contain w-full h-full"
                                     fill
-                                    src="/assets/logo.png"
+                                    src="/assets/logo.jpg"
                                     alt=""
                                 />
                             </div>
