@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,55 +12,87 @@ import "swiper/css/pagination";
 import "./MainSlider.css";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export default function MainSlider() {
+    function servicesLinkHref() {
+        if (activeIndex === 0) {
+            return "/";
+        } else if (activeIndex === 1) {
+            return "/services";
+        } else if (activeIndex === 2) {
+            return "/about";
+        } else if (activeIndex === 3) {
+            return "/";
+        } else {
+            return "/";
+        }
+    }
+    
+    function inspectionLinkHref() {
+        if (activeIndex === 0) {
+            return "/";
+        } else if (activeIndex === 1) {
+            return "/services";
+        } else if (activeIndex === 2) {
+            return "/about";
+        } else if (activeIndex === 3) {
+            return "/";
+        } else {
+            return "/";
+        }
+    }
     const [activeIndex, setActiveIndex] = useState(0);
     return (
         <>
             <div
-                className="topics h-[86vh] mt-28 bg-gray-800/25 flex justify-center items-center flex-col absolute right-0 w-full gap-5 top-0 left-0 bottom-0 text-center text-white z-40"
+                className="font-[Cairo] topics h-[100vh] mt-16 bg-gray-800/35 flex justify-center items-start flex-col absolute right-0 w-full gap-5 top-0 left-0 bottom-0 text-center text-white z-40"
                 dir="rtl"
             >
-                <h2
-                    className={`transition-all duration-300 font-[Ge-Jarida] ${
-                        activeIndex === 0
-                            ? "font-bold text-8xl block"
-                            : "hidden"
-                    }`}
-                >
-                    تمديدات الخليج
-                </h2>
+                <div className="headers w-full">
+                    <h2
+                        className={`transition-all duration-300 self-center justify-self-center ${
+                            activeIndex === 0
+                                ? "font-bold text-8xl block"
+                                : "hidden"
+                        }`}
+                    >
+                        تمديدات الخليج
+                        
+                    </h2>
 
-                <h2
-                    className={`transition-all duration-300 font-[Ge-Jarida] ${
-                        activeIndex === 1
-                            ? "font-bold text-6xl block text-start ms-[46rem]"
-                            : "hidden"
-                    }`}
-                >
-                    المشاريع السكنية
-                </h2>
+                    <h2
+                        className={`transition-all duration-300 ${
+                            activeIndex === 1
+                                ? "font-bold text-6xl block text-start -translate-x-32"
+                                : "hidden"
+                        }`}
+                    >
+                        المشاريع السكنية
+                    </h2>
 
-                <h2
-                    className={`transition-all duration-300 ${
-                        activeIndex === 2
-                            ? "font-bold text-6xl block text-start ms-[42rem]"
-                            : "hidden"
-                    }`}
-                >
-                    المشاريع التجارية
-                </h2>
+                    <h2
+                        className={`transition-all duration-300 ${
+                            activeIndex === 2
+                                ? "font-bold text-6xl block text-start -translate-x-32"
+                                : "hidden"
+                        }`}
+                    >
+                        المشاريع التجارية
+                    </h2>
 
-                <h2
-                    className={`transition-all duration-300 mb-8 ${
-                        activeIndex === 3
-                            ? "font-bold text-6xl block text-start ms-[40rem]"
-                            : "hidden"
-                    }`}
-                >
-                    المشاريع الصناعية
-                </h2>
-                <div className="content">
-                    <div className="first">
+                    <h2
+                        className={`transition-all duration-300 ${
+                            activeIndex === 3
+                                ? "font-bold text-6xl block text-start -translate-x-32"
+                                : "hidden"
+                        }`}
+                    >
+                        المشاريع الصناعية
+                    </h2>
+                </div>
+
+                <div className="content w-full">
+                    <div className="first relative">
                         <h3
                             className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 ${
                                 activeIndex === 0
@@ -68,13 +100,14 @@ export default function MainSlider() {
                                     : "hidden"
                             }`}
                         >
-                            <span className="text-4xl mb-2 font-bold block w-3/4 border-b-4 border-white pb-3">
+                            <span className="text-4xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
                                 حلول متكاملة، بخبرة تضمن الأمان والثقة
+                                <div className="mx-auto w-1/2 translate-y-4 h-1 bg-white"></div>
                             </span>
                             <p className="text-3xl w-full font-bold pt-3">
                                 شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في
                                 المملكة العربية السعودية. <br />
-                                <span className="mb-3 block">
+                                <span className="mb-3 block self-center justify-self-center">
                                     نعمل بخبرة طويلة ومعدات حديثة لتوفير أعلى
                                     مستويات الجودة والسلامة لكل عميل. <br />
                                 </span>
@@ -82,39 +115,19 @@ export default function MainSlider() {
                                 والصناعية.
                             </p>
                         </h3>
-                        
-                        <div
-                            className={`buttons flex gap-32 justify-center items-center ${
-                                activeIndex === 0
-                                    ? "font-bold text-8xl block"
+                    </div>
+
+                    <div className="second relative">
+                        <h3
+                            className={`transition-all duration-300 ${
+                                activeIndex === 1
+                                    ? "block -translate-x-32"
                                     : "hidden"
                             }`}
                         >
-                            <Button
-                                variant="outline"
-                                className="bg-transparent border-2 hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                خدماتنا
-                            </Button>
-
-                            <Button
-                                variant="outline"
-                                className="hover:bg-transparent border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                طلب معاينة
-                            </Button>
-                        </div>
-                    </div>
-
-                    <div className="second">
-                        <h3
-                            className={`transition-all duration-300 ${
-                                activeIndex === 1 ? "block ms-72" : "hidden"
-                            }`}
-                        >
-                            <span className="text-3xl mb-2 font-bold block w-1/2 pb-3">
+                            <span className="text-3xl text-start mb-2 font-bold block pb-3">
                                 حلول غاز امنة وموثوقة لمنازلكم
-                                <div className="w-full mx-auto translate-y-4 h-1 bg-white"></div>
+                                <div className="w-[23%] ms-auto translate-y-4 h-1 bg-white"></div>
                             </span>
                             <p className="text-2xl w-full text-start font-bold mb-12 pt-3">
                                 ننفذ شبكات الغاز للفيلات والعمارات السكنية وفق
@@ -122,41 +135,21 @@ export default function MainSlider() {
                             </p>
                         </h3>
                         <div className="buttons"></div>
+                    </div>
 
-                        <div
-                            className={`buttons flex gap-32 justify-center items-center ${
-                                activeIndex === 1
-                                    ? "font-bold text-8xl block"
+                    <div className="third relative">
+                        <h3
+                            className={`transition-all duration-300 mb-20 ${
+                                activeIndex === 2
+                                    ? "block -translate-x-32"
                                     : "hidden"
                             }`}
                         >
-                            <Button
-                                variant="outline"
-                                className="bg-transparent border-2 hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                خدماتنا
-                            </Button>
-
-                            <Button
-                                variant="outline"
-                                className="hover:bg-transparent border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                طلب معاينة
-                            </Button>
-                        </div>
-                    </div>
-
-                    <div className="third">
-                        <h3
-                            className={`transition-all duration-300 mb-20 ${
-                                activeIndex === 2 ? "block ms-72" : "hidden"
-                            }`}
-                        >
-                            <span className="text-3xl mb-2 font-bold block w-1/2 me-32 pb-3">
+                            <span className="text-3xl text-start mb-2 font-bold block pb-3">
                                 كفاءة عالية تلبي احتياجات منشآتك التجارية
-                                <div className="w-[95%] mx-auto translate-y-4 h-1 bg-white"></div>
+                                <div className="w-[31%] ms-auto translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-2xl w-4/6  text-start font-bold pt-3 me-[9rem]">
+                            <p className="text-2xl w-full text-start font-bold mb-12 pt-3">
                                 من الفنادق إلى المطاعم والمجمعات التجارية، نقدم
                                 أنظمة غاز مصممة لتعمل بكفاءة وأمان على مدار
                                 الساعة.
@@ -165,76 +158,39 @@ export default function MainSlider() {
                                 راحتكم.
                             </p>
                         </h3>
+                    </div>
 
-                        <div
-                            className={`buttons flex gap-32 justify-center items-center ${
-                                activeIndex === 2
-                                    ? "font-bold text-8xl block"
+                    <div className="fourth relative">
+                        <h3
+                            className={`transition-all duration-300 mb-20 ${
+                                activeIndex === 3
+                                    ? "block -translate-x-32"
                                     : "hidden"
                             }`}
                         >
-                            <Button
-                                variant="outline"
-                                className="bg-transparent border-2 hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                خدماتنا
-                            </Button>
-
-                            <Button
-                                variant="outline"
-                                className="hover:bg-transparent border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                طلب معاينة
-                            </Button>
-                        </div>
-                    </div>
-
-                    <div className="fourth">
-                        <h3
-                            className={`transition-all duration-300 mb-12 ${
-                                activeIndex === 3 ? "block ms-96" : "hidden"
-                            }`}
-                        >
-                            <span className="text-3xl mb-2 font-bold block w-4/5 pb-3">
+                            <span className="text-3xl text-start mb-2 font-bold block pb-3">
                                 خبرة هندسية لخدمة المشاريع الصناعية الكبري{" "}
-                                <div className="w-[100%] mx-auto translate-y-4 h-1 bg-white"></div>
+                                <div className="w-[31%] ms-auto translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-2xl text-start font-bold pt-3 ">
+                            <p className="text-2xl w-full text-start font-bold mb-12 pt-3">
                                 نقدم حلول غاز صناععية متاكملة للمصانع والمنشات
-                                الانتاجية, مع <br /> الالتزامالصارم بمعايير
+                                الانتاجية, مع <br /> الالتزام الصارم بمعايير
                                 السلامة والجود. <br /> فريقنا المتخصص يضمن اداء
                                 مستقرا يواكب متطلبات التشغيل الصناعي.
                             </p>
                         </h3>
-
-                        <div
-                            className={`buttons flex gap-32 justify-center items-center ${
-                                activeIndex === 3
-                                    ? "font-bold text-8xl block"
-                                    : "hidden"
-                            }`}
-                        >
-                            <Button
-                                variant="outline"
-                                className="bg-transparent border-2 hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                خدماتنا
-                            </Button>
-
-                            <Button
-                                variant="outline"
-                                className="hover:bg-transparent border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer px-10"
-                            >
-                                طلب معاينة
-                            </Button>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div className="relative h-[86vh]">
+
+            <div className="relative h-[100vh]">
                 <Swiper
                     spaceBetween={30}
                     effect={"fade"}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: true,
+                    }}
                     pagination={{
                         clickable: true,
                         type: "bullets",
@@ -242,7 +198,7 @@ export default function MainSlider() {
                             "swiper-pagination-bullet-active custom-bullet-active",
                         bulletClass: "swiper-pagination-bullet custom-bullet",
                     }}
-                    modules={[EffectFade, Pagination]}
+                    modules={[EffectFade, Autoplay, Pagination]}
                     onSlideChange={(swiper) =>
                         setActiveIndex(swiper.activeIndex)
                     }
@@ -301,6 +257,24 @@ export default function MainSlider() {
                             />
                         </div>
                     </SwiperSlide>
+
+                    <div
+                        className={`buttons flex gap-32 justify-center items-center absolute top-[80%] z-50 left-1/2 translate-x-[-50%]  `}
+                    >
+                        <Button
+                            variant="outline"
+                            className="hover:bg-transparent rounded-2xl text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer px-10"
+                        >
+                            <Link href={inspectionLinkHref()}>طلب معاينة</Link>
+                        </Button>
+
+                        <Button
+                            variant="outline"
+                            className="bg-transparent rounded-2xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer px-10"
+                        >
+                            <Link href={servicesLinkHref()}>خدماتنا</Link>
+                        </Button>
+                    </div>
                 </Swiper>
             </div>
         </>
