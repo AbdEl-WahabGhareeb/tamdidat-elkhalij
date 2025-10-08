@@ -1,0 +1,130 @@
+import Image from "next/image";
+import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
+
+export default function Services() {
+    return (
+        <>
+            <div
+                className="container mt-16 pb-16 border-b-4 border-gray-800 mx-auto"
+                dir="rtl"
+            >
+                <div className="header">
+                    <h2 className="text-4xl font-bold text-center">
+                        خدماتنا
+                        <div className="w-[9%] mt-2 h-[5px] mx-auto bg-blue-900"></div>
+                    </h2>
+                    <h3 className="text-xl mt-3 font-bold text-center">
+                        حلول غاز شاملة بمعايير عالمية
+                    </h3>
+                    <p className="text-center font-semibold text-xl mt-3">
+                        نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال شبكات
+                        الغاز، تلبي احتياجات المنازل والمنشآت التجارية
+                        والصناعية:
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 mt-10 md:grid-cols-3 gap-6 p-4">
+                    <div className="card-1 ">
+                        <div className="card group rounded-2xl ms-auto md:w-[90%] shadow-special bg-base-100 w-96">
+                            <figure>
+                                <div className="relative overflow-hidden w-full h-[350px] text-green-700">
+                                    <Image
+                                        className="w-full group-hover:scale-105 transition-transform duration-300 h-full rounded-t-2xl"
+                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                        fill
+                                        src="/assets/right-card.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </figure>
+                            <div className="card-body px-3 py-1.5">
+                                <h2 className="card-title font-bold text-xl mb-2">
+                                    تصميم وتركيب أنظمة الغاز
+                                </h2>
+                                <p className="text-lg font-semibold">
+                                    تصميم وتنفيذ شبكات الغاز بأعلى معايير الجودة
+                                    والسلامة.
+                                </p>
+                                <div className="card-actions justify-end flex w-full">
+                                    <Button
+                                        variant="outline"
+                                        className="hover:bg-blue-500 rounded-2xl text-lg text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                    >
+                                        <Link href="/">اعرف أكثر...</Link>
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card-2 ">
+                        <div className="card group rounded-2xl mx-auto md:w-[90%] shadow-special bg-base-100 w-96">
+                            <figure>
+                                <div className="relative overflow-hidden w-full h-[350px] text-green-700">
+                                    <Image
+                                        className="group-hover:scale-105 transition-transform duration-300 w-full h-full rounded-t-2xl"
+                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                        fill
+                                        src="/assets/middle-card.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </figure>
+                            <div className="card-body px-3 py-1.5">
+                                <h2 className="card-title font-bold text-xl mb-2">
+                                    شحن خزانات الغاز{" "}
+                                </h2>
+                                <p className="text-lg font-semibold">
+                                    خدمة شحن احترافية بأحدث المعدات وبإشراف
+                                    فنيين معتمدين.
+                                </p>
+                                <div className="card-actions justify-end flex w-full">
+                                    <Button
+                                        variant="outline"
+                                        className="hover:bg-blue-500 rounded-2xl text-lg text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                    >
+                                        <Link href="/">اعرف أكثر...</Link>
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card-3">
+                        <div className="card  group rounded-2xl me-auto md:w-[90%] shadow-special bg-base-100 w-96">
+                            <figure>
+                                <div className="relative w-full h-[350px] text-green-700 overflow-hidden">
+                                    <Image
+                                        className="w-full h-full rounded-t-2xl group-hover:scale-105 transition-transform duration-300"
+                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                        fill
+                                        src="/assets/last-card.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </figure>
+                            <div className="card-body px-3 py-1.5">
+                                <h2 className="card-title font-bold text-xl mb-2">
+                                    صيانة شبكات الغاز
+                                </h2>
+                                <p className="text-lg font-semibold">
+                                    صيانة دورية وطارئة تضمن استمرارية التشغيل
+                                    بأمان تام
+                                </p>
+                                <div className="card-actions justify-end flex w-full">
+                                    <Button
+                                        variant="outline"
+                                        className="hover:bg-blue-500 rounded-2xl text-lg text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                    >
+                                        <Link href="/">اعرف أكثر...</Link>
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}

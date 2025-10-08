@@ -45,10 +45,10 @@ export default function MainSlider() {
     return (
         <>
             <div
-                className="font-[Cairo] topics h-[90vh] mt-16 bg-gray-800/35 flex justify-center items-start flex-col absolute right-0 w-full gap-5 top-0 left-0 bottom-0 text-center text-white z-40"
+                className="topics h-[90vh] mt-16 bg-gray-800/35 flex justify-center items-start flex-col absolute right-0 w-full gap-5 top-0 left-0 bottom-0 text-center text-white z-30"
                 dir="rtl"
             >
-                <div className="headers w-full">
+                <div className="headers md:h-[96px] w-full">
                     <h2
                         className={`transition-all duration-300 self-center justify-self-center ${
                             activeIndex === 0
@@ -91,7 +91,7 @@ export default function MainSlider() {
                     </h2>
                 </div>
 
-                <div className="content w-full">
+                <div className="content md:h-[248px] w-full">
                     <div className="first relative">
                         <h3
                             className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 ${
@@ -232,6 +232,8 @@ export default function MainSlider() {
                         </div>
                     </SwiperSlide>
 
+                    
+
                     <SwiperSlide>
                         <div className="relative w-full h-full ">
                             <Image
@@ -261,7 +263,7 @@ export default function MainSlider() {
                     </SwiperSlide>
 
                     <div
-                        className={`buttons flex gap-20 justify-center items-center absolute top-[80%] z-50 left-1/2 translate-x-[-50%]  `}
+                        className={`buttons flex gap-20 justify-center items-center absolute top-[78%] z-40 left-1/2 translate-x-[-50%]`}
                     >
                         <Button
                             variant="outline"

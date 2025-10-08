@@ -20,7 +20,7 @@ export default function Navbar() {
                     <NavigationMenu className="w-1/4" viewport={false}>
                         <NavigationMenuList>
                             <NavigationMenuItem className="relative">
-                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-400 data-[state=open]:bg-blue-400/50 bg-blue-900 px-8 py-3 font-bold text-2xl rounded-3xl data-[state=open]:hover:bg-blue-400 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-400 focus:bg-blue-400 transition-all  ">
+                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-8 py-3 font-bold text-2xl rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all  ">
                                     تواصل معنا
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="  z-50 w-[150px] absolute">
@@ -106,7 +106,7 @@ export default function Navbar() {
                                                     href="#"
                                                     className="flex-row items-center justify-end  gap-0 "
                                                 >
-                                                    منازل
+                                                    تصميم وتركيب
                                                 </NavLink>
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
@@ -114,7 +114,7 @@ export default function Navbar() {
                                                     href="#"
                                                     className="flex-row items-center  justify-end  gap-0 "
                                                 >
-                                                    تجاري
+                                                    صيانة
                                                 </NavLink>
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
@@ -122,7 +122,7 @@ export default function Navbar() {
                                                     href="#"
                                                     className="flex-row items-center  justify-end  gap-0 "
                                                 >
-                                                    صناعي
+                                                    شحن الخزانات
                                                 </NavLink>
                                             </NavigationMenuLink>
                                         </li>
@@ -141,7 +141,7 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <Link href="/" className="pb-1 w-[10%]">
+                    <Link href="/" className="pb-1 w-[13.2%]">
                         <div className=" flex flex-col justify-center items-end gap-1">
                             <div className="relative h-16 w-full">
                                 <Image
