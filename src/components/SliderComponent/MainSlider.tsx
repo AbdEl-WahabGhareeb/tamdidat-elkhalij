@@ -27,7 +27,7 @@ export default function MainSlider() {
             return "/";
         }
     }
-    
+
     function inspectionLinkHref() {
         if (activeIndex === 0) {
             return "/";
@@ -45,7 +45,7 @@ export default function MainSlider() {
     return (
         <>
             <div
-                className="font-[Cairo] topics h-[100vh] mt-16 bg-gray-800/35 flex justify-center items-start flex-col absolute right-0 w-full gap-5 top-0 left-0 bottom-0 text-center text-white z-40"
+                className="font-[Cairo] topics h-[90vh] mt-16 bg-gray-800/35 flex justify-center items-start flex-col absolute right-0 w-full gap-5 top-0 left-0 bottom-0 text-center text-white z-40"
                 dir="rtl"
             >
                 <div className="headers w-full">
@@ -183,13 +183,13 @@ export default function MainSlider() {
                 </div>
             </div>
 
-            <div className="relative h-[100vh]">
+            <div className="relative h-[90vh]">
                 <Swiper
                     spaceBetween={30}
                     effect={"fade"}
                     autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: true,
+                        delay: 3000,
+                        disableOnInteraction: false,
                     }}
                     pagination={{
                         clickable: true,
@@ -217,6 +217,7 @@ export default function MainSlider() {
                             />
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="relative w-full h-full ">
                             <Image
@@ -230,6 +231,7 @@ export default function MainSlider() {
                             />
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div className="relative w-full h-full ">
                             <Image
@@ -259,18 +261,18 @@ export default function MainSlider() {
                     </SwiperSlide>
 
                     <div
-                        className={`buttons flex gap-32 justify-center items-center absolute top-[80%] z-50 left-1/2 translate-x-[-50%]  `}
+                        className={`buttons flex gap-20 justify-center items-center absolute top-[80%] z-50 left-1/2 translate-x-[-50%]  `}
                     >
                         <Button
                             variant="outline"
-                            className="hover:bg-transparent rounded-2xl text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer px-10"
+                            className="hover:bg-transparent rounded-2xl text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer w-1/2"
                         >
                             <Link href={inspectionLinkHref()}>طلب معاينة</Link>
                         </Button>
 
                         <Button
                             variant="outline"
-                            className="bg-transparent rounded-2xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer px-10"
+                            className="bg-transparent rounded-2xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer w-1/2"
                         >
                             <Link href={servicesLinkHref()}>خدماتنا</Link>
                         </Button>

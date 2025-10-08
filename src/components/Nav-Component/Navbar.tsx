@@ -141,9 +141,9 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <Link href="/" className="pb-1 w-1/4">
+                    <Link href="/" className="pb-1 w-[10%]">
                         <div className=" flex flex-col justify-center items-end gap-1">
-                            <div className="relative h-16 w-[55%]">
+                            <div className="relative h-16 w-full">
                                 <Image
                                     className="object-contain w-full h-[80%]"
                                     fill
@@ -152,8 +152,8 @@ export default function Navbar() {
                                 />
                             </div>
 
-                            <h1 className="text-2xl font-bold w-[55%] text-center text-blue-900">
-                                شركة تمديدات الخليج
+                            <h1 className="text-2xl font-bold text-center text-blue-900">
+                            تمديدات الخليج
                             </h1>
                         </div>
                     </Link>
