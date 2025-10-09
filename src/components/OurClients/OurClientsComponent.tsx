@@ -4,7 +4,7 @@ import React from "react";
 export default function OurClients() {
     return (
         <>
-            <div className="mt-16 pb-16 border-b-4 border-gray-800 " dir="rtl">
+            <div className="mt-16 " dir="rtl">
                 <div className="header text-center">
                     <h2 className="text-4xl w-fit font-bold mx-auto">
                         عملائنا
@@ -76,7 +76,7 @@ export default function OurClients() {
                             <span className="text-2xl font-bold">مشروع في جميع <br /> انحاء المملكة</span>
                         </div>
                     </div>
-                    <div className="relative w-full h-[350px] overflow-hidden">
+                    <div className="relative w-full h-[100vh] md:h-[350px] overflow-hidden">
                         <div className="statistics z-[5] bg-[#2F3A97]/45 absolute top-0 left-0 w-full h-full "></div>
                         <Image
                             className="w-full opacity-50 object-fill h-full"
