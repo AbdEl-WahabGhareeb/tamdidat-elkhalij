@@ -10,10 +10,10 @@ export default function Services() {
                 className="container mt-16 pb-16 border-b-4 border-gray-800 mx-auto"
                 dir="rtl"
             >
-                <div className="header">
-                    <h2 className="text-4xl font-bold text-center">
+                <div className="header text-center">
+                    <h2 className="text-4xl w-fit font-bold mx-auto">
                         خدماتنا
-                        <div className="w-[9%] mt-2 h-[5px] mx-auto bg-blue-900"></div>
+                        <div className="w-full mt-2 h-[5px] bg-blue-900"></div>
                     </h2>
                     <h3 className="text-xl mt-3 font-bold text-center">
                         حلول غاز شاملة بمعايير عالمية
@@ -24,11 +24,11 @@ export default function Services() {
                         والصناعية:
                     </p>
                 </div>
-                <div className="grid grid-cols-1 mt-10 md:grid-cols-3 gap-6 p-4">
-                    <div className="card-1 ">
-                        <div className="card group rounded-2xl ms-auto md:w-[90%] shadow-special bg-base-100 w-96">
+                
+                <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+                        <div className="card group overflow-hidden rounded-2xl md:ms-auto md:w-[95%] shadow-special bg-base-100 w-[90%] mx-auto">
                             <figure>
-                                <div className="relative overflow-hidden w-full h-[350px] text-green-700">
+                                <div className="relative overflow-hidden w-full md:h-[350px] h-[450px]">
                                     <Image
                                         className="w-full group-hover:scale-105 transition-transform duration-300 h-full rounded-t-2xl"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -56,12 +56,10 @@ export default function Services() {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="card-2 ">
-                        <div className="card group rounded-2xl mx-auto md:w-[90%] shadow-special bg-base-100 w-96">
+                        <div className="card group rounded-2xl md:mx-auto md:w-[90%] shadow-special bg-base-100 w-[90%] mx-auto overflow-hidden">
                             <figure>
-                                <div className="relative overflow-hidden w-full h-[350px] text-green-700">
+                                <div className="relative overflow-hidden w-full md:h-[350px] h-[450px] ">
                                     <Image
                                         className="group-hover:scale-105 transition-transform duration-300 w-full h-full rounded-t-2xl"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -89,12 +87,11 @@ export default function Services() {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="card-3">
-                        <div className="card  group rounded-2xl me-auto md:w-[90%] shadow-special bg-base-100 w-96">
+
+                        <div className="card w-[90%] mx-auto group rounded-2xl md:me-auto md:w-[90%] shadow-special bg-base-100  overflow-hidden">
                             <figure>
-                                <div className="relative w-full h-[350px] text-green-700 overflow-hidden">
+                                <div className="relative w-full md:h-[350px] h-[450px] overflow-hidden">
                                     <Image
                                         className="w-full h-full rounded-t-2xl group-hover:scale-105 transition-transform duration-300"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -123,7 +120,6 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </>
     );
