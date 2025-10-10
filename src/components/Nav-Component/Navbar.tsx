@@ -16,11 +16,11 @@ export default function Navbar() {
     return (
         <>
             <div className=" shadow-lg z-50 fixed top-0 left-0 right-0 bg-white font-[Cairo] rounded-b-3xl">
-                <div className="container px-10 mx-auto flex justify-between items-center py-2">
+                <div className="container px-10  mx-auto flex justify-between items-center pt-1">
                     <NavigationMenu className="w-1/4" viewport={false}>
                         <NavigationMenuList>
                             <NavigationMenuItem className="relative">
-                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-8 py-3 font-bold text-2xl rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all  ">
+                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all  ">
                                     تواصل معنا
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="  z-50 w-[150px] absolute">
@@ -74,7 +74,7 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavLink
                                     href="/about"
-                                    className={`pb-0 text-2xl font-bold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600          group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600          group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
                                 >
                                     من نحن
                                 </NavLink>
@@ -83,17 +83,17 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavLink
                                     href="/projects"
-                                    className={`pb-0 text-2xl font-bold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600          group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600          group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
                                 >
                                     المشاريع{" "}
                                 </NavLink>
                             </NavigationMenuItem>
 
                             <NavigationMenuItem className="relative">
-                                <NavigationMenuTrigger className="p-0 flex-row text-2xl font-bold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 ">
+                                <NavigationMenuTrigger className="p-0 flex-row text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 ">
                                     <NavLink
                                         href="/services"
-                                        className="flex-row py-2 px-4 text-2xl font-bold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 "
+                                        className="flex-row py-2 px-4 text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 "
                                     >
                                         الخدمات
                                     </NavLink>
@@ -133,7 +133,7 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavLink
                                     href="/"
-                                    className={`pb-0 text-2xl font-bold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600         group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600         group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
                                 >
                                     الرئيسية
                                 </NavLink>
@@ -141,9 +141,9 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <Link href="/" className="pb-1 w-[13.2%]">
-                        <div className=" flex flex-col justify-center items-end gap-1">
-                            <div className="relative h-16 w-full">
+                    <Link href="/" className="pb-1 min-w-[10%] ">
+                        <div className=" flex flex-col justify-center items-end gap-0">
+                            <div className="relative h-10 w-full">
                                 <Image
                                     className="object-contain w-full h-[80%]"
                                     fill
@@ -152,7 +152,7 @@ export default function Navbar() {
                                 />
                             </div>
 
-                            <h1 className="text-2xl font-bold text-center text-blue-900">
+                            <h1 className="xl:text-lg lg:text-md font-bold text-center text-blue-900">
                             تمديدات الخليج
                             </h1>
                         </div>

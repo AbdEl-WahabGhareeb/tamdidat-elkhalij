@@ -1,0 +1,12 @@
+.clients-imgs .swiper-pagination-bullet {
+    background-color: rgb(144, 144, 207) !important;
+}
+
+.clients-imgs .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 255, 0.676) !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin-inline: .1875rem !important;
+}
+
+

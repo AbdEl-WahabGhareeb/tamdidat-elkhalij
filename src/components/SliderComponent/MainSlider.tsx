@@ -52,7 +52,7 @@ export default function MainSlider() {
                     <div
                         className={`first relative ${
                             activeIndex === 0
-                                ? "font-bold text-6xl block"
+                                ? "font-bold text-4xl block"
                                 : "hidden"
                         }`}
                     >
@@ -65,11 +65,11 @@ export default function MainSlider() {
                         <h3
                             className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 `}
                         >
-                            <span className="text-2xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
+                            <span className="text-xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
                                 حلول متكاملة، بخبرة تضمن الأمان والثقة
                                 <div className="mx-auto w-1/2 translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-xl w-full font-bold pt-3">
+                            <p className="text-base w-full font-bold pt-3">
                                 شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في
                                 المملكة العربية السعودية. <br />
                                 <span className="mb-3 block self-center justify-self-center">
@@ -94,11 +94,11 @@ export default function MainSlider() {
                         </h2>
 
                         <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-2xl w-fit text-start mb-2 font-bold block pb-3">
+                            <span className="text-xl w-fit text-start mb-2 font-bold block pb-3">
                                 حلول غاز آمنة وموثوقة لمنازلكم
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-xl w-full text-start font-bold mb-12 pt-3">
+                            <p className="text-base w-full text-start font-bold mb-12 pt-3">
                                 ننفذ شبكات الغاز للفيلات والعمارات السكنية وفق
                                 أعلي معايير الجودة والسلامة.
                             </p>
@@ -117,11 +117,11 @@ export default function MainSlider() {
                         </h2>
 
                         <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-2xl text-start mb-2 w-fit font-bold block pb-3">
+                            <span className="text-xl text-start mb-2 w-fit font-bold block pb-3">
                                 كفاءة عالية تلبي احتياجات منشآتك التجارية
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-xl w-full text-start font-bold mb-12 pt-3">
+                            <p className="text-base w-full text-start font-bold mb-12 pt-3">
                                 من الفنادق إلى المطاعم والمجمعات التجارية، نقدم
                                 أنظمة غاز مصممة لتعمل
                                 <br /> بكفاءة وأمان على مدار الساعة.
@@ -144,11 +144,11 @@ export default function MainSlider() {
                         </h2>
 
                         <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-2xl w-fit text-start mb-2 font-bold block pb-3">
+                            <span className="text-xl w-fit text-start mb-2 font-bold block pb-3">
                                 خبرة هندسية لخدمة المشاريع الصناعية الكبري{" "}
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-xl w-full text-start font-bold mb-12 pt-3">
+                            <p className="text-base w-full text-start font-bold mb-12 pt-3">
                                 نقدم حلول غاز صناععية متاكملة للمصانع والمنشات
                                 الانتاجية, مع <br /> الالتزام الصارم بمعايير
                                 السلامة والجود. <br /> فريقنا المتخصص يضمن اداء
@@ -158,75 +158,7 @@ export default function MainSlider() {
                     </div>
                 </div>
 
-                {/* <div className="content md:h-[190px] w-full">
-                    <div className="first relative">
-                        <h3
-                            className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 ${
-                                activeIndex === 0
-                                    ? "block font-medium"
-                                    : "hidden"
-                            }`}
-                        >
-                            <span className="text-2xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
-                                حلول متكاملة، بخبرة تضمن الأمان والثقة
-                                <div className="mx-auto w-1/2 translate-y-4 h-1 bg-white"></div>
-                            </span>
-                            <p className="text-xl w-full font-bold pt-3">
-                                شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في
-                                المملكة العربية السعودية. <br />
-                                <span className="mb-3 block self-center justify-self-center">
-                                    نعمل بخبرة طويلة ومعدات حديثة لتوفير أعلى
-                                    مستويات الجودة والسلامة لكل عميل. <br />
-                                </span>
-                                خدماتنا متوفرة للمشآت السكنية المشاريع التجارية
-                                والصناعية.
-                            </p>
-                        </h3>
-                    </div>
-
-                     <div className="second relative">
-                        <h3
-                            className={`transition-all duration-300 ${
-                                activeIndex === 1
-                                    ? "block -translate-x-32"
-                                    : "hidden"
-                            }`}
-                        >
-                            <span className="text-2xl text-start mb-2 font-bold block pb-3">
-                                حلول غاز امنة وموثوقة لمنازلكم
-                                <div className="w-[23%] ms-auto translate-y-4 h-1 bg-white"></div>
-                            </span>
-                            <p className="text-xl w-full text-start font-bold mb-12 pt-3">
-                                ننفذ شبكات الغاز للفيلات والعمارات السكنية وفق
-                                أعلي معايير الجودة والسلامة.
-                            </p>
-                        </h3>
-                        <div className="buttons"></div>
-                    </div> *
-
-                     <div className="third relative">
-                        <h3
-                            className={`transition-all duration-300 mb-20 ${
-                                activeIndex === 2
-                                    ? "block -translate-x-32"
-                                    : "hidden"
-                            }`}
-                        >
-                            <span className="text-2xl text-start mb-2 font-bold block pb-3">
-                                كفاءة عالية تلبي احتياجات منشآتك التجارية
-                                <div className="w-[31%] ms-auto translate-y-4 h-1 bg-white"></div>
-                            </span>
-                            <p className="text-xl w-full text-start font-bold mb-12 pt-3">
-                                من الفنادق إلى المطاعم والمجمعات التجارية، نقدم
-                                أنظمة غاز مصممة لتعمل بكفاءة وأمان على مدار
-                                الساعة.
-                                <br />
-                                حلول احترافية تزيد من موثوقية التشغيل وتضمن
-                                راحتكم.
-                            </p>
-                        </h3>
-                    </div> 
-                </div> */}
+              
             </div>
 
             <div className="relative h-[90vh]">
@@ -307,18 +239,18 @@ export default function MainSlider() {
                     </SwiperSlide>
 
                     <div
-                        className={`buttons flex gap-20 justify-center items-center absolute top-[78%] z-40 left-1/2 translate-x-[-50%]`}
+                        className={`buttons flex gap-20 justify-center items-center absolute top-[78%] w-full z-40 left-1/2 translate-x-[-50%]`}
                     >
                         <Button
                             variant="outline"
-                            className="hover:bg-transparent rounded-2xl text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-2xl py-7 cursor-pointer w-1/2"
+                            className="hover:bg-transparent rounded-4xl w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-xl py-7 cursor-pointer"
                         >
                             <Link href={inspectionLinkHref()}>طلب معاينة</Link>
                         </Button>
 
                         <Button
                             variant="outline"
-                            className="bg-transparent rounded-2xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-2xl py-7 cursor-pointer w-1/2"
+                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-xl py-7 cursor-pointer w-1/5"
                         >
                             <Link href={servicesLinkHref()}>خدماتنا</Link>
                         </Button>

@@ -1,7 +1,213 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+// import "swiper/css/pagination";
+
+import "./OurClients.css";
+import { Pagination } from "swiper/modules";
+
+// import required modules
 
 export default function OurClients() {
+    const clientImages = [
+        {
+            id: 1,
+            src: "/assets/clients/client-1.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 2,
+            src: "/assets/clients/client-2.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 3,
+            src: "/assets/clients/client-3.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 4,
+            src: "/assets/clients/client-4.png",
+            alt: "Client 4",
+        },
+
+        {
+            id: 5,
+            src: "/assets/clients/client-5.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 6,
+            src: "/assets/clients/client-6.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 7,
+            src: "/assets/clients/client-7.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 8,
+            src: "/assets/clients/client-8.png",
+            alt: "Client 4",
+        },
+        {
+            id: 9,
+            src: "/assets/clients/client-9.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 10,
+            src: "/assets/clients/client-10.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 11,
+            src: "/assets/clients/client-11.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 12,
+            src: "/assets/clients/client-12.png",
+            alt: "Client 4",
+        },
+        {
+            id: 13,
+            src: "/assets/clients/client-13.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 14,
+            src: "/assets/clients/client-14.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 15,
+            src: "/assets/clients/client-15.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 16,
+            src: "/assets/clients/client-16.png",
+            alt: "Client 4",
+        },
+        {
+            id: 17,
+            src: "/assets/clients/client-17.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 18,
+            src: "/assets/clients/client-18.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 19,
+            src: "/assets/clients/client-19.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 20,
+            src: "/assets/clients/client-20.png",
+            alt: "Client 4",
+        },
+        {
+            id: 21,
+            src: "/assets/clients/client-21.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 22,
+            src: "/assets/clients/client-22.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 23,
+            src: "/assets/clients/client-23.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 24,
+            src: "/assets/clients/client-24.png",
+            alt: "Client 4",
+        },
+        {
+            id: 25,
+            src: "/assets/clients/client-25.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 26,
+            src: "/assets/clients/client-26.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 27,
+            src: "/assets/clients/client-27.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 28,
+            src: "/assets/clients/client-28.png",
+            alt: "Client 4",
+        },
+        {
+            id: 29,
+            src: "/assets/clients/client-29.png",
+            alt: "Client 1",
+        },
+
+        {
+            id: 30,
+            src: "/assets/clients/client-30.png",
+            alt: "Client 2",
+        },
+
+        {
+            id: 31,
+            src: "/assets/clients/client-31.png",
+            alt: "Client 3",
+        },
+
+        {
+            id: 32,
+            src: "/assets/clients/client-32.png",
+            alt: "Client 4",
+        },
+        {
+            id: 33,
+            src: "/assets/clients/client-33.png",
+            alt: "Client 1",
+        },
+    ];
+
     return (
         <>
             <div className="mt-16 " dir="rtl">
@@ -15,8 +221,8 @@ export default function OurClients() {
                     </h3>
                 </div>
 
-                <div className="clients-imgs px-16 grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-4 items-center gap-10 p-4 mt-10">
-                    <div className="relative w-full h-[130px]">
+                <div className="clients-imgs px-16  pt-4 mt-0">
+                    {/* <div className="relative w-full h-[110px]">
                         <Image
                             className="w-full h-full"
                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -25,7 +231,7 @@ export default function OurClients() {
                             alt=""
                         />
                     </div>
-                    <div className="relative w-full h-[130px]">
+                    <div className="relative w-full h-[110px]">
                         <Image
                             className="w-full h-full"
                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -51,32 +257,83 @@ export default function OurClients() {
                             src="/assets/client-4.png"
                             alt=""
                         />
-                    </div>
+                    </div> */}
+
+                    <Swiper
+                        slidesPerView={5}
+                        spaceBetween={120}
+                        pagination={{
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
+                        modules={[Pagination]}
+                        breakpoints={{
+                            300: {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                            },
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                                spaceBetween: 80,
+                            },
+                            1024: {
+                                slidesPerView: 5,
+                                spaceBetween: 120,
+                            },
+                        }}
+                        className="mySwiper relative mt-4   "
+                    >
+                        {clientImages.map((client) => (
+                            <SwiperSlide key={client.id} className="pb-20">
+                                <div className="relative lg:w-full h-[110px]">
+                                    <Image
+                                        className="w-full h-full"
+                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                        fill
+                                        src={client.src}
+                                        alt={client.alt}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
 
-                <div className="bg-image relative mt-10 ">
+                <div className="bg-image relative mt-4">
                     <div className="absolute top-0 left-0 px-16 right-0 bottom-0 z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center text-white text-center p-4">
                         <div className="first text-center">
                             <p className="text-4xl font-bold mb-4">+40</p>
-                            <span className="text-2xl font-bold">مشروع سكني</span>
+                            <span className="text-2xl font-bold">
+                                مشروع سكني
+                            </span>
                         </div>
 
                         <div className="second text-center">
                             <p className="text-4xl font-bold mb-4">+50</p>
-                            <span className="text-2xl font-bold">مشروع تجاري</span>
+                            <span className="text-2xl font-bold">
+                                مشروع تجاري
+                            </span>
                         </div>
 
                         <div className="third text-center">
                             <p className="text-4xl font-bold mb-4">+20</p>
-                            <span className="text-2xl font-bold">مشروع صناعي</span>
+                            <span className="text-2xl font-bold">
+                                مشروع صناعي
+                            </span>
                         </div>
 
                         <div className="fourth text-center">
                             <p className="text-4xl font-bold mb-4">+100</p>
-                            <span className="text-2xl font-bold">مشروع في جميع <br /> انحاء المملكة</span>
+                            <span className="text-2xl font-bold">
+                                مشروع في جميع <br /> انحاء المملكة
+                            </span>
                         </div>
                     </div>
-                    <div className="relative w-full h-[100vh] md:h-[350px] overflow-hidden">
+                    <div className="relative w-full h-[100vh] md:h-[320px] overflow-hidden">
                         <div className="statistics z-[5] bg-[#2F3A97]/45 absolute top-0 left-0 w-full h-full "></div>
                         <Image
                             className="w-full opacity-50 object-fill h-full"

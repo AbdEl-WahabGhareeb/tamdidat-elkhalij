@@ -13,7 +13,7 @@ export default function Home() {
             <div>
                 <About />
             </div>
-            <div>
+            <div className="bg-gray-100">
                 <Services />
             </div>
             <div>
