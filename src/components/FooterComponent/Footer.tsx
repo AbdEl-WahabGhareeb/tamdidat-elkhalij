@@ -1,5 +1,5 @@
 "use client";
-import { AArrowDown } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,9 +7,13 @@ import React from "react";
 export default function Footer() {
     return (
         <>
-            
-            <div className="px-20 relative text-white mx-auto pb-3 pt-16 bg-[url(/assets/footer.jpg)] bg-cover bg-center" dir="rtl">
-            <div className="layer absolute top-0 bottom-0 left-0 right-0 z-0 bg-black opacity-85 "></div>
+           <div className="bg-[url(/assets/footer.jpg)] bg-cover bg-center relative">
+                <div className="layer absolute top-0 bottom-0 left-0 right-0 z-0 bg-black opacity-85 "></div>
+
+             <div
+                className="container relative text-white mx-auto pb-3 pt-16 "
+                dir="rtl"
+            >
                 <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-5 z-10 relative ">
                     <div className="logo-and-desc flex flex-col justify-center items-center col-span-5 row-span-5">
                         <div className="flex flex-col w-full  mb-5 justify-start items-start ">
@@ -36,17 +40,41 @@ export default function Footer() {
                                 الصناعية والتجارية
                             </p>
                         </div>
-                        <div className="social-media flex gap-2 flex-col justify-end w-full items-start">
+                        <div className="social-media flex gap-2 flex-col justify-end  w-full items-start">
                             <p className="font-bold">وسائل التواصل الاجتماعي</p>
-                            <div className="icons flex gap-5 justify-end items-center">
-                                <div className="bg-blue-900 rounded-full text-white p-2">
-                                    <AArrowDown />
+                            <div className="icons mt-3 flex gap-5 justify-end items-center">
+                                <div className="bg-blue-900 rounded-full text-white p-3">
+                                    <div className="relative w-[25px]  text-white h-[25px]">
+                                        <Image
+                                            className="w-full h-full text-white"
+                                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                            fill
+                                            src="/assets/linked-in.svg"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
-                                <div className="bg-blue-900 rounded-full text-white p-2">
-                                    <AArrowDown />
+                                <div className="bg-blue-900 rounded-full text-white p-3">
+                                    <div className="relative w-[25px]  text-white h-[25px]">
+                                        <Image
+                                            className="w-full h-full text-white"
+                                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                            fill
+                                            src="/assets/X.png"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
-                                <div className="bg-blue-900 rounded-full text-white p-2">
-                                    <AArrowDown />
+                                <div className="bg-blue-900 rounded-full text-white p-3">
+                                    <div className="relative w-[25px]  text-white h-[25px]">
+                                        <Image
+                                            className="w-full h-full text-white"
+                                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                            fill
+                                            src="/assets/tiktok.svg"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -84,10 +112,18 @@ export default function Footer() {
                             الدعم الفني فيأي وقت.
                         </p>
 
-                        <div className="icons flex gap-5 justify-center items-end mt-5 flex-col ms-36">
+                        <div className="icons flex gap-5 justify-center items-end mt-5 flex-col lg:translate-x-12 xl:translate-x-20">
                             <div className="flex gap-3 flex-row-reverse items-center justify-center">
                                 <div className="bg-blue-900 rounded-full text-white p-2">
-                                    <AArrowDown />
+                                    <div className="relative w-[20px]  text-white h-[20px]">
+                                        <Image
+                                            className="w-full h-full text-white"
+                                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                            fill
+                                            src="/assets/whatsapp-white.svg"
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                                 <p className="text-lg text-end font-medium">
                                     +9665 6157 6175
@@ -96,7 +132,7 @@ export default function Footer() {
 
                             <div className="flex gap-3 flex-row-reverse items-center justify-center">
                                 <div className="bg-blue-900 rounded-full text-white p-2">
-                                    <AArrowDown />
+                                    <Mail />
                                 </div>
                                 <p className="text-lg text-end font-medium">
                                     example@example.com
@@ -105,7 +141,7 @@ export default function Footer() {
 
                             <div className="flex gap-3 flex-row-reverse items-start justify-center">
                                 <div className="bg-blue-900 rounded-full text-white p-2">
-                                    <AArrowDown />
+                                    <MapPin />
                                 </div>
                                 <p className="text-lg text-end font-medium">
                                     JCRB4490, 4490 Amir Bin Salama, 8944 Al
@@ -124,6 +160,7 @@ export default function Footer() {
                     <p className="text-lg">سياسة الخصوصية | شروط الاستخدام</p>
                 </div>
             </div>
+           </div>
         </>
     );
 }

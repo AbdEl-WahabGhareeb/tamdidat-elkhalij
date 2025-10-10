@@ -285,7 +285,7 @@ export default function OurClients() {
                                 spaceBetween: 120,
                             },
                         }}
-                        className="mySwiper relative mt-4   "
+                        className="mySwiper relative mt-4"
                     >
                         {clientImages.map((client) => (
                             <SwiperSlide key={client.id} className="pb-20">

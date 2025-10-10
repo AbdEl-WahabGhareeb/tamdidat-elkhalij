@@ -44,11 +44,11 @@ export default function MainSlider() {
     const [activeIndex, setActiveIndex] = useState(0);
     return (
         <>
-            <div
+             <div
                 className="topics h-[90vh] flex justify-center items-center mt-16 bg-gray-800/35 absolute right-0 w-full top-0 left-0 bottom-0 text-center text-white z-30"
                 dir="rtl"
             >
-                <div className="w-full relative">
+                <div className="w-full relative lg:h-[280px]">
                     <div
                         className={`first relative ${
                             activeIndex === 0
@@ -57,7 +57,7 @@ export default function MainSlider() {
                         }`}
                     >
                         <h2
-                            className={`transition-all mb-6 duration-300 self-center justify-self-center `}
+                            className={`transition-all mb-6 duration-300`}
                         >
                             تمديدات الخليج
                         </h2>
@@ -85,7 +85,7 @@ export default function MainSlider() {
                     <div
                         className={`second relative ${
                             activeIndex === 1
-                                ? "font-bold text-4xl block text-start -translate-x-32"
+                                ? "font-bold text-4xl block md:text-start text-center md:-translate-x-32"
                                 : "hidden"
                         }`}
                     >
@@ -94,11 +94,11 @@ export default function MainSlider() {
                         </h2>
 
                         <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-xl w-fit text-start mb-2 font-bold block pb-3">
+                            <span className="text-xl w-fit mx-auto md:mx-0 md:text-start text-center mb-2 font-bold block pb-3">
                                 حلول غاز آمنة وموثوقة لمنازلكم
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-base w-full text-start font-bold mb-12 pt-3">
+                            <p className="text-base w-full md:text-start text-center font-bold mb-12 pt-3">
                                 ننفذ شبكات الغاز للفيلات والعمارات السكنية وفق
                                 أعلي معايير الجودة والسلامة.
                             </p>
@@ -108,7 +108,7 @@ export default function MainSlider() {
                     <div
                         className={`third relative  ${
                             activeIndex === 2
-                                ? "font-bold text-4xl block text-start -translate-x-32"
+                                ? "font-bold text-4xl block md:text-start text-center md:-translate-x-32"
                                 : "hidden"
                         }`}
                     >
@@ -117,11 +117,11 @@ export default function MainSlider() {
                         </h2>
 
                         <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-xl text-start mb-2 w-fit font-bold block pb-3">
+                            <span className="text-xl mx-auto md:mx-0 md:text-start text-center mb-2 w-fit font-bold block pb-3">
                                 كفاءة عالية تلبي احتياجات منشآتك التجارية
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-base w-full text-start font-bold mb-12 pt-3">
+                            <p className="text-base w-full md:text-start text-center font-bold mb-12 pt-3">
                                 من الفنادق إلى المطاعم والمجمعات التجارية، نقدم
                                 أنظمة غاز مصممة لتعمل
                                 <br /> بكفاءة وأمان على مدار الساعة.
@@ -135,7 +135,7 @@ export default function MainSlider() {
                     <div
                         className={`fourth relative  ${
                             activeIndex === 3
-                                ? "font-bold text-4xl block text-start -translate-x-32"
+                                ? "font-bold text-4xl block md:text-start text-center md:-translate-x-32"
                                 : "hidden"
                         }`}
                     >
@@ -144,11 +144,11 @@ export default function MainSlider() {
                         </h2>
 
                         <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-xl w-fit text-start mb-2 font-bold block pb-3">
+                            <span className="text-xl w-fit mx-auto md:mx-0 md:text-start text-center mb-2 font-bold block pb-3">
                                 خبرة هندسية لخدمة المشاريع الصناعية الكبري{" "}
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <p className="text-base w-full text-start font-bold mb-12 pt-3">
+                            <p className="text-base w-full md:text-start text-center font-bold mb-12 pt-3">
                                 نقدم حلول غاز صناععية متاكملة للمصانع والمنشات
                                 الانتاجية, مع <br /> الالتزام الصارم بمعايير
                                 السلامة والجود. <br /> فريقنا المتخصص يضمن اداء
@@ -239,18 +239,18 @@ export default function MainSlider() {
                     </SwiperSlide>
 
                     <div
-                        className={`buttons flex gap-20 justify-center items-center absolute top-[78%] w-full z-40 left-1/2 translate-x-[-50%]`}
+                        className={`buttons flex sm:gap-20 gap-5 justify-center items-center flex-col sm:flex-row absolute sm:top-[78%] top-[65%] w-full z-40 left-1/2 translate-x-[-50%]`}
                     >
                         <Button
                             variant="outline"
-                            className="hover:bg-transparent rounded-4xl w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-xl py-7 cursor-pointer"
+                            className="hover:bg-transparent rounded-4xl w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-7 cursor-pointer"
                         >
                             <Link href={inspectionLinkHref()}>طلب معاينة</Link>
                         </Button>
 
                         <Button
                             variant="outline"
-                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-xl py-7 cursor-pointer w-1/5"
+                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-base md:text-xl py-7 cursor-pointer w-1/5"
                         >
                             <Link href={servicesLinkHref()}>خدماتنا</Link>
                         </Button>
