@@ -84,7 +84,7 @@ export default function Navbar() {
 
                             {/* Contact Us Button */}
                             <div className="flex flex-col items-center space-y-3 pt-4 border-t border-gray-200">
-                                <button className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all w-full">
+                                <button className="data-[state=open]:focus:bg-blue-500 w-1/2 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all md:w-full">
                                     تواصل معنا
                                 </button>
                                 <div className="flex flex-col w-full pt-2">
