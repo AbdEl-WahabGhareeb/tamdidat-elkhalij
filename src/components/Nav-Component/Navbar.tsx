@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -13,17 +13,126 @@ import NavLink from "./NavLink";
 import Link from "next/link";
 
 export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <>
-            <div className=" shadow-lg z-50 fixed top-0 left-0 right-0 bg-white font-[Cairo] rounded-b-3xl">
-                <div className="container px-10  mx-auto flex justify-between items-center pt-1">
-                    <NavigationMenu className="w-1/4" viewport={false}>
+            <div className="shadow-lg z-50 fixed top-0 left-0 right-0 bg-white font-[Cairo] rounded-b-3xl">
+                <div className="container px-4 md:px-10 mx-auto flex justify-between items-center pt-1">
+                    {/* Mobile Menu Button */}
+                    <button 
+                        onClick={toggleMenu}
+                        className="md:hidden cursor-pointer text-blue-900 p-2 focus:outline-none"
+                        aria-label="Toggle menu"
+                        title="Toggle navigation menu"
+                    >
+                        <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            {isMenuOpen ? (
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            ) : (
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            )}
+                        </svg>
+                    </button>
+
+                    {/* Mobile Menu */}
+                    <div className={`${isMenuOpen ? 'block' : 'hidden'}  md:hidden fixed top-[4rem] left-0 right-0 bg-white shadow-lg rounded-b-3xl p-4 z-50`}>
+                        <div className="flex flex-col space-y-4">
+                            {/* Navigation Links */}
+                            <NavLink
+                                href="/"
+                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
+                            >
+                                الرئيسية
+                            </NavLink>
+                            <NavLink
+                                href="/services"
+                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
+                            >
+                                الخدمات
+                            </NavLink>
+                            <NavLink
+                                href="/projects"
+                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
+                            >
+                                المشاريع
+                            </NavLink>
+                            <NavLink
+                                href="/about"
+                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
+                            >
+                                من نحن
+                            </NavLink>
+
+                            {/* Contact Us Button */}
+                            <div className="flex flex-col items-center space-y-3 pt-4 border-t border-gray-200">
+                                <button className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all w-full">
+                                    تواصل معنا
+                                </button>
+                                <div className="flex flex-col w-full pt-2">
+                                    <NavLink
+                                        href="https://wa.me/+201096311532"
+                                        className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
+                                    >
+                                        <span>علي واتساب</span>
+                                        <div className="relative w-[20px] h-[20px] text-green-700">
+                                            <Image
+                                                className="w-full h-full"
+                                                sizes="(max-width: 768px) 100vw"
+                                                fill
+                                                src="/assets/whatsapp.svg"
+                                                alt="WhatsApp"
+                                            />
+                                        </div>
+                                    </NavLink>
+                                    <NavLink
+                                        href="mailto:abdosileem48@gmail.com"
+                                        className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
+                                    >
+                                        <span>عبر البريد</span>
+                                        <div className="relative w-[20px] h-[20px]">
+                                            <Image
+                                                className="w-full h-full"
+                                                sizes="(max-width: 768px) 100vw"
+                                                fill
+                                                src="/assets/gmail.svg"
+                                                alt="Email"
+                                            />
+                                        </div>
+                                    </NavLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Desktop Navigation */}
+                    <NavigationMenu className="hidden md:block w-1/4" viewport={false}>
                         <NavigationMenuList>
                             <NavigationMenuItem className="relative">
-                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all  ">
+                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all">
                                     تواصل معنا
                                 </NavigationMenuTrigger>
-                                <NavigationMenuContent className="  z-50 w-[150px] absolute">
+                                <NavigationMenuContent className="z-50 w-[150px] md:-translate-x-4 absolute">
+                    
+             
                                     <ul className="grid w-[150px] gap-4">
                                         <li>
                                             <NavigationMenuLink asChild>
@@ -69,7 +178,7 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <NavigationMenu className="w-1/2" viewport={false}>
+                    <NavigationMenu className="w-1/2 hidden md:block" viewport={false}>
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavLink

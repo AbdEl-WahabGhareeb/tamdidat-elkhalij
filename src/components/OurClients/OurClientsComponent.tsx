@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,11 +10,70 @@ import "swiper/css/navigation";
 // import "swiper/css/pagination";
 
 import "./OurClients.css";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 // import required modules
 
 export default function OurClients() {
+    const [firstCount, setFirstCount] = useState(0);
+    const fitstNumber = 40;
+
+    const [secondCount, setSecondCount] = useState(0);
+    const secondNumber = 50;
+
+    const [thirdCount, setThirdCount] = useState(0);
+    const thirdNumber = 20;
+
+    const [fourthCount, setFourthCount] = useState(0);
+    const fourthNumber = 110;
+
+    const [hasStarted, setHasStarted] = useState(false);
+
+    const startCounting = () => {
+        if (!hasStarted) {
+            setHasStarted(true);
+            const firstInterval = setInterval(() => {
+                setFirstCount((prevCount) => {
+                    if (prevCount < fitstNumber) {
+                        return prevCount + 1;
+                    }
+                    clearInterval(firstInterval);
+                    return prevCount;
+                });
+            }, 50);
+
+            const secondInterval = setInterval(() => {
+                setSecondCount((prevCount) => {
+                    if (prevCount < secondNumber) {
+                        return prevCount + 1;
+                    }
+                    clearInterval(secondInterval);
+                    return prevCount;
+                });
+            }, 50);
+
+            const thirdInterval = setInterval(() => {
+                setThirdCount((prevCount) => {
+                    if (prevCount < thirdNumber) {
+                        return prevCount + 1;
+                    }
+                    clearInterval(thirdInterval);
+                    return prevCount;
+                });
+            }, 50);
+
+            const interval = setInterval(() => {
+                setFourthCount((prevCount) => {
+                    if (prevCount < fourthNumber) {
+                        return prevCount + 1;
+                    }
+                    clearInterval(interval);
+                    return prevCount;
+                });
+            }, 5);
+        }
+    };
+
     const clientImages = [
         {
             id: 1,
@@ -210,7 +269,7 @@ export default function OurClients() {
 
     return (
         <>
-            <div className="mt-16 " dir="rtl">
+            <div className="mt-16" dir="rtl" onMouseEnter={startCounting}>
                 <div className="header text-center">
                     <h2 className="text-4xl w-fit font-bold mx-auto">
                         عملائنا
@@ -259,75 +318,86 @@ export default function OurClients() {
                         />
                     </div> */}
 
-                    <Swiper
-                        slidesPerView={5}
-                        spaceBetween={120}
-                        pagination={{
-                            clickable: true,
-                            dynamicBullets: true,
-                        }}
-                        modules={[Pagination]}
-                        breakpoints={{
-                            300: {
-                                slidesPerView: 1,
-                                spaceBetween: 0,
-                            },
-                            640: {
-                                slidesPerView: 2,
-                                spaceBetween: 40,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 80,
-                            },
-                            1024: {
-                                slidesPerView: 5,
-                                spaceBetween: 120,
-                            },
-                        }}
-                        className="mySwiper relative mt-4"
-                    >
-                        {clientImages.map((client) => (
-                            <SwiperSlide key={client.id} className="pb-20">
-                                <div className="relative lg:w-full h-[110px]">
-                                    <Image
-                                        className="w-full h-full"
-                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                                        fill
-                                        src={client.src}
-                                        alt={client.alt}
-                                    />
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                    <div className="container mx-auto px-10">
+                        <Swiper
+                            slidesPerView={3}
+                            spaceBetween={120}
+                            pagination={{
+                                clickable: true,
+                                dynamicBullets: true,
+                            }}
+                            autoplay={{
+                                delay: 1000,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true
+                            }}
+                            modules={[Pagination, Autoplay]}
+                            breakpoints={{
+                                300: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 0,
+                                },
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 40,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 80,
+                                },
+                            }}
+                            className="mySwiper relative mt-4"
+                        >
+                            {clientImages.map((client) => (
+                                <SwiperSlide key={client.id} className="pb-20">
+                                    <div className="relative lg:w-full h-[110px]">
+                                        <Image
+                                            className="w-full h-full"
+                                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                            fill
+                                            src={client.src}
+                                            alt={client.alt}
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
 
                 <div className="bg-image relative mt-4">
                     <div className="absolute top-0 left-0 px-16 right-0 bottom-0 z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center text-white text-center p-4">
                         <div className="first text-center">
-                            <p className="text-4xl font-bold mb-4">+40</p>
+                            <p className="text-4xl font-bold mb-4">
+                                +{firstCount}
+                            </p>
                             <span className="text-2xl font-bold">
                                 مشروع سكني
                             </span>
                         </div>
 
                         <div className="second text-center">
-                            <p className="text-4xl font-bold mb-4">+50</p>
+                            <p className="text-4xl font-bold mb-4">
+                                +{secondCount}
+                            </p>
                             <span className="text-2xl font-bold">
                                 مشروع تجاري
                             </span>
                         </div>
 
                         <div className="third text-center">
-                            <p className="text-4xl font-bold mb-4">+20</p>
+                            <p className="text-4xl font-bold mb-4">
+                                +{thirdCount}
+                            </p>
                             <span className="text-2xl font-bold">
                                 مشروع صناعي
                             </span>
                         </div>
 
                         <div className="fourth text-center">
-                            <p className="text-4xl font-bold mb-4">+100</p>
+                            <p className="text-4xl font-bold mb-4">
+                                +{fourthCount}
+                            </p>
                             <span className="text-2xl font-bold">
                                 مشروع في جميع <br /> انحاء المملكة
                             </span>

@@ -29,19 +29,19 @@ export default function About() {
                         من نحن
                         <div className="w-full mt-2 px-3 h-[5px] bg-blue-900"></div>
                     </h2>
-                    <p className="mb-5 leading-10 mt-8 text-xl font-semibold">
+                    <p className="mb-5 leading-10 mt-7 lg:mt-8 lg:text-lg xl:text-xl font-semibold">
                         شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في
                         تصميم وتنفيذ وصيانة شبكات الغاز للمنازل والمنشآت
                         التجارية والصناعية.
                     </p>
 
-                    <p className="mb-5 leading-10 mt-8 text-xl font-semibold">
+                    <p className="mb-5 leading-10 mt-7 lg:mt-8 lg:text-lg xl:text-xl font-semibold">
                         نفتخر بأننا شركاء نجاح لعدد كبير من المشاريع السكنية
                         والتجارية والصناعية في مختلف المدن السعودية، مع سجل حافل
                         بالإنجازات ورضا العملاء بنسبة 100%.
                     </p>
 
-                    <p className="mb-5 leading-10 mt-8 text-xl font-semibold">
+                    <p className="mb-5 leading-10 mt-7 lg:mt-8 lg:text-lg xl:text-xl font-semibold">
                         نعمل بفريق فني معتمد يستخدم أحدث التقنيات والمعدات
                         لتقديم حلول غاز آمنة وموثوقة تلبي احتياجات العملاء بدقة
                         وكفاءة.

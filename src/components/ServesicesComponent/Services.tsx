@@ -46,10 +46,10 @@ export default function Services() {
                                     تصميم وتنفيذ شبكات الغاز بأعلى معايير الجودة
                                     والسلامة.
                                 </p>
-                                <div className="card-actions justify-end flex w-full">
+                                <div className="card-actions lg:mt-7 xl:mt-0 justify-end flex w-full">
                                     <Button
                                         variant="outline"
-                                        className="hover:bg-blue-500 rounded-2xl text-lg text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                        className="hover:bg-blue-500 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
                                         <Link href="/">اعرف أكثر...</Link>
                                     </Button>
@@ -80,7 +80,7 @@ export default function Services() {
                                 <div className="card-actions justify-end flex w-full">
                                     <Button
                                         variant="outline"
-                                        className="hover:bg-blue-500 rounded-2xl text-lg text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                        className="hover:bg-blue-500 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
                                         <Link href="/">اعرف أكثر...</Link>
                                     </Button>
@@ -109,10 +109,10 @@ export default function Services() {
                                     صيانة دورية وطارئة تضمن استمرارية التشغيل
                                     بأمان تام
                                 </p>
-                                <div className="card-actions justify-end flex w-full">
+                                <div className="card-actions lg:mt-7 xl:mt-0 justify-end flex w-full">
                                     <Button
                                         variant="outline"
-                                        className="hover:bg-blue-500 rounded-2xl text-lg text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                        className="hover:bg-blue-500 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
                                         <Link href="/">اعرف أكثر...</Link>
                                     </Button>
