@@ -10,7 +10,7 @@ export default function About() {
                 className="grid container mx-auto grid-cols-1 px-5 ps-16 md:pb-16 md:px-0  mt-16 md:grid-cols-9 gap-4"
                 dir="rtl"
             >
-                <div className="relative md:translate-y-28 ms-auto col-span-4 lg:translate-y-5 md:w-[90%] md:h-[350px]  lg:right-[10%] lg:w-[330px] w-full mb-16 lg:mb-0 h-[600px] lg:h-[400px] bg-blue-900 rounded-3xl top-0  ">
+                <div className="relative md:translate-y-28 ms-auto col-span-4 lg:translate-y-5 md:w-[90%] md:h-[350px]  lg:right-[10%] lg:w-[330px] w-full md:mb-16 mb-6 lg:mb-0 h-[600px] lg:h-[400px] bg-blue-900 rounded-3xl top-0  ">
                         <div className="absolute right-0 md:right-5 lg:right-10 lg:top-10 md:top-5 w-full  h-full lg:w-full lg:h-full border-4 rounded-3xl">
                             <Image
                                 className="object-cover rounded-3xl md:px-0"

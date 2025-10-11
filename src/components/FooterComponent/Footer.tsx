@@ -7,7 +7,7 @@ import React from "react";
 export default function Footer() {
     return (
         <>
-            <div className="bg-[url(/assets/footer.jpg)] bg-cover bg-center relative">
+            <div className="bg-[url(/assets/footer.jpg)] bg-cover bg-center relative px-8 md:px-0">
                 <div className="layer absolute top-0 bottom-0 left-0 right-0 z-0 bg-black opacity-85 "></div>
 
                 <div
