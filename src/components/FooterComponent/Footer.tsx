@@ -146,8 +146,8 @@ export default function Footer() {
                                         <MapPin />
                                     </div>
                                     <p className="text-lg text-end font-medium">
-                                        JCRB4490, 4490 Amir Bin Salama, 8944 Al
-                                        Rehab Dist. Jeddah 23345 ,Kingdom of
+                                        JCRB4490, 4490 Amir Bin Salama, 8944 Al <br />
+                                        Rehab Dist. Jeddah 23345 ,Kingdom of <br />
                                         Saudi Arabia
                                     </p>
                                 </div>
