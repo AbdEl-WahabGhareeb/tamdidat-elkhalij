@@ -38,7 +38,7 @@ export default function OurClients() {
                 const [entry] = entries;
                 if (entry.isIntersecting && !hasStarted) {
                     setHasStarted(true);
-                    
+
                     // First counter
                     const firstInterval = setInterval(() => {
                         setFirstCount((prev) => {
@@ -81,7 +81,7 @@ export default function OurClients() {
 
         // Save the current value to avoid cleanup closure issues
         const currentRef = statsRef.current;
-        
+
         if (currentRef) {
             observer.observe(currentRef);
         }
@@ -132,12 +132,6 @@ export default function OurClients() {
         },
 
         {
-            id: 7,
-            src: "/assets/clients/client-7.png",
-            alt: "Client 3",
-        },
-
-        {
             id: 8,
             src: "/assets/clients/client-8.png",
             alt: "Client 4",
@@ -152,12 +146,6 @@ export default function OurClients() {
             id: 10,
             src: "/assets/clients/client-10.png",
             alt: "Client 2",
-        },
-
-        {
-            id: 11,
-            src: "/assets/clients/client-11.png",
-            alt: "Client 3",
         },
 
         {
@@ -349,7 +337,7 @@ export default function OurClients() {
                             autoplay={{
                                 delay: 1000,
                                 disableOnInteraction: false,
-                                pauseOnMouseEnter: true
+                                pauseOnMouseEnter: true,
                             }}
                             modules={[Pagination, Autoplay]}
                             breakpoints={{
