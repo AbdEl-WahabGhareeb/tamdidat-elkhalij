@@ -42,7 +42,7 @@ export default function Footer() {
                                         alt=""
                                     />
                                 </div>
-                                <h2 className="text-[1.9rem] md:text-[2.3rem] lg:text-[1.9rem] font-bold text-center text-blue-900">
+                                <h2 className="text-[2rem] md:text-[2.3rem] lg:text-[1.9rem] font-bold text-center text-blue-900">
                                     تمديدات الخليج
                                 </h2>
                             </div>
