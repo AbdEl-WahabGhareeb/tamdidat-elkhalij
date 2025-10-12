@@ -289,43 +289,6 @@ export default function OurClients() {
                 </div>
 
                 <div className="clients-imgs px-16  pt-4 mt-0">
-                    {/* <div className="relative w-full h-[110px]">
-                        <Image
-                            className="w-full h-full"
-                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                            fill
-                            src="/assets/client-1.png"
-                            alt=""
-                        />
-                    </div>
-                    <div className="relative w-full h-[110px]">
-                        <Image
-                            className="w-full h-full"
-                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                            fill
-                            src="/assets/client-2.png"
-                            alt=""
-                        />
-                    </div>
-                    <div className="relative w-full h-[160px]">
-                        <Image
-                            className="w-full h-full"
-                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                            fill
-                            src="/assets/client-3.png"
-                            alt=""
-                        />
-                    </div>
-                    <div className="relative w-full h-[200px]">
-                        <Image
-                            className="w-full h-full"
-                            sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                            fill
-                            src="/assets/client-4.png"
-                            alt=""
-                        />
-                    </div> */}
-
                     <div className="container mx-auto  w-3/4 md:w-full">
                         <Swiper
                             slidesPerView={3}

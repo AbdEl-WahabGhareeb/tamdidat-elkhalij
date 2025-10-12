@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="shadow-lg z-50 fixed top-0 left-0 right-0 bg-white font-[Cairo] rounded-b-3xl">
                 <div className="container px-4 md:px-10 mx-auto flex justify-between items-center pt-1">
                     {/* Mobile Menu Button */}
-                    <button 
+                    <button
                         onClick={toggleMenu}
                         className="md:hidden cursor-pointer text-blue-900 p-2 focus:outline-none"
                         aria-label="Toggle menu"
@@ -54,7 +54,11 @@ export default function Navbar() {
                     </button>
 
                     {/* Mobile Menu */}
-                    <div className={`${isMenuOpen ? 'block' : 'hidden'}  md:hidden fixed top-[4rem] left-0 right-0 bg-white shadow-lg rounded-b-3xl p-4 z-50`}>
+                    <div
+                        className={`${
+                            isMenuOpen ? "block" : "hidden"
+                        }  md:hidden fixed top-[4rem] left-0 right-0 bg-white shadow-lg rounded-b-3xl p-4 z-50`}
+                    >
                         <div className="flex flex-col space-y-4">
                             {/* Navigation Links */}
                             <NavLink
@@ -63,12 +67,36 @@ export default function Navbar() {
                             >
                                 الرئيسية
                             </NavLink>
-                            <NavLink
-                                href="/services"
-                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
-                            >
-                                الخدمات
-                            </NavLink>
+                            <div className="flex flex-col group relative">
+                                <NavLink
+                                    href="/services"
+                                    className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
+                                >
+                                    الخدمات
+                                </NavLink>
+                                <ul className="w-full  mx-auto justify-center">
+                                    <li className="py-2 absolute top-10 right-[50%] w-1/3 translate-x-[50%] shadow-special rounded-2xl bg-white flex-col gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex">
+                                            <NavLink
+                                                href="#"
+                                                className="flex-row  block items-center w-full text-center justify-end  gap-0 "
+                                            >
+                                                تصميم وتركيب
+                                            </NavLink>
+                                            <NavLink
+                                                href="#"
+                                                className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
+                                            >
+                                                صيانة
+                                            </NavLink>
+                                            <NavLink
+                                                href="#"
+                                                className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
+                                            >
+                                                شحن الخزانات
+                                            </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
                             <NavLink
                                 href="/projects"
                                 className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
@@ -77,17 +105,17 @@ export default function Navbar() {
                             </NavLink>
                             <NavLink
                                 href="/about"
-                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
+                                className="text-lg font-semibold text-center border-b-2 md:border-0 pb-5 pt-2 hover:text-blue-600 transition-colors duration-300"
                             >
                                 من نحن
                             </NavLink>
 
                             {/* Contact Us Button */}
-                            <div className="flex flex-col items-center space-y-3 pt-4 border-t border-gray-200">
-                                <button className="data-[state=open]:focus:bg-blue-500 w-1/2 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all md:w-full">
+                            <div className="flex relative flex-col group items-center space-y-3 w-1/2 mx-auto">
+                                <button className="data-[state=open]:focus:bg-blue-500 w-full z-50 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 p-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all md:w-full">
                                     تواصل معنا
                                 </button>
-                                <div className="flex flex-col w-full pt-2">
+                                <div className="opacity-0 absolute top-10 z-10 right-[50%] translate-x-[50%] bg-white rounded-b-3xl invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex-col w-[100vw] pt-2">
                                     <NavLink
                                         href="https://wa.me/+201096311532"
                                         className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
@@ -124,15 +152,16 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <NavigationMenu className="hidden md:block w-1/4" viewport={false}>
+                    <NavigationMenu
+                        className="hidden md:block w-1/4"
+                        viewport={false}
+                    >
                         <NavigationMenuList>
                             <NavigationMenuItem className="relative">
                                 <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all">
                                     تواصل معنا
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="z-50 w-[150px] md:-translate-x-4 absolute">
-                    
-             
                                     <ul className="grid w-[150px] gap-4">
                                         <li>
                                             <NavigationMenuLink asChild>
@@ -178,12 +207,15 @@ export default function Navbar() {
                         </NavigationMenuList>
                     </NavigationMenu>
 
-                    <NavigationMenu className="w-1/2 hidden md:block" viewport={false}>
+                    <NavigationMenu
+                        className="w-1/2 hidden md:block"
+                        viewport={false}
+                    >
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavLink
                                     href="/about"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600          group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
                                 >
                                     من نحن
                                 </NavLink>
@@ -192,7 +224,7 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavLink
                                     href="/projects"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600          group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
                                 >
                                     المشاريع{" "}
                                 </NavLink>
@@ -242,7 +274,7 @@ export default function Navbar() {
                             <NavigationMenuItem>
                                 <NavLink
                                     href="/"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600         group inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
                                 >
                                     الرئيسية
                                 </NavLink>
@@ -262,7 +294,7 @@ export default function Navbar() {
                             </div>
 
                             <h1 className="xl:text-lg lg:text-md font-bold text-center text-blue-900">
-                            تمديدات الخليج
+                                تمديدات الخليج
                             </h1>
                         </div>
                     </Link>
