@@ -48,7 +48,7 @@ export default function MainSlider() {
                 className="topics h-[90vh] flex justify-center items-center mt-12 bg-gray-800/45 absolute right-0 w-full top-0 left-0 bottom-0 text-center text-white z-30"
                 dir="rtl"
             >
-                <div className="w-full relative lg:h-[280px]">
+                <div className="w-full relative h-[272px] lg:h-[280px]">
                     <div
                         className={`first relative ${
                             activeIndex === 0
