@@ -370,7 +370,7 @@ export default function OurClients() {
                         >
                             {clientImages.map((client) => (
                                 <SwiperSlide key={client.id} className="pb-20">
-                                    <div className="relative w-3/4 mx-auto h-[110px]">
+                                    <div className="relative w-full mx-auto h-[110px]">
                                         <Image
                                             className="w-full h-full object-contain"
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -426,7 +426,7 @@ export default function OurClients() {
                     <div className="relative w-full h-[100vh] md:h-[320px] overflow-hidden">
                         <div className="statistics z-[5] bg-[#2F3A97]/45 absolute top-0 left-0 w-full h-full "></div>
                         <Image
-                            className="w-full opacity-50 object-cover md:object-fill h-full"
+                            className="w-full opacity-50 object-contain md:object-fill h-full"
                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                             fill
                             src="/assets/clients-statistics.png"
