@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,7 +16,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 export default function OurClients() {
     const [firstCount, setFirstCount] = useState(0);
-    const fitstNumber = 40;
+    const firstNumber = 40;
 
     const [secondCount, setSecondCount] = useState(0);
     const secondNumber = 50;
@@ -28,51 +28,71 @@ export default function OurClients() {
     const fourthNumber = 110;
 
     const [hasStarted, setHasStarted] = useState(false);
+    const statsRef = useRef(null);
 
-    const startCounting = () => {
-        if (!hasStarted) {
-            setHasStarted(true);
-            const firstInterval = setInterval(() => {
-                setFirstCount((prevCount) => {
-                    if (prevCount < fitstNumber) {
-                        return prevCount + 1;
-                    }
-                    clearInterval(firstInterval);
-                    return prevCount;
-                });
-            }, 50);
+    useEffect(() => {
+        if (hasStarted) return; // Don't set up observer if counting has already started
 
-            const secondInterval = setInterval(() => {
-                setSecondCount((prevCount) => {
-                    if (prevCount < secondNumber) {
-                        return prevCount + 1;
-                    }
-                    clearInterval(secondInterval);
-                    return prevCount;
-                });
-            }, 50);
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const [entry] = entries;
+                if (entry.isIntersecting && !hasStarted) {
+                    setHasStarted(true);
+                    
+                    // First counter
+                    const firstInterval = setInterval(() => {
+                        setFirstCount((prev) => {
+                            if (prev < firstNumber) return prev + 1;
+                            clearInterval(firstInterval);
+                            return prev;
+                        });
+                    }, 50);
 
-            const thirdInterval = setInterval(() => {
-                setThirdCount((prevCount) => {
-                    if (prevCount < thirdNumber) {
-                        return prevCount + 1;
-                    }
-                    clearInterval(thirdInterval);
-                    return prevCount;
-                });
-            }, 50);
+                    // Second counter
+                    const secondInterval = setInterval(() => {
+                        setSecondCount((prev) => {
+                            if (prev < secondNumber) return prev + 1;
+                            clearInterval(secondInterval);
+                            return prev;
+                        });
+                    }, 50);
 
-            const interval = setInterval(() => {
-                setFourthCount((prevCount) => {
-                    if (prevCount < fourthNumber) {
-                        return prevCount + 1;
-                    }
-                    clearInterval(interval);
-                    return prevCount;
-                });
-            }, 5);
+                    // Third counter
+                    const thirdInterval = setInterval(() => {
+                        setThirdCount((prev) => {
+                            if (prev < thirdNumber) return prev + 1;
+                            clearInterval(thirdInterval);
+                            return prev;
+                        });
+                    }, 50);
+
+                    // Fourth counter
+                    const fourthInterval = setInterval(() => {
+                        setFourthCount((prev) => {
+                            if (prev < fourthNumber) return prev + 1;
+                            clearInterval(fourthInterval);
+                            return prev;
+                        });
+                    }, 25); // Faster interval for larger number
+                }
+            },
+            { threshold: 0.1 } // Start when 10% of the element is visible
+        );
+
+        // Save the current value to avoid cleanup closure issues
+        const currentRef = statsRef.current;
+        
+        if (currentRef) {
+            observer.observe(currentRef);
         }
-    };
+
+        return () => {
+            // Use the saved ref value in cleanup
+            if (currentRef) {
+                observer.unobserve(currentRef);
+            }
+        };
+    }, [hasStarted, firstNumber, secondNumber, thirdNumber, fourthNumber]);
 
     const clientImages = [
         {
@@ -269,7 +289,7 @@ export default function OurClients() {
 
     return (
         <>
-            <div className="mt-16" dir="rtl" onMouseEnter={startCounting}>
+            <div className="mt-16" dir="rtl">
                 <div className="header text-center">
                     <h2 className="text-4xl w-fit font-bold mx-auto">
                         عملائنا
@@ -365,7 +385,7 @@ export default function OurClients() {
                     </div>
                 </div>
 
-                <div className="bg-image relative mt-4">
+                <div ref={statsRef} className="bg-image relative mt-4">
                     <div className="absolute top-0 left-0 px-16 right-0 bottom-0 z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center text-white text-center p-4">
                         <div className="first text-center">
                             <p className="text-4xl font-bold mb-4">
