@@ -116,7 +116,7 @@ export default function Footer() {
 
                             <div className="icons flex gap-5 justify-center items-end mt-5 flex-col lg:translate-x-12 xl:translate-x-20">
                                 <div className="flex gap-3 flex-row-reverse items-center justify-center">
-                                    <div className="bg-blue-700 rounded-full text-white p-2">
+                                    <div className="bg-blue-700 w-[40px] h-[40px] flex items-center justify-center rounded-full text-white p-2">
                                         <div className="relative w-[20px]  text-white h-[20px]">
                                             <Image
                                                 className="w-full h-full text-white"
@@ -127,13 +127,13 @@ export default function Footer() {
                                             />
                                         </div>
                                     </div>
-                                    <p className="text-lg text-end font-medium">
+                                    <p className="text-lg text-end font-medium" dir="ltr">
                                         +9665 6157 6175
                                     </p>
                                 </div>
 
                                 <div className="flex gap-3 flex-row-reverse items-center justify-center">
-                                    <div className="bg-blue-700 rounded-full text-white p-2">
+                                    <div className="bg-blue-700 w-[40px] h-[40px] flex items-center justify-center rounded-full text-white p-2">
                                         <Mail />
                                     </div>
                                     <p className="text-lg text-end font-medium">
@@ -142,7 +142,7 @@ export default function Footer() {
                                 </div>
 
                                 <div className="flex gap-3 flex-row-reverse items-start justify-center">
-                                    <div className="bg-blue-700 rounded-full text-white p-2">
+                                    <div className="bg-blue-700 w-[40px] h-[40px] flex items-center justify-center rounded-full text-white p-2">
                                         <MapPin />
                                     </div>
                                     <p className="text-lg text-end font-medium">
