@@ -32,8 +32,8 @@ export default function Footer() {
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 z-10 relative ">
                         <div className="logo-and-desc flex flex-col justify-center items-start lg:items-center ps-12 row-span-5">
-                            <div className="flex flex-col w-full  mb-5 justify-start items-start ">
-                                <div className="relative mb-1 w-1/3 ms-auto h-[90px]">
+                            <div className="flex flex-col w-full mb-5 justify-start items-start ">
+                                <div className="relative mb-1 w-1/3 min-w-[200px] ms-auto h-[90px]">
                                     <Image
                                         className="w-full h-full"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -42,7 +42,7 @@ export default function Footer() {
                                         alt=""
                                     />
                                 </div>
-                                <h2 className="text-[1.4rem] sm:text-[1.9rem] md:text-[2.3rem] lg:text-[1.5rem] font-bold text-center text-blue-900">
+                                <h2 className="text-[1.9rem] md:text-[2.3rem] lg:text-[1.9rem] font-bold text-center text-blue-900">
                                     تمديدات الخليج
                                 </h2>
                             </div>
