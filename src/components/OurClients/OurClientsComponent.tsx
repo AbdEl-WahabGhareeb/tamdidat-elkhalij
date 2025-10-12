@@ -338,7 +338,7 @@ export default function OurClients() {
                         />
                     </div> */}
 
-                    <div className="container mx-auto px-10 w-3/4 md:w-full">
+                    <div className="container mx-auto  w-3/4 md:w-full">
                         <Swiper
                             slidesPerView={3}
                             spaceBetween={120}
