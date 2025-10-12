@@ -243,14 +243,14 @@ export default function MainSlider() {
                     >
                         <Button
                             variant="outline"
-                            className="hover:bg-transparent rounded-4xl w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-7 cursor-pointer"
+                            className="hover:bg-transparent rounded-4xl w-1/4 sm:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-7 cursor-pointer"
                         >
                             <Link href={inspectionLinkHref()}>طلب معاينة</Link>
                         </Button>
 
                         <Button
                             variant="outline"
-                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-base md:text-xl py-7 cursor-pointer w-1/5"
+                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-base md:text-xl py-7 cursor-pointer w-1/4 sm:w-1/5"
                         >
                             <Link href={servicesLinkHref()}>خدماتنا</Link>
                         </Button>
