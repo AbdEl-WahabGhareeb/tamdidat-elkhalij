@@ -35,7 +35,7 @@ export default function Footer() {
                             <div className="flex flex-col w-full mb-5 justify-start sm:items-start items-center      ">
                                 <div className="relative mb-1 w-1/3 mt-3 sm:mt-0 min-w-[200px] sm:ms-auto h-[90px]">
                                     <Image
-                                        className="w-full h-full"
+                                        className="w-full h-full object-cover"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/empty-logo.jpg"
