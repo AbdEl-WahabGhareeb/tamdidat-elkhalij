@@ -26,11 +26,11 @@ export default function Services() {
                 </div>
                 
                 <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-                        <div className="card group overflow-hidden rounded-2xl md:ms-auto md:w-[88%] shadow-special w-[90%] mx-auto">
+                        <div className="card group overflow-hidden rounded-2xl md:ms-auto md:w-[88%] shadow-special w-[90%]  mx-auto">
                             <figure>
-                                <div className="relative overflow-hidden w-full md:h-[275px] h-[300px] sm:h-[500px] xl:h-[300px] lg:h-[220px]"> 
+                                <div className="relative overflow-hidden max-w-full md:h-[275px] h-[400px]  sm:h-[450px] xl:h-[300px] lg:h-[220px]"> 
                                     <Image
-                                        className="w-full group-hover:scale-105 transition-transform duration-300 h-full rounded-t-2xl"
+                                        className="w-full group-hover:scale-105 object-cover transition-transform duration-300 h-full rounded-t-2xl"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/right-card.png"
@@ -57,11 +57,11 @@ export default function Services() {
                             </div>
                         </div>
 
-                        <div className="card group rounded-2xl md:mx-auto md:w-[88%] shadow-special bg-base-100 w-[90%] mx-auto overflow-hidden">
+                        <div className="card group rounded-2xl md:mx-auto md:w-[88%] shadow-special bg-base-100 w-[90%]  mx-auto overflow-hidden">
                             <figure>
-                                <div className="relative overflow-hidden w-full md:h-[275px] h-[300px] sm:h-[500px] xl:h-[300px] lg:h-[220px]  ">
+                                <div className="relative overflow-hidden max-w-full md:h-[275px] h-[400px]  sm:h-[450px] xl:h-[300px] lg:h-[220px]  ">
                                     <Image
-                                        className="group-hover:scale-105 transition-transform duration-300 w-full h-full rounded-t-2xl"
+                                        className="group-hover:scale-105 object-cover transition-transform duration-300 w-full h-full rounded-t-2xl"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/middle-card.png"
@@ -89,11 +89,11 @@ export default function Services() {
                         </div>
 
 
-                        <div className="card w-[90%] mx-auto group rounded-2xl md:me-auto md:w-[88%] shadow-special bg-base-100  overflow-hidden">
+                        <div className="card w-[90%]  mx-auto group rounded-2xl md:me-auto md:w-[88%] shadow-special bg-base-100  overflow-hidden">
                             <figure>
-                                <div className="relative w-full md:h-[275px] h-[300px] sm:h-[500px] xl:h-[300px] lg:h-[220px]  overflow-hidden">
+                                <div className="relative w-full md:h-[275px] h-[400px]  sm:h-[450px] xl:h-[300px] lg:h-[220px]  overflow-hidden">
                                     <Image
-                                        className="w-full h-full rounded-t-2xl group-hover:scale-105 transition-transform duration-300"
+                                        className="w-full h-full rounded-t-2xl group-hover:scale-105 object-cover transition-transform duration-300"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/last-card.png"
