@@ -75,17 +75,6 @@ export const siteMetadata = {
         "خزان غاز 7000 لتر افقي",
         "خزان غاز 10000 لتر افقي",
 
-        "خدمات الغاز في مكة المكرمة",
-        "خدمات الغاز في المدينة المنورة",
-        "خدمات الغاز في الخبر",
-        "خدمات الغاز في الطائف",
-        "خدمات الغاز في أبها",
-        "خدمات الغاز في تبوك",
-        "خدمات الغاز في الجبيل",
-        "خدمات الغاز في ينبع",
-        "خدمات الغاز في القصيم",
-        "خدمات الغاز في حائل",
-
         "فحص تسربات الغاز",
         "كشف تسربات الغاز",
         "صيانة دورية لشبكات الغاز",
@@ -120,17 +109,17 @@ export const siteMetadata = {
         "محطات تعبئة الغاز",
     ],
     authors: [{ name: "تمديدات الخليج" }],
-    canonical: "https://tamdidat-elkhalij.com",
+    canonical: "https://taamco.com",
     openGraph: {
         type: "website",
         locale: "ar_SA",
-        url: "https://tamdidat-elkhalij.com",
+        url: "https://taamco.com",
         siteName: "تمديدات الخليج",
         images: [
             {
-                url: "/assets/og-image.jpg",
-                width: 1200,
-                height: 630,
+                url: "./assets/Logo.png",
+                width: 32,
+                height: 32,
                 alt: "تمديدات الخليج - خدمات تصميم وتنفيذ وصيانة شبكات الغاز",
             },
         ],
@@ -141,7 +130,7 @@ export const siteMetadata = {
         creator: "@tamdidat_elkhalij",
     },
     alternates: {
-        canonical: "https://tamdidat-elkhalij.com",
+        canonical: "https://taamco.com",
     },
     robots: {
         index: true,

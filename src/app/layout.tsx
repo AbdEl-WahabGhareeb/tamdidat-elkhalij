@@ -16,7 +16,12 @@ const geistMono = Geist_Mono({
 import { siteMetadata } from './metadata';
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://tamdidat-elkhalij.com'),
+    metadataBase: new URL('https://taamco.com'),
+    icons: {
+        icon: '/assets/Logo.png',
+        apple: '/assets/Logo.png',
+        shortcut: '/assets/Logo.png'
+    },
     title: {
         default: siteMetadata.title,
         template: '%s | تمديدات الخليج',
@@ -38,7 +43,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} font-[Cairo] antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} font-[Noto-Kufi-Arabic] md:font-[Cairo] antialiased`}
             >
                 <Navbar />
                 {children}

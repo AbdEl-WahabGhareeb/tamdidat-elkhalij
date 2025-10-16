@@ -15,10 +15,10 @@ export default function Services() {
                         خدماتنا
                         <div className="w-full mt-2 h-[5px] bg-blue-900"></div>
                     </h2>
-                    <h3 className="text-xl mt-3 font-bold text-center">
+                    <h3 className="text-2xl mt-3 font-bold text-center">
                         حلول غاز شاملة بمعايير عالمية
                     </h3>
-                    <p className="text-center font-semibold text-xl mt-3">
+                    <p className="text-center font-normal text-xl mt-3">
                         نقدم مجموعة متكاملة من الخدمات المتخصصة في مجال شبكات
                         الغاز، تلبي احتياجات المنازل والمنشآت التجارية
                         والصناعية:
@@ -42,7 +42,7 @@ export default function Services() {
                                 <h2 className="card-title font-bold text-xl mb-2">
                                     تصميم وتركيب أنظمة الغاز
                                 </h2>
-                                <p className="text-lg font-semibold">
+                                <p className="text-lg font-normal">
                                     تصميم وتنفيذ شبكات الغاز بأعلى معايير الجودة
                                     والسلامة.
                                 </p>
@@ -73,7 +73,7 @@ export default function Services() {
                                 <h2 className="card-title font-bold text-xl mb-2">
                                     شحن خزانات الغاز{" "}
                                 </h2>
-                                <p className="text-lg font-semibold">
+                                <p className="text-lg font-normal">
                                     خدمة شحن احترافية بأحدث المعدات وبإشراف
                                     فنيين معتمدين.
                                 </p>
@@ -105,7 +105,7 @@ export default function Services() {
                                 <h2 className="card-title font-bold text-xl mb-2">
                                     صيانة شبكات الغاز
                                 </h2>
-                                <p className="text-lg font-semibold">
+                                <p className="text-lg font-normal">
                                     صيانة دورية وطارئة تضمن استمرارية التشغيل
                                     بأمان تام
                                 </p>

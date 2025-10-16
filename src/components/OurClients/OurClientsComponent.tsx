@@ -283,7 +283,7 @@ export default function OurClients() {
                         عملائنا
                         <div className="w-full mt-2 h-[5px] bg-blue-900"></div>
                     </h2>
-                    <h3 className="text-xl mt-3 font-bold text-center">
+                    <h3 className="text-xl mt-3 font-semibold text-center">
                         نفتخر بثقة عملائنا وإنجازاتنا في مختلف أنحاء المملكة
                     </h3>
                 </div>
