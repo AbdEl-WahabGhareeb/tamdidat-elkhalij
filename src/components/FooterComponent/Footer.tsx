@@ -35,11 +35,11 @@ export default function Footer() {
                             <div className="flex flex-col w-full mb-5 justify-start sm:items-start items-center      ">
                                 <div className="relative mb-1 w-1/3 mt-3 sm:mt-0 min-w-[200px] sm:ms-auto h-[90px]">
                                     <Image
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-contain"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/empty-logo.jpg"
-                                        alt=""
+                                        alt="شعار شركة تمديدات الخليج في تذييل الصفحة"
                                     />
                                 </div>
                                 <h2 className="text-[2.1rem] md:text-[2.3rem] lg:text-[1.9rem] font-bold text-center text-blue-900">
@@ -69,7 +69,7 @@ export default function Footer() {
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
                                                 src="/assets/linked-in.svg"
-                                                alt=""
+                                                alt="رابط صفحة لينكد إن لشركة تمديدات الخليج"
                                             />
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@ export default function Footer() {
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
                                                 src="/assets/X.png"
-                                                alt=""
+                                                alt="رابط حساب تويتر لشركة تمديدات الخليج"
                                             />
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@ export default function Footer() {
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
                                                 src="/assets/tiktok.svg"
-                                                alt=""
+                                                alt="رابط حساب تيك توك لشركة تمديدات الخليج"
                                             />
                                         </div>
                                     </div>
@@ -111,7 +111,7 @@ export default function Footer() {
                             </p>
                             <p className="text-xl mt-2">
                                 فريقنا جاهز للرد علي جميع استفساراتك <br />{" "}
-                                وتقديم الدعم الفني فيأي وقت.
+                                وتقديم الدعم الفني في أي وقت.
                             </p>
 
                             <div className="icons flex gap-5 justify-center items-end mt-5 flex-col lg:translate-x-12 xl:translate-x-20">
@@ -123,7 +123,7 @@ export default function Footer() {
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
                                                 src="/assets/whatsapp-white.svg"
-                                                alt=""
+                                                alt="ايقونة واتساب بجانب رقم التواصل المباشر مع تمديدات الخليج في تذييل الصفحة"
                                             />
                                         </div>
                                     </div>

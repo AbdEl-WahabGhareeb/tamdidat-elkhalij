@@ -98,180 +98,180 @@ export default function OurClients() {
         {
             id: 1,
             src: "/assets/clients/client-1.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مشروع سكني في الرياض",
         },
 
         {
             id: 2,
             src: "/assets/clients/client-2.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - مجمع تجاري في جدة",
         },
 
         {
             id: 3,
             src: "/assets/clients/client-3.png",
-            alt: "Client 3",
+            alt: "شعار عميل تمديدات الخليج - مشروع صناعي في الدمام",
         },
 
         {
             id: 4,
             src: "/assets/clients/client-4.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - فندق فاخر في مكة المكرمة",
         },
 
         {
             id: 5,
             src: "/assets/clients/client-5.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مجمع سكني في المدينة المنورة",
         },
 
         {
             id: 6,
             src: "/assets/clients/client-6.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - مطعم في الخبر",
         },
 
         {
             id: 8,
             src: "/assets/clients/client-8.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - مصنع في ينبع الصناعية",
         },
         {
             id: 9,
             src: "/assets/clients/client-9.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مشروع سكني في الطائف",
         },
 
         {
             id: 10,
             src: "/assets/clients/client-10.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - مركز تجاري في أبها",
         },
 
         {
             id: 12,
             src: "/assets/clients/client-12.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - مشروع صناعي في الجبيل",
         },
         {
             id: 13,
             src: "/assets/clients/client-13.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - فلل سكنية في الخرج",
         },
 
         {
             id: 14,
             src: "/assets/clients/client-14.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - مجمع مطاعم في القصيم",
         },
 
         {
             id: 15,
             src: "/assets/clients/client-15.png",
-            alt: "Client 3",
+            alt: "شعار عميل تمديدات الخليج - منشأة صناعية في رابغ",
         },
 
         {
             id: 16,
             src: "/assets/clients/client-16.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - عمارات سكنية في حائل",
         },
         {
             id: 17,
             src: "/assets/clients/client-17.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مشروع تجاري في تبوك",
         },
 
         {
             id: 18,
             src: "/assets/clients/client-18.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - فندق في الخبر",
         },
 
         {
             id: 19,
             src: "/assets/clients/client-19.png",
-            alt: "Client 3",
+            alt: "شعار عميل تمديدات الخليج - مجمع صناعي في جازان",
         },
 
         {
             id: 20,
             src: "/assets/clients/client-20.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - مشروع سكني في نجران",
         },
         {
             id: 21,
             src: "/assets/clients/client-21.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مركز تجاري في الباحة",
         },
 
         {
             id: 22,
             src: "/assets/clients/client-22.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - مصنع في الأحساء",
         },
 
         {
             id: 23,
             src: "/assets/clients/client-23.png",
-            alt: "Client 3",
+            alt: "شعار عميل تمديدات الخليج - مجمع سكني في جدة",
         },
 
         {
             id: 24,
             src: "/assets/clients/client-24.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - مشروع تجاري في الرياض",
         },
         {
             id: 25,
             src: "/assets/clients/client-25.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - منشأة صناعية في الدمام",
         },
 
         {
             id: 26,
             src: "/assets/clients/client-26.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - مطاعم في مكة المكرمة",
         },
 
         {
             id: 27,
             src: "/assets/clients/client-27.png",
-            alt: "Client 3",
+            alt: "شعار عميل تمديدات الخليج - مشروع سكني في المدينة المنورة",
         },
 
         {
             id: 28,
             src: "/assets/clients/client-28.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - مركز تجاري في الطائف",
         },
         {
             id: 29,
             src: "/assets/clients/client-29.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مشروع صناعي في ينبع",
         },
 
         {
             id: 30,
             src: "/assets/clients/client-30.png",
-            alt: "Client 2",
+            alt: "شعار عميل تمديدات الخليج - فلل سكنية في أبها",
         },
 
         {
             id: 31,
             src: "/assets/clients/client-31.png",
-            alt: "Client 3",
+            alt: "شعار عميل تمديدات الخليج - مجمع تجاري في القصيم",
         },
 
         {
             id: 32,
             src: "/assets/clients/client-32.png",
-            alt: "Client 4",
+            alt: "شعار عميل تمديدات الخليج - مشروع صناعي في الجبيل",
         },
         {
             id: 33,
             src: "/assets/clients/client-33.png",
-            alt: "Client 1",
+            alt: "شعار عميل تمديدات الخليج - مشروع سكني في الخرج",
         },
     ];
 
@@ -381,7 +381,7 @@ export default function OurClients() {
                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                             fill
                             src="/assets/clients-statistics.png"
-                            alt=""
+                            alt="إحصائيات وإنجازات تمديدات الخليج في المشاريع السكنية والتجارية والصناعية"
                         />
                     </div>
                 </div>

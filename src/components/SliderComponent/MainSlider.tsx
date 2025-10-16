@@ -44,16 +44,14 @@ export default function MainSlider() {
     const [activeIndex, setActiveIndex] = useState(0);
     return (
         <>
-             <div
+            <div
                 className="topics h-[90vh] flex justify-center items-center mt-12 bg-gray-800/45 absolute right-0 w-full top-0 left-0 bottom-0 text-center text-white z-30"
                 dir="rtl"
             >
                 <div className="w-full relative h-[272px] lg:h-[280px]">
                     <div
                         className={`first relative ${
-                            activeIndex === 0
-                                ? "block"
-                                : "hidden"
+                            activeIndex === 0 ? "block" : "hidden"
                         }`}
                     >
                         <h2
@@ -89,7 +87,9 @@ export default function MainSlider() {
                                 : "hidden"
                         }`}
                     >
-                        <h2 className={`transition-all font-bold text-4xl duration-300 mb-6 `}>
+                        <h2
+                            className={`transition-all font-bold text-4xl duration-300 mb-6 `}
+                        >
                             المشاريع السكنية{" "}
                         </h2>
 
@@ -112,7 +112,9 @@ export default function MainSlider() {
                                 : "hidden"
                         }`}
                     >
-                        <h2 className={`transition-all font-bold text-4xl duration-300 mb-6 `}>
+                        <h2
+                            className={`transition-all font-bold text-4xl duration-300 mb-6 `}
+                        >
                             المشاريع التجارية
                         </h2>
 
@@ -139,7 +141,9 @@ export default function MainSlider() {
                                 : "hidden"
                         }`}
                     >
-                        <h2 className={`transition-all font-bold text-4xl duration-300 mb-6 `}>
+                        <h2
+                            className={`transition-all font-bold text-4xl duration-300 mb-6 `}
+                        >
                             المشاريع الصناعية
                         </h2>
 
@@ -157,8 +161,6 @@ export default function MainSlider() {
                         </h3>
                     </div>
                 </div>
-
-              
             </div>
 
             <div className="relative h-[90vh]">
@@ -191,7 +193,7 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/General.jpg"
-                                alt="Nature 1"
+                                alt="تمديدات الخليج - الشركة الرائدة في تصميم وتنفيذ وصيانة شبكات الغاز"
                             />
                         </div>
                     </SwiperSlide>
@@ -205,7 +207,7 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/Home.jpg"
-                                alt="Nature 1"
+                                alt="خدمات تمديدات الغاز للمشاريع السكنية - الفلل والعمارات السكنية"
                             />
                         </div>
                     </SwiperSlide>
@@ -219,7 +221,7 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/resturent1.jpg"
-                                alt="Nature 1"
+                                alt="خدمات تمديدات الغاز للمشاريع التجارية - الفنادق والمطاعم والمجمعات التجارية"
                             />
                         </div>
                     </SwiperSlide>
@@ -233,7 +235,7 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/industrial.jpg"
-                                alt="Nature 1"
+                                alt="خدمات تمديدات الغاز للمشاريع الصناعية - المصانع والمنشآت الإنتاجية"
                             />
                         </div>
                     </SwiperSlide>

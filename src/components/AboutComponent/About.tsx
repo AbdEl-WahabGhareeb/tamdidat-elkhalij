@@ -19,7 +19,7 @@ export default function About() {
                                 loading="eager"
                                 fill
                                 src="/assets/about.png"
-                                alt="Nature 1"
+                                alt="صورة تعريفية عن شركة تمديدات الخليج المحدودة وخدماتها المتخصصة"
                             />
                     </div>
                 </div>

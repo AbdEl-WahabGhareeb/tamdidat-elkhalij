@@ -127,7 +127,7 @@ export default function Navbar() {
                                                 sizes="(max-width: 768px) 100vw"
                                                 fill
                                                 src="/assets/whatsapp.svg"
-                                                alt="WhatsApp"
+                                                alt="أيقونة واتساب للتواصل المباشر مع تمديدات الخليج"
                                             />
                                         </div>
                                     </NavLink>
@@ -142,7 +142,7 @@ export default function Navbar() {
                                                 sizes="(max-width: 768px) 100vw"
                                                 fill
                                                 src="/assets/gmail.svg"
-                                                alt="Email"
+                                                alt="أيقونة البريد الإلكتروني للتواصل مع تمديدات الخليج"
                                             />
                                         </div>
                                     </NavLink>
@@ -177,7 +177,7 @@ export default function Navbar() {
                                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                             fill
                                                             src="/assets/whatsapp.svg"
-                                                            alt=""
+                                                            alt="أيقونة واتساب للتواصل المباشر مع تمديدات الخليج"
                                                         />
                                                     </div>
                                                 </NavLink>
@@ -195,7 +195,7 @@ export default function Navbar() {
                                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                             fill
                                                             src="/assets/gmail.svg"
-                                                            alt=""
+                                                            alt="أيقونة البريد الإلكتروني للتواصل مع تمديدات الخليج"
                                                         />
                                                     </div>
                                                 </NavLink>
@@ -289,7 +289,7 @@ export default function Navbar() {
                                     className="object-contain w-full h-[80%]"
                                     fill
                                     src="/assets/logo.jpg"
-                                    alt="لوجو شركة تمديدات الخليج"
+                                    alt="شعار شركة تمديدات الخليج - الشركة الرائدة في خدمات الغاز"
                                 />
                             </div>
 

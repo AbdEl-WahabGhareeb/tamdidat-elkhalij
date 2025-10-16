@@ -34,7 +34,7 @@ export default function Services() {
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/right-card.png"
-                                        alt=""
+                                        alt="خدمات تصميم وتركيب أنظمة الغاز المتكاملة بأعلى معايير الجودة"
                                     />
                                 </div>
                             </figure>
@@ -65,7 +65,7 @@ export default function Services() {
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/middle-card.png"
-                                        alt=""
+                                        alt="خدمة شحن خزانات الغاز الاحترافية بمعدات حديثة"
                                     />
                                 </div>
                             </figure>
@@ -97,7 +97,7 @@ export default function Services() {
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                         fill
                                         src="/assets/last-card.png"
-                                        alt=""
+                                        alt="خدمات صيانة شبكات الغاز وفحص السلامة الدوري"
                                     />
                                 </div>
                             </figure>
