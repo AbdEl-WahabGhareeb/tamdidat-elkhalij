@@ -13,35 +13,21 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+import { siteMetadata } from './metadata';
+
 export const metadata: Metadata = {
-    title: "تمديدات الخليج",
-    description:
-        "شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في تصميم وتنفيذ وصيانة شبكات الغاز للمنازل والمنشآت التجارية والصناعية.",
-    keywords: [
-        "تمديدات",
-        "تمديدات الخليج",
-        "شركة تمديدات الخليج",
-        "غاز",
-        "شركة سعودية",
-        "صيانة",
-        "تصميم",
-        "تنفيذ",
-        "شبكات الغاز",
-        "منازل",
-        "منشآت تجارية",
-        "منشآت صناعية",
-        "خدمات غاز",
-        "سلامة الغاز",
-        "تركيب الغاز",
-        "مشاريع سكنية",
-        "مشاريع تجارية",
-        "مشاريع صناعية",
-        "فريق فني معتمد",
-        "تقنيات حديثة",
-        "معدات غاز",
-        "حلول غاز آمنة",
-        "كفاءة الغاز",
-    ],
+    metadataBase: new URL('https://tamdidat-elkhalij.com'),
+    title: {
+        default: siteMetadata.title,
+        template: '%s | تمديدات الخليج',
+    },
+    description: siteMetadata.description,
+    keywords: siteMetadata.keywords,
+    authors: siteMetadata.authors,
+    openGraph: siteMetadata.openGraph,
+    twitter: siteMetadata.twitter,
+    alternates: siteMetadata.alternates,
+    robots: siteMetadata.robots,
 };
 
 export default function RootLayout({

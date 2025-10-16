@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function page() {
+import { metadata } from './page-metadata';
+
+export { metadata };
+
+export default function Projects() {
     return (
         <div className="px-12">
             <h2 className="text-3xl font-bold mt-36 mb-10 text-center">مشاريعنا</h2>
