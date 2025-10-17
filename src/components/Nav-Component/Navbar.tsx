@@ -117,7 +117,7 @@ export default function Navbar() {
                                 </button>
                                 <div className="opacity-0 absolute top-10 z-10 right-[50%] translate-x-[50%] bg-white rounded-b-3xl invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex-col w-[100vw] pt-2">
                                     <NavLink
-                                        href="https://wa.me/+201096311532"
+                                        href="https://wa.me/+966543488470"
                                         className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
                                     >
                                         <span>علي واتساب</span>
@@ -166,7 +166,7 @@ export default function Navbar() {
                                         <li>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="https://wa.me/+201096311532"
+                                                    href="https://wa.me/+966543488470"
                                                     className="flex-row items-center justify-end gap-2"
                                                 >
                                                     <span>علي واتساب</span>

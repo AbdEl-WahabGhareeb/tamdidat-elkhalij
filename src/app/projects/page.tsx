@@ -3,6 +3,7 @@ import Script from 'next/script';
 import Image from 'next/image';
 import { metadata } from './page-metadata';
 import { getProjectsStructuredData } from '../structured-data/projects';
+import Footer from "@/components/FooterComponent/Footer";
 
 export { metadata };
 
@@ -92,6 +93,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

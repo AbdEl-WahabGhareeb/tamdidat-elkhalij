@@ -1,11 +1,13 @@
 import React from "react";
 
 import { metadata } from './page-metadata';
+import Footer from "@/components/FooterComponent/Footer";
 
 export { metadata };
 
 export default function About() {
     return (
+        <>
         <div className="px-12">
             <h2 className="text-3xl font-bold mt-36 mb-10 text-center">من نحن</h2>
             <p>
@@ -36,5 +38,9 @@ export default function About() {
                 necessitatibus, beatae unde cupiditate repudiandae.
             </p>
         </div>
+                    <Footer/>
+
+        </>
+        
     );
 }

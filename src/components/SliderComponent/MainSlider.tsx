@@ -11,36 +11,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./MainSlider.css";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 export default function MainSlider() {
-    function servicesLinkHref() {
-        if (activeIndex === 0) {
-            return "/";
-        } else if (activeIndex === 1) {
-            return "/services";
-        } else if (activeIndex === 2) {
-            return "/about";
-        } else if (activeIndex === 3) {
-            return "/";
-        } else {
-            return "/";
-        }
-    }
-
-    function inspectionLinkHref() {
-        if (activeIndex === 0) {
-            return "/";
-        } else if (activeIndex === 1) {
-            return "/services";
-        } else if (activeIndex === 2) {
-            return "/about";
-        } else if (activeIndex === 3) {
-            return "/";
-        } else {
-            return "/";
-        }
-    }
     const [activeIndex, setActiveIndex] = useState(0);
     return (
         <>
@@ -54,11 +26,11 @@ export default function MainSlider() {
                             activeIndex === 0 ? "block" : "hidden"
                         }`}
                     >
-                        <h2
+                        <h1
                             className={`transition-all mb-6 duration-300 font-bold text-4xl`}
                         >
                             تمديدات الخليج
-                        </h2>
+                        </h1>
 
                         <h3
                             className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 `}
@@ -243,19 +215,19 @@ export default function MainSlider() {
                     <div
                         className={`buttons flex sm:gap-20 gap-5 justify-center items-center sm:flex-row absolute  top-[78%] w-full z-40 left-1/2 translate-x-[-50%]`}
                     >
-                        <Button
-                            variant="outline"
-                            className="hover:bg-transparent rounded-4xl w-1/3 sm:w-1/4 md:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-7 cursor-pointer"
+                        <Link
+                            className="hover:bg-transparent rounded-4xl w-1/3 sm:w-1/4 md:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-4 text-center cursor-pointer"
+                            href="https://wa.me/+966543488470"
                         >
-                            <Link href={inspectionLinkHref()}>طلب معاينة</Link>
-                        </Button>
+                            طلب معاينة
+                        </Link>
 
-                        <Button
-                            variant="outline"
-                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-base md:text-xl py-7 cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"
+                        <Link
+                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-center text-base md:text-xl py-4 cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"
+                            href="/services"
                         >
-                            <Link href={servicesLinkHref()}>خدماتنا</Link>
-                        </Button>
+                            خدماتنا
+                        </Link>
                     </div>
                 </Swiper>
             </div>

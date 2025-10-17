@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "../ui/button";
 import Link from "next/link";
 
 export default function About() {
@@ -48,12 +47,12 @@ export default function About() {
                     </p>
 
                     <div className="button mb-5 md:mb-0 w-full flex justify-end items-center mt-4">
-                        <Button
-                            variant="outline"
-                            className="hover:bg-blue-500 w-full mb-8 md:mb-0 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white  text-xl py-7 cursor-pointer md:w-1/2"
+                        <Link
+                            className="hover:bg-blue-500 text-center w-full mb-8 md:mb-0 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white  text-xl py-4 cursor-pointer md:w-1/2"
+                            href="/About"
                         >
-                            <Link href="/">إعرف عنا أكثر ...</Link>
-                        </Button>
+                            إعرف عنا أكثر ...
+                        </Link>
                     </div>
                 </div>
             </div>

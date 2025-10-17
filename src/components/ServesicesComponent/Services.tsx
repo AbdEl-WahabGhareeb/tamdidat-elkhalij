@@ -26,7 +26,7 @@ export default function Services() {
                 </div>
                 
                 <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-                        <div className="card group overflow-hidden rounded-2xl md:ms-auto md:w-[88%] shadow-special w-[90%]  mx-auto">
+                        <div className="card group relative pb-12 lg:pb-10 overflow-hidden rounded-2xl md:ms-auto md:w-[88%] shadow-special w-[90%]  mx-auto">
                             <figure>
                                 <div className="relative overflow-hidden max-w-full md:h-[275px] h-[300px] sm:h-[450px] xl:h-[300px] lg:h-[220px]"> 
                                     <Image
@@ -49,7 +49,7 @@ export default function Services() {
                                 <div className="card-actions lg:mt-7 xl:mt-0 justify-end flex w-full">
                                     <Button
                                         variant="outline"
-                                        className="hover:bg-blue-500 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                        className="hover:bg-blue-500 absolute left-3 bottom-3 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
                                         <Link href="/">اعرف أكثر...</Link>
                                     </Button>
@@ -57,7 +57,7 @@ export default function Services() {
                             </div>
                         </div>
 
-                        <div className="card group rounded-2xl md:mx-auto md:w-[88%] shadow-special bg-base-100 w-[90%]  mx-auto overflow-hidden">
+                        <div className="card group relative pb-12 lg:pb-10 rounded-2xl md:mx-auto md:w-[88%] shadow-special bg-base-100 w-[90%]  mx-auto overflow-hidden">
                             <figure>
                                 <div className="relative overflow-hidden max-w-full md:h-[275px] h-[300px]  sm:h-[450px] xl:h-[300px] lg:h-[220px]  ">
                                     <Image
@@ -80,7 +80,7 @@ export default function Services() {
                                 <div className="card-actions justify-end flex w-full">
                                     <Button
                                         variant="outline"
-                                        className="hover:bg-blue-500 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                        className="hover:bg-blue-500 absolute left-3 bottom-3 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
                                         <Link href="/">اعرف أكثر...</Link>
                                     </Button>
@@ -89,7 +89,7 @@ export default function Services() {
                         </div>
 
 
-                        <div className="card w-[90%]  mx-auto group rounded-2xl md:me-auto md:w-[88%] shadow-special bg-base-100  overflow-hidden">
+                        <div className="card w-[90%]  mx-auto group relative pb-12 lg:pb-10 rounded-2xl md:me-auto md:w-[88%] shadow-special bg-base-100  overflow-hidden">
                             <figure>
                                 <div className="relative w-full md:h-[275px] h-[300px]  sm:h-[450px] xl:h-[300px] lg:h-[220px]  overflow-hidden">
                                     <Image
@@ -112,7 +112,7 @@ export default function Services() {
                                 <div className="card-actions lg:mt-7 xl:mt-0 justify-end flex w-full">
                                     <Button
                                         variant="outline"
-                                        className="hover:bg-blue-500 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
+                                        className="hover:bg-blue-500 absolute left-3 bottom-3 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
                                         <Link href="/">اعرف أكثر...</Link>
                                     </Button>
