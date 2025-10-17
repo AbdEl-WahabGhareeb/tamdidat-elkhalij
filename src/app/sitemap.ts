@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
-            url: 'https://tamdidat-elkhalij.com/projects',
+            url: 'https://taamco.com/projects',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.9,

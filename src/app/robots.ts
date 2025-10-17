@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/private/', '/admin/'],
         },
-        sitemap: 'https://tamdidat-elkhalij.com/sitemap.xml',
+        sitemap: 'https://taamco.com/sitemap.xml',
     };
 }

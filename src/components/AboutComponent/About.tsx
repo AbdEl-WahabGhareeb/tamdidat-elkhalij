@@ -31,8 +31,8 @@ export default function About() {
                     </h2>
                     <p className=" leading-10 my-4 lg:mt-8 lg:text-lg xl:text-xl font-semibold">
                         شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في
-                        تصميم وتنفيذ وصيانة شبكات الغاز للمنازل والمنشآت
-                        التجارية والصناعية.
+                        تصميم وتنفيذ وصيانة شبكات الغاز وشحن خزانات الغاز
+                        للمنازل والمنشآت التجارية والصناعية.
                     </p>
 
                     <p className=" leading-10 my-4 lg:mt-8 lg:text-lg xl:text-xl font-semibold">
