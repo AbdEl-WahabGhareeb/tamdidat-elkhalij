@@ -117,7 +117,7 @@ export const siteMetadata = {
         siteName: "تمديدات الخليج",
         images: [
             {
-                url: "https://taamco.com/assets/Logo.png",
+                url: "https://taamco.com/assets/Logo.svg",
                 width: 32,
                 height: 32,
                 alt: "تمديدات الخليج - خدمات تصميم وتنفيذ وصيانة شبكات الغاز",

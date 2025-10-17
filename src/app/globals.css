@@ -118,6 +118,9 @@
     }
     body {
         @apply bg-background text-foreground;
+        font-family: var(--font-cairo, 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial) !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 
