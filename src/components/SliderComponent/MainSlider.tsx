@@ -48,7 +48,7 @@ export default function MainSlider() {
                 className="topics h-[90vh] flex justify-center items-center mt-12 bg-gray-800/45 absolute right-0 w-full top-0 left-0 bottom-0 text-center text-white z-30"
                 dir="rtl"
             >
-                <div className="w-full relative h-[272px] lg:h-[280px]">
+                <div className="w-full relative mb-32 md:mb-0 h-[272px] lg:h-[280px]">
                     <div
                         className={`first relative ${
                             activeIndex === 0 ? "block" : "hidden"
@@ -65,7 +65,7 @@ export default function MainSlider() {
                         >
                             <span className="text-xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
                                 حلول متكاملة، بخبرة تضمن الأمان والثقة
-                                <div className="mx-auto w-2/5 translate-y-4 h-1 bg-white"></div>
+                                <div className="mx-auto w-full sm:w-3/4 md:w-2/5 translate-y-4 h-1 bg-white"></div>
                             </span>
                             <span className="text-xl block w-full pt-3">
                                 شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في
@@ -245,14 +245,14 @@ export default function MainSlider() {
                     >
                         <Button
                             variant="outline"
-                            className="hover:bg-transparent rounded-4xl w-1/4 sm:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-7 cursor-pointer"
+                            className="hover:bg-transparent rounded-4xl w-1/3 sm:w-1/4 md:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-7 cursor-pointer"
                         >
                             <Link href={inspectionLinkHref()}>طلب معاينة</Link>
                         </Button>
 
                         <Button
                             variant="outline"
-                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-base md:text-xl py-7 cursor-pointer w-1/4 sm:w-1/5"
+                            className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-base md:text-xl py-7 cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"
                         >
                             <Link href={servicesLinkHref()}>خدماتنا</Link>
                         </Button>

@@ -25,7 +25,7 @@ export default function About() {
                 </div>
 
                 <div className="md:ps-4 col-span-1  md:col-span-5">
-                    <h2 className="text-4xl w-fit font-bold">
+                    <h2 className="text-3xl md:text-4xl w-fit font-bold">
                         من نحن
                         <div className="w-full mt-2 px-3 h-[5px] bg-blue-900"></div>
                     </h2>

@@ -11,11 +11,11 @@ export default function Services() {
                 dir="rtl"
             >
                 <div className="header text-center">
-                    <h2 className="text-4xl w-fit font-bold mx-auto">
+                    <h2 className="text-3xl md:text-4xl w-fit font-bold mx-auto">
                         خدماتنا
                         <div className="w-full mt-2 h-[5px] bg-blue-900"></div>
                     </h2>
-                    <h3 className="text-2xl mt-3 font-bold text-center">
+                    <h3 className="text-xl mt-3 font-bold text-center">
                         حلول غاز شاملة بمعايير عالمية
                     </h3>
                     <p className="text-center font-normal text-xl mt-3">
