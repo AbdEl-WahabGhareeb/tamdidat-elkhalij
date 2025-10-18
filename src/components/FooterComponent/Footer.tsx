@@ -8,13 +8,13 @@ export default function Footer() {
     return (
         <>
             <div className="bg-[url(/assets/footer.jpg)] bg-cover bg-center relative md:px-0">
-                <div className="layer absolute top-0 bottom-0 left-0 right-0 z-0 bg-gray-700/50 backdrop-brightness-5 "></div>
+                <div className="layer absolute top-0 bottom-0 left-0 right-0 z-0 bg-[#222222]/95 "></div>
 
                 <div
                     className="container relative text-white mx-auto pt-8 "
                     dir="rtl"
                 >
-                    <div className="flex text-shadow-2xs text-shadow-white/50 justify-center text-center w-full flex-col items-center">
+                    <div id="footer" className="flex justify-center text-center w-full flex-col items-center">
                         <p className="text-3xl text-blue-900 border-b-4 mb-2 border-b-blue-900 pb-2 font-bold w-fit">
                             تواصل معنا
                         </p>
@@ -28,7 +28,7 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 items-center justify-center mb-8 md:grid-cols-2 lg:gap-80 mt-8">
+                    <div className="grid grid-cols-1 items-center justify-center mb-6 mt-3 md:grid-cols-2 lg:gap-80">
                         <div className="logo-and-desc w-4/5 mx-auto md:w-full flex-col justify-center items-start lg:items-center">
                             <div className="flex flex-col w-full mb-5 justify-start sm:items-start">
                                 <div className="relative mb-1 w-1/3 mt-3 sm:mt-0 min-w-[200px] sm:ms-auto h-[90px]">
@@ -40,20 +40,20 @@ export default function Footer() {
                                         alt="شعار شركة تمديدات الخليج في تذييل الصفحة"
                                     />
                                 </div>
-                                <h2 className="text-[1.8rem] text-shadow-2xs text-shadow-white md:text-[1.9rem] lg:text-[1.9rem] str font-bold text-blue-900">
+                                <h2 className="text-[1.8rem] text-shadow-special md:text-[1.9rem] lg:text-[1.9rem] str font-bold text-blue-900">
                                     تمديدات الخليج
                                 </h2>
                             </div>
-                            <div className="desc mb-7 text-lg w-full lg:ps-32">
+                            <div className="desc mb-4 text-lg w-full lg:ps-32">
                                 <p className="mt-1">
                                     شركة رائدة في تصميم وتنفيذ وصيانة شبكات
                                     الغاز في المملكة العربية السعودية.
                                 </p>
-                                <p className="mt-3">
+                                <p className="mt-1.5">
                                     نعمل بخبرة طويلة ومعدات حديثة لتوفير اعلي
                                     مسويات الجودة والسلامة لكل عميل.
                                 </p>
-                                <p className="mt-3">
+                                <p className="mt-1.5">
                                     خدماتنا متوفرة للمنشات السكنية والمشاريع
                                     الصناعية والتجارية
                                 </p>
@@ -117,7 +117,7 @@ export default function Footer() {
                                     className="text-base text-end font-medium"
                                     dir="ltr"
                                 >
-                                    +9665 6157 6175
+                                    +9665 4348 8470 
                                 </p>
                             </div>
 
@@ -126,7 +126,7 @@ export default function Footer() {
                                     <Mail />
                                 </div>
                                 <p className="text-base text-end font-medium">
-                                    example@example.com
+                                    mohamedghareeb001100@gmail.com
                                 </p>
                             </div>
 
@@ -142,7 +142,7 @@ export default function Footer() {
                                 </div>
                             </div>
                             <div className="links w-full md:w-3/5 mt-5">
-                                <p className="font-bold mb-4 text-shadow-2xs text-shadow-white/50 text-xl text-blue-900">
+                                <p className="font-bold mb-4 text-xl text-blue-900">
                                     يمكنكم ايضا زيارة
                                 </p>
                                 <ul className="flex font-semibold ">
@@ -178,7 +178,7 @@ export default function Footer() {
 
                 <div className="bg-white w-full h-0.5 z-10 relative"></div>
 
-                <div className="flex container mx-auto flex-col text-center md:flex-row gap-3 justify-between items-center pb-8 pt-6  text-white relative z-10">
+                <div className="flex container mx-auto flex-col text-center md:flex-row gap-3 justify-between items-center py-6  text-white relative z-10">
                     <p className="text-lg">سياسة الخصوصية | شروط الاستخدام</p>
                     <p className="text-xl mb-2">
                         تمديدات الخليج © جميع الحقوق محفوظة 2025

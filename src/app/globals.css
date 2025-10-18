@@ -126,5 +126,6 @@
 
 @theme {
     --shadow-special: 1px 1px 20px #0000006a;
+    --text-shadow-special: -1px -1px  #fff , 1px 1px  #fff,-1px 1px #fff,1px -1px #fff;
 }
 

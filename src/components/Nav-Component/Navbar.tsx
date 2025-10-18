@@ -76,24 +76,24 @@ export default function Navbar() {
                                 </NavLink>
                                 <ul className="w-full  mx-auto justify-center">
                                     <li className="py-2 absolute top-10 right-[50%] w-1/3 translate-x-[50%] shadow-special rounded-2xl bg-white flex-col gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex">
-                                            <NavLink
-                                                href="#"
-                                                className="flex-row  block items-center w-full text-center justify-end  gap-0 "
-                                            >
-                                                تصميم وتركيب
-                                            </NavLink>
-                                            <NavLink
-                                                href="#"
-                                                className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
-                                            >
-                                                صيانة
-                                            </NavLink>
-                                            <NavLink
-                                                href="#"
-                                                className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
-                                            >
-                                                شحن الخزانات
-                                            </NavLink>
+                                        <NavLink
+                                            href="#"
+                                            className="flex-row  block items-center w-full text-center justify-end  gap-0 "
+                                        >
+                                            تصميم وتركيب
+                                        </NavLink>
+                                        <NavLink
+                                            href="#"
+                                            className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
+                                        >
+                                            صيانة
+                                        </NavLink>
+                                        <NavLink
+                                            href="#"
+                                            className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
+                                        >
+                                            شحن الخزانات
+                                        </NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -112,7 +112,16 @@ export default function Navbar() {
 
                             {/* Contact Us Button */}
                             <div className="flex relative flex-col group items-center space-y-3 w-1/2 mx-auto">
-                                <button className="data-[state=open]:focus:bg-blue-500 w-full z-50 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 p-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all md:w-full">
+                                <button
+                                    onClick={() => {
+                                        const contactSection =
+                                            document.getElementById("footer");
+                                        contactSection?.scrollIntoView({
+                                            behavior: "smooth",
+                                        });
+                                    }}
+                                    className="data-[state=open]:focus:bg-blue-500 w-full z-50 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 p-2 font-semibold cursor-pointer text-lg rounded-3xl hover:bg-blue-500 text-white transition-all md:w-full"
+                                >
                                     تواصل معنا
                                 </button>
                                 <div className="opacity-0 absolute top-10 z-10 right-[50%] translate-x-[50%] bg-white rounded-b-3xl invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex-col w-[100vw] pt-2">
@@ -132,7 +141,7 @@ export default function Navbar() {
                                         </div>
                                     </NavLink>
                                     <NavLink
-                                        href="mailto:abdosileem48@gmail.com"
+                                        href="mailto:mohamedghareeb001100@gmail.com"
                                         className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
                                     >
                                         <span>عبر البريد</span>
@@ -158,7 +167,16 @@ export default function Navbar() {
                     >
                         <NavigationMenuList>
                             <NavigationMenuItem className="relative">
-                                <NavigationMenuTrigger className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all">
+                                <NavigationMenuTrigger
+                                    onClick={() => {
+                                        const contactSection =
+                                            document.getElementById("footer");
+                                        contactSection?.scrollIntoView({
+                                            behavior: "smooth",
+                                        });
+                                    }}
+                                    className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all"
+                                >
                                     تواصل معنا
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="z-50 w-[150px] md:-translate-x-4 absolute">
@@ -184,7 +202,7 @@ export default function Navbar() {
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="mailto:abdosileem48@gmail.com"
+                                                    href="mailto:mohamedghareeb001100@gmail.com"
                                                     className="flex-row items-center justify-end gap-2"
                                                 >
                                                     <span>علي الايميل</span>
