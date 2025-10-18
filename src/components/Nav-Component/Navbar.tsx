@@ -20,9 +20,103 @@ export default function Navbar() {
     };
     return (
         <>
-            <div className="shadow-lg z-50 fixed top-0 left-0 right-0 bg-white font-[Cairo] rounded-b-3xl">
+            <div
+                className="shadow-lg z-50 fixed top-0 left-0 right-0 bg-white font-[Cairo] rounded-b-3xl"
+                dir="rtl"
+            >
                 <div className="container px-4 md:px-10 mx-auto flex justify-between items-center pt-1">
-                    {/* Mobile Menu Button */}
+                    <Link href="#" className="pb-1 min-w-[10%] ">
+                        <div className=" flex flex-col justify-center items-end gap-0">
+                            <div className="relative h-10 w-full">
+                                <Image
+                                    className="object-contain w-full h-[80%]"
+                                    fill
+                                    src="/assets/logo.jpg"
+                                    alt="شعار شركة تمديدات الخليج - الشركة الرائدة في خدمات الغاز"
+                                />
+                            </div>
+
+                            <h1 className="xl:text-lg lg:text-md font-bold text-center text-blue-900">
+                                تمديدات الخليج
+                            </h1>
+                        </div>
+                    </Link>
+
+                    <NavigationMenu
+                        className="w-1/2 hidden md:block"
+                        viewport={false}
+                    >
+                        <NavigationMenuList>
+                            <NavigationMenuItem>
+                                <NavLink
+                                    href="/about"
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                >
+                                    من نحن
+                                </NavLink>
+                            </NavigationMenuItem>
+
+                            <NavigationMenuItem>
+                                <NavLink
+                                    href="/projects"
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                >
+                                    المشاريع
+                                </NavLink>
+                            </NavigationMenuItem>
+
+                            <NavigationMenuItem className="relative">
+                                <NavigationMenuTrigger className="p-0 flex-row text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 ">
+                                    <NavLink
+                                        href="/services"
+                                        className="flex-row py-2 px-4 text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 "
+                                    >
+                                        الخدمات
+                                    </NavLink>
+                                </NavigationMenuTrigger>
+                                <NavigationMenuContent className="w-[100px] absolute z-50">
+                                    <ul className="flex w-[100px] gap-4 justify-center">
+                                        <li>
+                                            <NavigationMenuLink asChild>
+                                                <NavLink
+                                                    href="#"
+                                                    className="flex-row items-center justify-end  gap-0 "
+                                                >
+                                                    تصميم وتركيب
+                                                </NavLink>
+                                            </NavigationMenuLink>
+                                            <NavigationMenuLink asChild>
+                                                <NavLink
+                                                    href="#"
+                                                    className="flex-row items-center  justify-end  gap-0 "
+                                                >
+                                                    صيانة
+                                                </NavLink>
+                                            </NavigationMenuLink>
+                                            <NavigationMenuLink asChild>
+                                                <NavLink
+                                                    href="#"
+                                                    className="flex-row items-center  justify-end  gap-0 "
+                                                >
+                                                    شحن الخزانات
+                                                </NavLink>
+                                            </NavigationMenuLink>
+                                        </li>
+                                    </ul>
+                                </NavigationMenuContent>
+                            </NavigationMenuItem>
+
+                            <NavigationMenuItem>
+                                <NavLink
+                                    href="/"
+                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
+                                >
+                                    الرئيسية
+                                </NavLink>
+                            </NavigationMenuItem>
+                        </NavigationMenuList>
+                    </NavigationMenu>
+
                     <button
                         onClick={toggleMenu}
                         className="md:hidden cursor-pointer text-blue-900 p-2 focus:outline-none"
@@ -175,7 +269,7 @@ export default function Navbar() {
                                             behavior: "smooth",
                                         });
                                     }}
-                                    className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all"
+                                    className="data-[state=open]:focus:bg-blue-500 data-[state=open]:bg-blue-500/50 focus:text-white bg-blue-900 px-6 py-2 font-semibold cursor-pointer text-lg rounded-3xl data-[state=open]:hover:bg-blue-500 data-[state=open]:focus:text-white data-[state=open]:text-white hover:text-white text-white hover:bg-blue-500 focus:bg-blue-500 transition-all"
                                 >
                                     تواصل معنا
                                 </NavigationMenuTrigger>
@@ -224,98 +318,6 @@ export default function Navbar() {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
-
-                    <NavigationMenu
-                        className="w-1/2 hidden md:block"
-                        viewport={false}
-                    >
-                        <NavigationMenuList>
-                            <NavigationMenuItem>
-                                <NavLink
-                                    href="/about"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
-                                >
-                                    من نحن
-                                </NavLink>
-                            </NavigationMenuItem>
-
-                            <NavigationMenuItem>
-                                <NavLink
-                                    href="/projects"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
-                                >
-                                    المشاريع
-                                </NavLink>
-                            </NavigationMenuItem>
-
-                            <NavigationMenuItem className="relative">
-                                <NavigationMenuTrigger className="p-0 flex-row text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 ">
-                                    <NavLink
-                                        href="/services"
-                                        className="flex-row py-2 px-4 text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 "
-                                    >
-                                        الخدمات
-                                    </NavLink>
-                                </NavigationMenuTrigger>
-                                <NavigationMenuContent className="w-[100px] absolute z-50">
-                                    <ul className="flex w-[100px] gap-4 justify-center">
-                                        <li>
-                                            <NavigationMenuLink asChild>
-                                                <NavLink
-                                                    href="#"
-                                                    className="flex-row items-center justify-end  gap-0 "
-                                                >
-                                                    تصميم وتركيب
-                                                </NavLink>
-                                            </NavigationMenuLink>
-                                            <NavigationMenuLink asChild>
-                                                <NavLink
-                                                    href="#"
-                                                    className="flex-row items-center  justify-end  gap-0 "
-                                                >
-                                                    صيانة
-                                                </NavLink>
-                                            </NavigationMenuLink>
-                                            <NavigationMenuLink asChild>
-                                                <NavLink
-                                                    href="#"
-                                                    className="flex-row items-center  justify-end  gap-0 "
-                                                >
-                                                    شحن الخزانات
-                                                </NavLink>
-                                            </NavigationMenuLink>
-                                        </li>
-                                    </ul>
-                                </NavigationMenuContent>
-                            </NavigationMenuItem>
-
-                            <NavigationMenuItem>
-                                <NavLink
-                                    href="/"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
-                                >
-                                    الرئيسية
-                                </NavLink>
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
-
-                    <Link href="/" className="pb-1 min-w-[10%] ">
-                        <div className=" flex flex-col justify-center items-end gap-0">
-                            <div className="relative h-10 w-full">
-                                <Image
-                                    className="object-contain w-full h-[80%]"
-                                    fill
-                                    src="/assets/logo.jpg"
-                                    alt="شعار شركة تمديدات الخليج - الشركة الرائدة في خدمات الغاز"
-                                />
-                            </div>
-
-                            <h1 className="xl:text-lg lg:text-md font-bold text-center text-blue-900">
-                                تمديدات الخليج
-                            </h1>
-                        </div>
-                    </Link>
                 </div>
             </div>
         </>

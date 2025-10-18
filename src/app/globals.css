@@ -3,6 +3,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Smooth Scrolling */
+* {
+    scroll-margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth !important;
+    scroll-padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
@@ -41,6 +55,10 @@
     --radius-md: calc(var(--radius) - 2px);
     --radius-lg: var(--radius);
     --radius-xl: calc(var(--radius) + 4px);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
