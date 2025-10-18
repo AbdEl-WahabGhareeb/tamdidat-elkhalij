@@ -41,7 +41,7 @@ export default function MainSlider() {
                             </span>
                             <span className="text-xl block w-full pt-3">
                                 شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في
-                                المملكة العربية السعودية. <br />~
+                                المملكة العربية السعودية. <br />
                                 <span className="mb-3 block self-center justify-self-center">
                                     نعمل بخبرة طويلة ومعدات حديثة لتوفير أعلى
                                     مستويات الجودة والسلامة لكل عميل. <br />

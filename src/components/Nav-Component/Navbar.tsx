@@ -25,7 +25,7 @@ export default function Navbar() {
                 dir="rtl"
             >
                 <div className="container px-4 md:px-10 mx-auto flex justify-between items-center pt-1">
-                    <Link href="#" className="pb-1 min-w-[10%] ">
+                    <Link href="/" className="pb-1 min-w-[10%] ">
                         <div className=" flex flex-col justify-center items-end gap-0">
                             <div className="relative h-10 w-full">
                                 <Image
