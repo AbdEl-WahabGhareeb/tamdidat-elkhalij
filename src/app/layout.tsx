@@ -26,9 +26,9 @@ import { siteMetadata } from './metadata';
 export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
     icons: {
-        icon: '/assets/icon.jpg',
-        apple: '/assets/icon.jpg',
-        shortcut: '/assets/icon.jpg'
+        icon: '/assets/icon.ico',
+        apple: '/assets/icon.ico',
+        shortcut: '/assets/icon.ico'
     },
     title: {
         default: siteMetadata.title,
