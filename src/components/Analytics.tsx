@@ -18,7 +18,6 @@ export default function Analytics() {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-
                     // Google Analytics Configuration
                     gtag('config', '${GA_MEASUREMENT_ID}');
                     
