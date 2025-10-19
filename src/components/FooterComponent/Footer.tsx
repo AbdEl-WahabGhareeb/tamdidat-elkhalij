@@ -14,7 +14,10 @@ export default function Footer() {
                     className="container md:px-10 relative text-white mx-auto pt-8 "
                     dir="rtl"
                 >
-                    <div id="footer" className="flex justify-center text-center w-full flex-col items-center">
+                    <div
+                        id="footer"
+                        className="flex justify-center text-center w-full flex-col items-center"
+                    >
                         <p className="text-3xl text-blue-900 border-b-4 mb-2 border-b-blue-900 pb-2 font-bold w-fit">
                             تواصل معنا
                         </p>
@@ -117,7 +120,7 @@ export default function Footer() {
                                     className="text-base text-end font-medium"
                                     dir="ltr"
                                 >
-                                    +9665 4348 8470 
+                                    +9665 4348 8470
                                 </p>
                             </div>
 
@@ -126,7 +129,7 @@ export default function Footer() {
                                     <Mail />
                                 </div>
                                 <p className="text-base text-end font-medium">
-                                    mohamedghareeb001100@gmail.com
+                                    info@taamco.com
                                 </p>
                             </div>
 

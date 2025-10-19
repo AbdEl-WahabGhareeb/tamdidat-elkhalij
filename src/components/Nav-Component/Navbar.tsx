@@ -235,7 +235,7 @@ export default function Navbar() {
                                         </div>
                                     </NavLink>
                                     <NavLink
-                                        href="mailto:mohamedghareeb001100@gmail.com"
+                                        href="mailto:info@taamco.com"
                                         className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
                                     >
                                         <span>عبر البريد</span>
@@ -296,7 +296,7 @@ export default function Navbar() {
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="mailto:mohamedghareeb001100@gmail.com"
+                                                    href="mailto:info@taamco.com"
                                                     className="flex-row items-center justify-end gap-2"
                                                 >
                                                     <span>علي الايميل</span>
