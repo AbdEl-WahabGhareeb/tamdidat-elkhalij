@@ -49,7 +49,7 @@ export default function About() {
                     <div className="button mb-5 md:mb-0 w-full flex justify-end items-center mt-4">
                         <Link
                             className="hover:bg-blue-500 text-center w-full mb-8 md:mb-0 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white  text-xl py-4 cursor-pointer md:w-1/2"
-                            href="/About"
+                            href="/about"
                         >
                             إعرف عنا أكثر ...
                         </Link>

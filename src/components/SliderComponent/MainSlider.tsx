@@ -26,11 +26,11 @@ export default function MainSlider() {
                             activeIndex === 0 ? "block" : "hidden"
                         }`}
                     >
-                        <h1
+                        <h2
                             className={`transition-all mb-6 duration-300 font-bold text-4xl`}
                         >
                             تمديدات الخليج
-                        </h1>
+                        </h2>
 
                         <h3
                             className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 `}
