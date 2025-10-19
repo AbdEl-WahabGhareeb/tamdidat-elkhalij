@@ -26,10 +26,25 @@ import { siteMetadata } from './metadata';
 export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
     icons: {
-        icon: '/assets/icon.ico',
-        apple: '/assets/icon.ico',
-        shortcut: '/assets/icon.ico'
+        icon: [
+            { url: '/assets/favicon.ico', sizes: '32x32' },
+            { url: '/assets/icon-16x16.png', sizes: '16x16', type: 'image/png' },
+            { url: '/assets/icon-32x32.png', sizes: '32x32', type: 'image/png' },
+            { url: '/assets/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+            { url: '/assets/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+        ],
+        apple: [
+            { url: '/assets/apple-icon.png', sizes: '180x180', type: 'image/png' },
+        ],
+        other: [
+            {
+                rel: 'mask-icon',
+                url: '/assets/safari-pinned-tab.svg',
+                color: '#1e3a8a' // Your brand color (blue-900)
+            }
+        ]
     },
+    manifest: '/manifest.json',
     title: {
         default: siteMetadata.title,
         template: '%s | تمديدات الخليج',
