@@ -216,17 +216,17 @@ export default function MainSlider() {
                         className={`buttons flex sm:gap-20 gap-5 justify-center items-center sm:flex-row absolute  top-[78%] w-full z-40 left-1/2 translate-x-[-50%]`}
                     >
                         <Link
-                            className="hover:bg-transparent rounded-4xl w-1/3 sm:w-1/4 md:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-4 text-center cursor-pointer"
-                            href="https://wa.me/+966543488470"
-                        >
-                            طلب معاينة
-                        </Link>
-
-                        <Link
                             className="bg-transparent rounded-4xl border-2 text-white hover:bg-blue-900 transition-colors duration-300 hover:text-white hover:border-transparent text-center text-base md:text-xl py-4 cursor-pointer w-1/3 sm:w-1/4 md:w-1/5"
                             href="/services"
                         >
                             خدماتنا
+                        </Link>
+
+                        <Link
+                            className="hover:bg-transparent rounded-4xl w-1/3 sm:w-1/4 md:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-4 text-center cursor-pointer"
+                            href="https://wa.me/+966543488470"
+                        >
+                            طلب معاينة
                         </Link>
                     </div>
                 </Swiper>

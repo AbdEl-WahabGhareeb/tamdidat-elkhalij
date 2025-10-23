@@ -133,8 +133,8 @@ export default function Footer() {
                                 </p>
                             </div>
 
-                            <div className="flex gap-3 items-start justify-center">
-                                <p className="text-base text-end md:w-4/5 me-auto font-medium">
+                            <div className="flex gap-3 items-start justify-end">
+                                <p className="text-base text-end md:w-4/5 font-medium">
                                     JCRB4490, 4490 Amir Bin Salama, 8944 Al
                                     Rehab Dist. Jeddah 23345 ,Kingdom of Saudi
                                     Arabia

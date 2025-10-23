@@ -145,5 +145,8 @@ html {
 @theme {
     --shadow-special: 1px 1px 20px #0000006a;
     --text-shadow-special: -1px -1px  #fff , 1px 1px  #fff,-1px 1px #fff,1px -1px #fff;
+    --shadow-services: 10px 10px 10px #0000001a;
+    --shadow-accordion: 0 -4px 10px #0000002a;
+    --rounded-service-large: 1.25rem;
 }
 

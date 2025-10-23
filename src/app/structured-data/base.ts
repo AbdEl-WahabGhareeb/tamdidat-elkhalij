@@ -2,7 +2,7 @@ export interface LocalBusinessData {
     '@context': 'https://schema.org';
     '@type': string | string[];
     name: string;
-    image: string;
+    image: string | string[];
     '@id': string;
     url: string;
     telephone: string;

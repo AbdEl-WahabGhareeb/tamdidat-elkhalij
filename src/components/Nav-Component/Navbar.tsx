@@ -79,7 +79,7 @@ export default function Navbar() {
                                         <li>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="#"
+                                                    href="/services/design-install"
                                                     className="flex-row items-center justify-end  gap-0 "
                                                 >
                                                     تصميم وتركيب
@@ -87,7 +87,7 @@ export default function Navbar() {
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="#"
+                                                    href="/services/maintenance"
                                                     className="flex-row items-center  justify-end  gap-0 "
                                                 >
                                                     صيانة
@@ -95,7 +95,7 @@ export default function Navbar() {
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="#"
+                                                    href="/services/tank-refill"
                                                     className="flex-row items-center  justify-end  gap-0 "
                                                 >
                                                     شحن الخزانات
@@ -171,19 +171,19 @@ export default function Navbar() {
                                 <ul className="w-full  mx-auto justify-center">
                                     <li className="py-2 absolute top-10 right-[50%] w-1/3 translate-x-[50%] shadow-special rounded-2xl bg-white flex-col gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex">
                                         <NavLink
-                                            href="#"
+                                            href="/services/design-install"
                                             className="flex-row  block items-center w-full text-center justify-end  gap-0 "
                                         >
                                             تصميم وتركيب
                                         </NavLink>
                                         <NavLink
-                                            href="#"
+                                            href="/services/maintenance"
                                             className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
                                         >
                                             صيانة
                                         </NavLink>
                                         <NavLink
-                                            href="#"
+                                            href="/services/tank-refill"
                                             className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
                                         >
                                             شحن الخزانات

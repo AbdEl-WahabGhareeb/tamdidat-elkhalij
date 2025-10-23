@@ -22,6 +22,7 @@ const cairo = Cairo({
 });
 
 import { siteMetadata } from './metadata';
+import { localBusinessData } from './layout-structured-data';
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
@@ -64,7 +65,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="ar" dir="rtl" className="scroll-smooth">
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(localBusinessData)
+                    }}
+                />
+            </head>
             <body 
                 className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}
             >
