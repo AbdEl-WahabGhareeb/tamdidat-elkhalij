@@ -32,28 +32,32 @@ export default function MainSlider() {
                             تمديدات الخليج
                         </h2>
 
-                        <h3
+                        <div
                             className={`transition-all duration-300 flex flex-col items-center justify-center mb-12 `}
                         >
-                            <span className="text-xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
+                            <div className="text-xl mb-2 font-bold block w-3/4 self-center justify-self-center  pb-3">
                                 حلول متكاملة، بخبرة تضمن الأمان والثقة
                                 <div className="mx-auto w-full sm:w-3/4 md:w-2/5 translate-y-4 h-1 bg-white"></div>
-                            </span>
-                            <span className="text-xl block w-full pt-3">
+                            </div>
+                            <p className="text-xl flex justify-center items-center flex-col w-fit pt-3">
                                 شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في
-                                المملكة العربية السعودية. <br />
-                                <span className="mb-3 block self-center justify-self-center">
-                                    نعمل بخبرة طويلة ومعدات حديثة لتوفير أعلى
-                                    مستويات الجودة والسلامة لكل عميل. <br />
+                                <span className="block w-fit">
+                                    المملكة العربية السعودية.
                                 </span>
-                                خدماتنا متوفرة للمشآت السكنية المشاريع التجارية
-                                والصناعية.
-                            </span>
-                        </h3>
+                                <span className="mb-3 block">
+                                        نعمل بخبرة طويلة ومعدات حديثة لتوفير
+                                        أعلى مستويات الجودة والسلامة لكل عميل.
+                                </span>
+                                <span>
+                                    خدماتنا متوفرة للمشآت السكنية المشاريع
+                                    التجارية والصناعية.
+                                </span>
+                            </p>
+                        </div>
                     </div>
 
                     <div
-                        className={`second relative ${
+                        className={`second relative w-fit ${
                             activeIndex === 1
                                 ? "block md:text-start text-center md:-translate-x-32"
                                 : "hidden"
@@ -62,10 +66,10 @@ export default function MainSlider() {
                         <h2
                             className={`transition-all font-bold text-4xl duration-300 mb-6 `}
                         >
-                            المشاريع السكنية{" "}
+                            المشاريع السكنية
                         </h2>
 
-                        <h3 className={`transition-all duration-300 mb-20 `}>
+                        <div className={`transition-all duration-300 mb-20 `}>
                             <span className="text-xl w-fit mx-auto md:mx-0 md:text-start text-center mb-2 font-bold block pb-3">
                                 حلول غاز آمنة وموثوقة لمنازلكم
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
@@ -74,11 +78,11 @@ export default function MainSlider() {
                                 ننفذ شبكات الغاز للفيلات والعمارات السكنية وفق
                                 أعلي معايير الجودة والسلامة.
                             </span>
-                        </h3>
+                        </div>
                     </div>
 
                     <div
-                        className={`third relative  ${
+                        className={`third relative w-fit  ${
                             activeIndex === 2
                                 ? "block md:text-start text-center md:-translate-x-32"
                                 : "hidden"
@@ -90,47 +94,63 @@ export default function MainSlider() {
                             المشاريع التجارية
                         </h2>
 
-                        <h3 className={`transition-all  duration-300 mb-20 `}>
+                        <div
+                            className={`transition-all w-fit duration-300 mb-20 `}
+                        >
                             <span className="text-xl mx-auto md:mx-0 md:text-start text-center mb-2 w-fit font-bold block pb-3">
                                 كفاءة عالية تلبي احتياجات منشآتك التجارية
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <span className="text-xl block w-full md:text-start text-center mb-12 pt-3">
-                                من الفنادق إلى المطاعم والمجمعات التجارية، نقدم
-                                أنظمة غاز مصممة لتعمل
-                                <br /> بكفاءة وأمان على مدار الساعة.
-                                <br />
-                                حلول احترافية تزيد من موثوقية التشغيل وتضمن
-                                راحتكم.
+                            <span className="text-xl block w-fit md:text-start text-center mb-12 pt-3">
+                                <span className="block">
+                                    من الفنادق إلى المطاعم والمجمعات التجارية،
+                                    نقدم أنظمة غاز مصممة لتعمل
+                                </span>
+
+                                <span className="block">
+                                    بكفاءة وأمان على مدار الساعة.
+                                </span>
+
+                                <span className="block">
+                                    حلول احترافية تزيد من موثوقية التشغيل وتضمن
+                                    راحتكم.
+                                </span>
                             </span>
-                        </h3>
+                        </div>
                     </div>
 
                     <div
-                        className={`fourth relative  ${
+                        className={`fourth relative w-fit ${
                             activeIndex === 3
                                 ? "block md:text-start text-center md:-translate-x-32"
                                 : "hidden"
                         }`}
                     >
                         <h2
-                            className={`transition-all font-bold text-4xl duration-300 mb-6 `}
+                            className={`transition-all font-bold w-fit text-4xl duration-300 mb-6 `}
                         >
                             المشاريع الصناعية
                         </h2>
 
-                        <h3 className={`transition-all duration-300 mb-20 `}>
-                            <span className="text-xl w-fit mx-auto md:mx-0 md:text-start text-center mb-2 font-bold block pb-3">
-                                خبرة هندسية لخدمة المشاريع الصناعية الكبري{" "}
+                        <div className={`transition-all duration-300 mb-20`}>
+                            <span className="text-xl w-fit mx-auto  md:mx-0 md:text-start text-center mb-2 font-bold block pb-3">
+                                خبرة هندسية لخدمة المشاريع الصناعية الكبري
                                 <div className="w-full translate-y-4 h-1 bg-white"></div>
                             </span>
-                            <span className="text-xl block w-full md:text-start text-center  mb-12 pt-3">
-                                نقدم حلول غاز صناععية متاكملة للمصانع والمنشات
-                                الانتاجية, مع <br /> الالتزام الصارم بمعايير
-                                السلامة والجود. <br /> فريقنا المتخصص يضمن اداء
-                                مستقرا يواكب متطلبات التشغيل الصناعي.
+                            <span className="text-xl w-fit block md:text-start text-center  mb-12 pt-3">
+                                <span className="block">
+                                    نقدم حلول غاز صناععية متاكملة للمصانع
+                                    والمنشات الانتاجية, مع
+                                </span>
+                                <span className="block">
+                                    الالتزام الصارم بمعايير السلامة والجود.
+                                </span>
+                                <span className="block">
+                                    فريقنا المتخصص يضمن اداء مستقرا يواكب
+                                    متطلبات التشغيل الصناعي.
+                                </span>
                             </span>
-                        </h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,7 +161,7 @@ export default function MainSlider() {
                     effect={"fade"}
                     autoplay={{
                         delay: 3000,
-                        disableOnInteraction: false,
+                        disableOnInteraction: true,
                     }}
                     pagination={{
                         clickable: true,
