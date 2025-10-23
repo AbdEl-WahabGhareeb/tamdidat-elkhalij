@@ -197,7 +197,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="text-white w-1/6 flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
+                    <div className="text-white w-2/6 flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
                         <Link href="/">إعرف أكثر...</Link>
                     </div>
                 </div>
