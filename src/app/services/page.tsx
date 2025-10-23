@@ -55,7 +55,7 @@ export default function Services() {
                         </p>
                     </div>
 
-                    <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
+                    <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-16">
                         <div className="relative lg:bottom-1/2 w-full lg:w-10/12 ms-auto h-[450px] lg:h-[300px] xl:h-[350px] bg-blue-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
