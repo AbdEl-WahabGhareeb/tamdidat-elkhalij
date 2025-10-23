@@ -130,7 +130,7 @@ export default function Services() {
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
-                        <div className="relative ms-auto lg:bottom-1/2 w-full lg:w-10/12 h-[450px] lg:h-[300px] xl:h-[350px] bg-blue-900 rounded-[45px]">
+                        <div className="relative ms-auto lg:bottom-1/2 w-full lg:w-10/12 h-[450px] lg:h-[300px] xl:h-[310px] bg-blue-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
                                     className="object-cover w-full h-full rounded-[45px] md:px-0"
