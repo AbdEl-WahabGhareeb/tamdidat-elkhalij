@@ -56,7 +56,7 @@ export default function Services() {
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-16">
-                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 ms-auto h-[450px] lg:h-[300px] xl:h-[350px] bg-blue-900 rounded-[45px]">
+                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 ms-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[350px] bg-blue-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
                                     className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -124,13 +124,13 @@ export default function Services() {
                             الالتزام التام بمعايير السلامة المحلية والدولية.
                         </p>
 
-                        <div className="text-white w-2/6 flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
+                        <div className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
                             <Link href="/">إعرف أكثر...</Link>
                         </div>
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
-                        <div className="relative ms-auto lg:bottom-1/2 w-full lg:w-10/12 h-[450px] lg:h-[300px] xl:h-[310px] bg-blue-900 rounded-[45px]">
+                        <div className="relative ms-auto lg:bottom-1/2 w-full lg:w-10/12  h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[310px] bg-blue-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
                                     className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -146,8 +146,8 @@ export default function Services() {
 
                 <div className="mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
                     <div className=" flex flex-col lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
-                        <div className="image w-full lg:w-2/5 h-full">
-                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12 h-[450px] xl:h-[320px] lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
+                        <div className="image lg:translate-x-10 xl:translate-x-0 w-full lg:w-2/5 h-full">
+                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-[320px] lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
                                         className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -197,7 +197,7 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="text-white w-2/6 flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
+                    <div className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
                         <Link href="/">إعرف أكثر...</Link>
                     </div>
                 </div>
@@ -246,13 +246,13 @@ export default function Services() {
                             واحترافية.
                         </p>
 
-                        <div className="text-white w-2/6 flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
+                        <div className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
                             <Link href="/">إعرف أكثر...</Link>
                         </div>
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
-                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 me-auto h-[450px] lg:h-[300px] xl:h-[350px] ms-auto bg-blue-900 rounded-[45px]">
+                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 me-auto  h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[350px] ms-auto bg-blue-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
                                     className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -282,7 +282,7 @@ export default function Services() {
                                 value="item-1"
                                 className=" bg-[#EEF0FF] border-b-0 pb-3 shadow-accordion rounded-3xl"
                             >
-                                <AccordionTrigger className=" bg-[#EEF0FF] px-8 text-xl cursor-pointer hover:no-underline font-semibold ">
+                                <AccordionTrigger className=" bg-[#EEF0FF] px-8 text-xl cursor-pointer hover:no-underline text-start font-semibold ">
                                     ما هي مدة تنفيذ مشروع تمديدات الغاز للمنزل؟
                                 </AccordionTrigger>
                                 <AccordionContent className=" bg-[#EEF0FF] flex flex-col gap-4 text-pretty text-base font-semibold leading-8 mb-3 px-8">
@@ -297,7 +297,7 @@ export default function Services() {
                                 value="item-2"
                                 className=" bg-[#EEF0FF] border-b-0 -translate-y-5 pb-3 shadow-accordion rounded-3xl"
                             >
-                                <AccordionTrigger className=" bg-[#EEF0FF] px-8 text-xl cursor-pointer hover:no-underline font-semibold">
+                                <AccordionTrigger className=" bg-[#EEF0FF] px-8 text-xl cursor-pointer hover:no-underline text-start font-semibold">
                                     هل تقدمون خدمة الطوارئ؟
                                 </AccordionTrigger>
                                 <AccordionContent className=" bg-[#EEF0FF] flex flex-col gap-4 text-pretty text-base font-semibold leading-8 mb-3 px-8">
@@ -312,7 +312,7 @@ export default function Services() {
                                 value="item-3"
                                 className=" bg-[#EEF0FF] border-b-0 -translate-y-10 pb-3 shadow-accordion rounded-3xl"
                             >
-                                <AccordionTrigger className=" px-8 text-xl cursor-pointer hover:no-underline  bg-[#EEF0FF] font-semibold">
+                                <AccordionTrigger className=" px-8 text-xl cursor-pointer hover:no-underline text-start  bg-[#EEF0FF] font-semibold">
                                     ما هي ضمانات الخدمة التي تقدمونها؟
                                 </AccordionTrigger>
                                 <AccordionContent className=" bg-[#EEF0FF] flex flex-col gap-4 text-pretty text-base font-semibold leading-8 mb-3 px-8">
@@ -327,7 +327,7 @@ export default function Services() {
                                 value="item-4"
                                 className=" bg-[#EEF0FF] border-b-0 -translate-y-15 shadow-accordion rounded-3xl"
                             >
-                                <AccordionTrigger className=" bg-[#EEF0FF] px-8 text-xl cursor-pointer hover:no-underline font-semibold">
+                                <AccordionTrigger className=" bg-[#EEF0FF] px-8 text-xl cursor-pointer hover:no-underline text-start font-semibold">
                                     هل تراعون معايير السلامة في أعمالكم؟
                                 </AccordionTrigger>
                                 <AccordionContent className=" flex flex-col gap-4 text-pretty text-base font-semibold leading-8 mb-3 px-8">
@@ -341,12 +341,12 @@ export default function Services() {
                     </div>
 
                     <div className="w-full flex justify-start items-center gap-1 px-5 md:px-16 bg-blue-900 text-white -translate-y-3">
-                        <p className="text-xl">
+                        <p className="text-[10.99px] md:text-xl sm:text-base">
                             يمكنكم الاطلاع على مزيد من الأسئلة من خلال زيارة
                         </p>
                         <Link
                             href="/"
-                            className="font-black cursor-pointer underline"
+                            className="font-black text-[10px] sm:text-base md:text-xl cursor-pointer underline"
                         >
                             هذه الصفحة
                         </Link>
