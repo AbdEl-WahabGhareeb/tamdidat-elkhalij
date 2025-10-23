@@ -147,7 +147,7 @@ export default function Services() {
                 <div className="mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
                     <div className=" flex flex-col lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
                         <div className="image w-full lg:w-2/5 h-full">
-                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12 h-[450px] xl:h-[350px] lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
+                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12 h-[450px] xl:h-[320px] lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
                                         className="object-cover w-full h-full rounded-[45px] md:px-0"
