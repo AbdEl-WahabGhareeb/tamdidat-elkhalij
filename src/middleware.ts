@@ -1,7 +1,14 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { applySecurity } from './lib/security/index';
 
 export function middleware(request: NextRequest) {
+    // Apply security headers and checks first
+    const securityResponse = applySecurity(request);
+    if (securityResponse.status === 403) {
+        return securityResponse;
+    }
+
     const { pathname } = request.nextUrl;
 
     // Handle case-sensitive redirects
@@ -15,9 +22,15 @@ export function middleware(request: NextRequest) {
         return NextResponse.redirect(new URL('/projects', request.url));
     }
 
-    return NextResponse.next();
+    return securityResponse;
 }
 
+// Update matcher to include all routes that need security headers
 export const config = {
-    matcher: ['/About', '/Services', '/Projects']
+    matcher: [
+        '/((?!api|_next/static|_next/image|favicon.ico).*)',
+        '/About',
+        '/Services',
+        '/Projects'
+    ]
 };
