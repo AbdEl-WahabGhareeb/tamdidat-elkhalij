@@ -47,7 +47,7 @@ export default function Footer() {
                                     تمديدات الخليج
                                 </h2>
                             </div>
-                            <div className="desc mb-4 text-base w-full lg:ps-32">
+                            <div className="desc mb-4 text-base w-full">
                                 <p className="mt-1">
                                     شركة رائدة في تصميم وتنفيذ وصيانة شبكات
                                     الغاز في المملكة العربية السعودية.
