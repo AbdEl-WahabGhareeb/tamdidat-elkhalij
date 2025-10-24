@@ -34,7 +34,7 @@ export default function Footer() {
                     <div className="grid grid-cols-1 items-center justify-center my-3 md:grid-cols-2 lg:gap-20">
                         <div className="logo-and-desc w-4/5 mx-auto md:w-full flex-col justify-center items-start lg:items-center">
                             <div className="flex flex-col w-full mb-5 justify-start sm:items-start">
-                                <div className="relative w-1/4 mt-3 sm:mt-0 min-w-[170px] sm:ms-auto h-[90px]">
+                                <div className="relative w-1/4 mt-3 sm:mt-0 min-w-[170px] sm:me-auto h-[90px]">
                                     <Image
                                         className="w-full h-full object-contain"
                                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
