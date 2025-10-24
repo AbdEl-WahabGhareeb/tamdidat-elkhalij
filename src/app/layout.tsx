@@ -1,10 +1,20 @@
 import { Geist, Geist_Mono, Cairo } from "next/font/google";
+import dynamic from 'next/dynamic';
 import "./globals.css";
-import Navbar from "@/components/Nav-Component/Navbar";
-import Analytics from "@/components/Analytics";
+import {  DefaultLoadingFallback } from "@/components/layout/LoadingBoundary";
 import { metadata } from './seo-metadata';
 import { organizationLDJson } from './structured-data/organization-logo';
 import { websiteSchema } from './structured-data/website';
+
+// Dynamically import components with loading boundaries
+const Navbar = dynamic(() => import("@/components/Nav-Component/Navbar"), {
+    loading: () => <DefaultLoadingFallback minHeight="64px" />
+});
+
+const Analytics = dynamic(() => import("@/components/Analytics"), {
+    ssr: false, // Only load analytics on client-side
+    loading: () => null // Analytics shouldn't show loading state
+});
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -48,6 +58,7 @@ export default function RootLayout({
             </head>
             <body 
                 className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}
+                suppressHydrationWarning
             >
                 <Analytics />
                 <Navbar />
