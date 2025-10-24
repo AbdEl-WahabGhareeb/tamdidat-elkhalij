@@ -28,12 +28,13 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
     icons: {
         icon: [
-            { url: '/assets/favicon.ico', sizes: '32x32' },
+            { url: '/favicon.ico' },
             { url: '/assets/icon-16x16.png', sizes: '16x16', type: 'image/png' },
             { url: '/assets/icon-32x32.png', sizes: '32x32', type: 'image/png' },
             { url: '/assets/icon-192x192.png', sizes: '192x192', type: 'image/png' },
             { url: '/assets/icon-512x512.png', sizes: '512x512', type: 'image/png' },
         ],
+        shortcut: [{ url: "/favicon.ico" }],
         apple: [
             { url: '/assets/apple-icon.png', sizes: '180x180', type: 'image/png' },
         ],
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
             {
                 rel: 'mask-icon',
                 url: '/assets/safari-pinned-tab.svg',
-                color: '#1e3a8a' // Your brand color (blue-900)
+                color: '#1e3a8a'
             }
         ]
     },
@@ -67,6 +68,9 @@ export default function RootLayout({
     return (
         <html lang="ar" dir="rtl" className="scroll-smooth">
             <head>
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon-16x16.png" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
