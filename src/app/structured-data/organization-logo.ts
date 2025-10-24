@@ -1,25 +1,16 @@
 export const organizationLDJson = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': ['Organization', 'Corporation'],
     '@id': 'https://taamco.com/#organization',
     name: 'تمديدات الخليج',
+    alternateName: 'Tamdidat Elkhalij',
     url: 'https://taamco.com',
-    logo: {
-        '@type': 'ImageObject',
-        '@id': 'https://taamco.com/#logo',
-        inLanguage: 'ar-SA',
-        url: 'https://taamco.com/assets/logo-512x512.png',
-        contentUrl: 'https://taamco.com/assets/logo-512x512.png',
-        width: 512,
-        height: 512,
-        caption: 'تمديدات الخليج'
-    },
+    logo: 'https://taamco.com/assets/logo-512x512.png',
     image: {
         '@type': 'ImageObject',
         '@id': 'https://taamco.com/#logo',
         inLanguage: 'ar-SA',
         url: 'https://taamco.com/assets/logo-512x512.png',
-        contentUrl: 'https://taamco.com/assets/logo-512x512.png',
         width: 512,
         height: 512,
         caption: 'تمديدات الخليج'

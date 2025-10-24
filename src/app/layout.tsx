@@ -24,6 +24,7 @@ const cairo = Cairo({
 import { siteMetadata } from './metadata';
 import { localBusinessData } from './layout-structured-data';
 import { organizationLDJson } from './structured-data/organization-logo';
+import { websiteSchema } from './structured-data/website';
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
@@ -72,13 +73,14 @@ export default function RootLayout({
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(localBusinessData)
-                    }}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(organizationLDJson)
+                        __html: JSON.stringify({
+                            '@context': 'https://schema.org',
+                            '@graph': [
+                                organizationLDJson,
+                                websiteSchema,
+                                localBusinessData
+                            ]
+                        })
                     }}
                 />
             </head>
