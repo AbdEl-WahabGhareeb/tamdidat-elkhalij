@@ -117,9 +117,9 @@ export const siteMetadata = {
         "محطات تعبئة الغاز",
     ],
     icons: {
-        icon:"favicon.ico",
-        shortcut:"favicon.ico",
-        apple:"favicon.ico"
+        icon:"favicon.png",
+        shortcut:"favicon.png",
+        apple:"favicon.png"
 
     },
     authors: [{ name: "تمديدات الخليج" }],
