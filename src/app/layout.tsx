@@ -23,7 +23,7 @@ const cairo = Cairo({
 
 import { siteMetadata } from './metadata';
 import { localBusinessData } from './layout-structured-data';
-import { organizationSchema } from './structured-data/organization';
+import { organizationLDJson } from './structured-data/organization-logo';
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
@@ -31,26 +31,22 @@ export const metadata: Metadata = {
     applicationName: 'تمديدات الخليج',
     generator: 'Next.js',
     referrer: 'origin-when-cross-origin',
+    verification: {
+        google: "WrItQ08BRXtWf6oCMt3qJBj16zucGd1oRKttlFafcWs"
+    },
     icons: {
         icon: [
             { url: '/favicon.ico' },
-            { url: '/assets/icon-16x16.png', sizes: '16x16', type: 'image/png' },
-            { url: '/assets/icon-32x32.png', sizes: '32x32', type: 'image/png' },
-            { url: '/assets/icon-192x192.png', sizes: '192x192', type: 'image/png' },
-            { url: '/assets/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+            { url: '/assets/logo-192x192.png', sizes: '192x192', type: 'image/png' },
+            { url: '/assets/logo-512x512.png', sizes: '512x512', type: 'image/png' },
         ],
         shortcut: [{ url: "/favicon.ico" }],
         apple: [
-            { url: '/assets/apple-icon.png', sizes: '180x180', type: 'image/png' },
-        ],
-        other: [
-            {
-                rel: 'mask-icon',
-                url: '/assets/safari-pinned-tab.svg',
-                color: '#1e3a8a'
-            }
+            { url: '/assets/logo-192x192.png', sizes: '192x192', type: 'image/png' },
+            { url: '/assets/logo-512x512.png', sizes: '512x512', type: 'image/png' },
         ]
     },
+    themeColor: '#1e3a8a',
     manifest: '/manifest.json',
     title: {
         default: siteMetadata.title,
@@ -73,9 +69,6 @@ export default function RootLayout({
     return (
         <html lang="ar" dir="rtl" className="scroll-smooth">
             <head>
-                <link rel="shortcut icon" href="/favicon.ico" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon-16x16.png" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -85,7 +78,7 @@ export default function RootLayout({
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(organizationSchema)
+                        __html: JSON.stringify(organizationLDJson)
                     }}
                 />
             </head>
