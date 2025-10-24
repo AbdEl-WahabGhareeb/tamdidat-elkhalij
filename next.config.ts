@@ -38,80 +38,74 @@ const nextConfig: NextConfig = {
             }
         ];
     },
+
+    // Basic configuration
     poweredByHeader: false,
     reactStrictMode: true,
     swcMinify: true,
+
+    // Image optimization
     images: {
-        domains: ['taamco.com'],
+        domains: ['localhost', 'taamco.com'],
         formats: ['image/webp', 'image/avif'],
         deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
         imageSizes: [16, 32, 48, 64, 96, 128, 256],
         minimumCacheTTL: 60 * 60 * 24, // 24 hours
+        dangerouslyAllowSVG: true,
+        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
-    // Performance optimizations
-    swcMinify: true,
+
+    // Compiler options
     compiler: {
-        removeConsole: process.env.NODE_ENV === 'production'
+        removeConsole: process.env.NODE_ENV === 'production',
     },
+
+    // Experimental features
     experimental: {
         optimizeCss: true,
         scrollRestoration: true,
-        legacyBrowsers: false
-    },
-    // Optimization for production builds
-    webpack: (config, { dev, isServer }) => {
-        if (!dev && !isServer) {
-            // Split chunks optimization
-            config.optimization.splitChunks = {
-                chunks: 'all',
-                minSize: 20000,
-                maxSize: 244000,
-                minChunks: 1,
-                maxAsyncRequests: 30,
-                maxInitialRequests: 30,
-                cacheGroups: {
-                    defaultVendors: {
-                        test: /[\\/]node_modules[\\/]/,
-                        priority: -10,
-                        reuseExistingChunk: true,
-                    },
-                    default: {
-                        minChunks: 2,
-                        priority: -20,
-                        reuseExistingChunk: true,
-                    },
-                },
-            };
-        }
-        return config;
-    },
-    experimental: {
-        optimizeCss: true,
         turbo: {
             loaders: {
                 '.svg': ['@svgr/webpack'],
             },
         },
     },
-    compiler: {
-        removeConsole: process.env.NODE_ENV === 'production',
-    },
+
+    // Webpack configuration
     webpack: (config, { dev, isServer }) => {
-        // Optimize CSS
+        // Only apply optimizations for production builds
         if (!dev && !isServer) {
-            config.optimization.splitChunks.cacheGroups = {
-                ...config.optimization.splitChunks.cacheGroups,
-                styles: {
-                    name: 'styles',
-                    test: /\.(css|scss)$/,
+            // Optimize chunks
+            config.optimization = {
+                ...config.optimization,
+                splitChunks: {
                     chunks: 'all',
-                    enforce: true,
+                    minSize: 20000,
+                    maxSize: 244000,
+                    minChunks: 1,
+                    maxAsyncRequests: 30,
+                    maxInitialRequests: 30,
+                    cacheGroups: {
+                        defaultVendors: {
+                            test: /[\\/]node_modules[\\/]/,
+                            priority: -10,
+                            reuseExistingChunk: true,
+                        },
+                        default: {
+                            minChunks: 2,
+                            priority: -20,
+                            reuseExistingChunk: true,
+                        },
+                    },
+                },
+                runtimeChunk: {
+                    name: 'runtime',
                 },
             };
         }
 
         return config;
-    }
+    },
 };
 
 export default nextConfig;
