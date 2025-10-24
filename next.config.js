@@ -21,9 +21,7 @@ const nextConfig = {
         removeConsole: process.env.NODE_ENV === "production",
     },
     experimental: {
-        optimizeCss: true, // Enable CSS optimization
-        optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
-        webpackBuildWorker: true,
+        optimizePackageImports: ["@mantine/core", "@mantine/hooks"]
     },
     // Enable gzip compression
     compress: true,
