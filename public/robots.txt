@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /projects
+Allow: /sitemap.xml
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+# Block potentially malicious file types
+Disallow: /*.php$
+Disallow: /*.aspx$
+Disallow: /*.asp$
+Disallow: /*.sql$
+Disallow: /*.ini$
+Disallow: /*.config$
+
+Sitemap: https://taamco.com/sitemap.xml
