@@ -1,18 +1,20 @@
+const SITE_URL = 'https://taamco.com';
+
 export const organizationLDJson = {
     '@context': 'https://schema.org',
-    '@type': ['Organization', 'Corporation'],
-    '@id': 'https://taamco.com/#organization',
+    '@type': ['Organization', 'LocalBusiness', 'GasStation'],
+    '@id': `${SITE_URL}/#organization`,
     name: 'تمديدات الخليج',
     alternateName: 'Tamdidat Elkhalij',
-    url: 'https://taamco.com',
-    logo: 'https://taamco.com/assets/logo-512x512.png',
+    url: SITE_URL,
+    logo: `${SITE_URL}/assets/logo-search.png`,
     image: {
         '@type': 'ImageObject',
-        '@id': 'https://taamco.com/#logo',
+        '@id': `${SITE_URL}/#logo`,
         inLanguage: 'ar-SA',
-        url: 'https://taamco.com/assets/logo-512x512.png',
-        width: 512,
-        height: 512,
+        url: `${SITE_URL}/assets/logo-search.png`,
+        width: 112,
+        height: 112,
         caption: 'تمديدات الخليج'
     },
     description: 'شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في تصميم وتنفيذ وصيانة شبكات الغاز وشحن خزانات الغاز للمنازل والمنشآت التجارية والصناعية.',

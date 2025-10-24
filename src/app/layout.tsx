@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono, Cairo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Nav-Component/Navbar";
 import Analytics from "@/components/Analytics";
+import { metadata } from './seo-metadata';
+import { organizationLDJson } from './structured-data/organization-logo';
+import { websiteSchema } from './structured-data/website';
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -21,46 +23,7 @@ const cairo = Cairo({
     display: 'swap',
 });
 
-import { siteMetadata } from './metadata';
-import { localBusinessData } from './layout-structured-data';
-import { organizationLDJson } from './structured-data/organization-logo';
-import { websiteSchema } from './structured-data/website';
-
-export const metadata: Metadata = {
-    metadataBase: new URL('https://taamco.com'),
-    publisher: 'تمديدات الخليج',
-    applicationName: 'تمديدات الخليج',
-    generator: 'Next.js',
-    referrer: 'origin-when-cross-origin',
-    verification: {
-        google: "WrItQ08BRXtWf6oCMt3qJBj16zucGd1oRKttlFafcWs"
-    },
-    icons: {
-        icon: [
-            { url: '/favicon.ico' },
-            { url: '/assets/logo-192x192.png', sizes: '192x192', type: 'image/png' },
-            { url: '/assets/logo-512x512.png', sizes: '512x512', type: 'image/png' },
-        ],
-        shortcut: [{ url: "/favicon.ico" }],
-        apple: [
-            { url: '/assets/logo-192x192.png', sizes: '192x192', type: 'image/png' },
-            { url: '/assets/logo-512x512.png', sizes: '512x512', type: 'image/png' },
-        ]
-    },
-    themeColor: '#1e3a8a',
-    manifest: '/manifest.json',
-    title: {
-        default: siteMetadata.title,
-        template: '%s | تمديدات الخليج',
-    },
-    description: siteMetadata.description,
-    keywords: siteMetadata.keywords,
-    authors: siteMetadata.authors,
-    openGraph: siteMetadata.openGraph,
-    twitter: siteMetadata.twitter,
-    alternates: siteMetadata.alternates,
-    robots: siteMetadata.robots,
-};
+export { metadata };
 
 export default function RootLayout({
     children,
@@ -77,8 +40,7 @@ export default function RootLayout({
                             '@context': 'https://schema.org',
                             '@graph': [
                                 organizationLDJson,
-                                websiteSchema,
-                                localBusinessData
+                                websiteSchema
                             ]
                         })
                     }}
