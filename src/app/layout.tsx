@@ -23,9 +23,14 @@ const cairo = Cairo({
 
 import { siteMetadata } from './metadata';
 import { localBusinessData } from './layout-structured-data';
+import { organizationSchema } from './structured-data/organization';
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://taamco.com'),
+    publisher: 'تمديدات الخليج',
+    applicationName: 'تمديدات الخليج',
+    generator: 'Next.js',
+    referrer: 'origin-when-cross-origin',
     icons: {
         icon: [
             { url: '/favicon.ico' },
@@ -75,6 +80,12 @@ export default function RootLayout({
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify(localBusinessData)
+                    }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(organizationSchema)
                     }}
                 />
             </head>

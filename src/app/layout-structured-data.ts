@@ -5,7 +5,7 @@ export const localBusinessData: LocalBusinessData = {
     '@type': ['LocalBusiness', 'GasStation', 'HomeAndConstructionBusiness'],
     name: 'تمديدات الخليج',
     image: [
-        'https://taamco.com/assets/logo.png',
+        'https://taamco.com/assets/favicon.ico',
         'https://taamco.com/assets/og-image.png'
     ],
     '@id': 'https://taamco.com/#organization',
