@@ -10,7 +10,6 @@ export default function About() {
     return (
         <>
             <div className="px-12">
-                {/* <h2 className="text-3xl font-bold mt-36 mb-10 text-center">من نحن</h2> */}
                 <div className="relative w-4/5 mx-auto h-[600px] mt-32">
                     <Image
                         className="object-contain rounded-3xl md:px-0"
