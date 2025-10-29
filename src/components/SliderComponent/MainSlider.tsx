@@ -212,7 +212,7 @@ export default function MainSlider() {
                                 priority
                                 loading="eager"
                                 fill
-                                src="/assets/resturent1.jpg"
+                                src="/assets/general.jpg"
                                 alt="خدمات تمديدات الغاز للمشاريع التجارية - الفنادق والمطاعم والمجمعات التجارية"
                             />
                         </div>
