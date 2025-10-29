@@ -184,7 +184,7 @@ export default function MainSlider() {
                                 priority
                                 loading="eager"
                                 fill
-                                src="/assets/General.jpg"
+                                src="/assets/General.png"
                                 alt="تمديدات الخليج - الشركة الرائدة في تصميم وتنفيذ وصيانة شبكات الغاز"
                             />
                         </div>
