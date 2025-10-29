@@ -1,5 +1,33 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async redirects() {
+        return [
+            // Handle www to non-www redirect
+            {
+                source: '/:path*',
+                has: [
+                    {
+                        type: 'host',
+                        value: 'www.taamco.com',
+                    },
+                ],
+                destination: 'https://taamco.com/:path*',
+                permanent: true,
+            },
+            // Handle old domain if any
+            {
+                source: '/:path*',
+                has: [
+                    {
+                        type: 'host',
+                        value: 'old-domain.com',
+                    },
+                ],
+                destination: 'https://taamco.com/:path*',
+                permanent: true,
+            },
+        ];
+    },
     images: {
         deviceSizes: [640, 750, 828, 1080, 1200, 1920],
         imageSizes: [16, 32, 48, 64, 96, 128, 256],

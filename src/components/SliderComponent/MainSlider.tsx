@@ -174,7 +174,7 @@ export default function MainSlider() {
                     onSlideChange={(swiper) =>
                         setActiveIndex(swiper.activeIndex)
                     }
-                    className="mySwiper w-full h-full mb-56 !static"
+                    className="mySwiper w-full h-full mb-56 static!"
                 >
                     <SwiperSlide>
                         <div className="relative w-full h-full">

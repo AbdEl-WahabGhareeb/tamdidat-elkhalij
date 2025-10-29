@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { applySecurity } from './lib/security/index';
+import { getRedirectPath, getRedirectStatus } from './lib/redirects';
 
 export function middleware(request: NextRequest) {
     // Apply security headers and checks first
@@ -9,28 +10,42 @@ export function middleware(request: NextRequest) {
         return securityResponse;
     }
 
-    const { pathname } = request.nextUrl;
+    const url = request.nextUrl;
+    const { pathname } = url;
 
-    // Handle case-sensitive redirects
-    if (pathname === '/About') {
-        return NextResponse.redirect(new URL('/about', request.url));
+    // Handle lowercase conversion for case-sensitive paths
+    if (pathname !== pathname.toLowerCase()) {
+        return NextResponse.redirect(
+            new URL(pathname.toLowerCase(), request.url),
+            { status: 301 }
+        );
     }
-    if (pathname === '/Services') {
-        return NextResponse.redirect(new URL('/services', request.url));
+
+    // Check for configured redirects
+    const redirectPath = getRedirectPath(pathname);
+    if (redirectPath) {
+        const status = getRedirectStatus(pathname);
+        return NextResponse.redirect(
+            new URL(redirectPath, request.url),
+            { status }
+        );
     }
-    if (pathname === '/Projects') {
-        return NextResponse.redirect(new URL('/projects', request.url));
+
+    // Remove trailing slashes except for root path
+    if (pathname !== '/' && pathname.endsWith('/')) {
+        return NextResponse.redirect(
+            new URL(pathname.slice(0, -1), request.url),
+            { status: 301 }
+        );
     }
 
     return securityResponse;
 }
 
-// Update matcher to include all routes that need security headers
+// Update matcher to include all routes that need checking
 export const config = {
     matcher: [
-        '/((?!api|_next/static|_next/image|favicon.ico).*)',
-        '/About',
-        '/Services',
-        '/Projects'
+        // Match all paths except Next.js specific files and API routes
+        '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)'
     ]
 };

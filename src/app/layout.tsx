@@ -1,11 +1,11 @@
 import { Geist, Geist_Mono, Cairo } from "next/font/google";
 import dynamic from 'next/dynamic';
 import "./globals.css";
-import { LoadingBoundary, DefaultLoadingFallback } from "@/components/layout/LoadingBoundary";
-import { metadata } from './seo-metadata';
+import { DefaultLoadingFallback } from "@/components/layout/LoadingBoundary";
 import { organizationLDJson } from './structured-data/organization-logo';
 import { websiteSchema } from './structured-data/website';
 import ClientAnalytics from '@/components/ClientAnalytics';
+import { generateMetadata } from './metadata-generator';
 
 // Dynamically import components with loading boundaries
 const Navbar = dynamic(() => import("@/components/Nav-Component/Navbar"), {
@@ -29,7 +29,7 @@ const cairo = Cairo({
     display: 'swap',
 });
 
-export { metadata };
+export const metadata = generateMetadata();
 
 export default function RootLayout({
     children,

@@ -374,8 +374,8 @@ export default function OurClients() {
                             </span>
                         </div>
                     </div>
-                    <div className="relative w-full h-[100vh] md:h-[320px] overflow-hidden">
-                        <div className="statistics z-[5] bg-[#2F3A97]/55 absolute top-0 left-0 w-full h-full "></div>
+                    <div className="relative w-full h-screen md:h-80 overflow-hidden">
+                        <div className="statistics z-10 bg-[#2F3A97]/55 absolute top-0 left-0 w-full h-full "></div>
                         <Image
                             className="w-full opacity-50 object-cover md:object-fill h-full"
                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"

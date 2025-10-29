@@ -74,13 +74,13 @@ export default function Navbar() {
                                         الخدمات
                                     </NavLink>
                                 </NavigationMenuTrigger>
-                                <NavigationMenuContent className="w-[100px] absolute z-50">
-                                    <ul className="flex w-[100px] gap-4 justify-center">
+                                <NavigationMenuContent className="w-[130px] absolute z-50 -translate-x-1/6">
+                                    <ul className="flex w-[130px] gap-4 justify-end">
                                         <li>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="/services/design-install"
-                                                    className="flex-row items-center justify-end  gap-0 "
+                                                    href="/services/installation"
+                                                    className="flex-row items-center justify-end gap-0 "
                                                 >
                                                     تصميم وتركيب
                                                 </NavLink>
@@ -95,7 +95,7 @@ export default function Navbar() {
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="/services/tank-refill"
+                                                    href="/services/shipping"
                                                     className="flex-row items-center  justify-end  gap-0 "
                                                 >
                                                     شحن الخزانات
@@ -151,7 +151,7 @@ export default function Navbar() {
                     <div
                         className={`${
                             isMenuOpen ? "block" : "hidden"
-                        }  md:hidden fixed top-[4rem] left-0 right-0 bg-white shadow-lg rounded-b-3xl p-4 z-50`}
+                        }  md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg rounded-b-3xl p-4 z-50`}
                     >
                         <div className="flex flex-col space-y-4">
                             {/* Navigation Links */}
@@ -171,7 +171,7 @@ export default function Navbar() {
                                 <ul className="w-full  mx-auto justify-center">
                                     <li className="py-2 absolute top-10 right-[50%] w-1/3 translate-x-[50%] shadow-special rounded-2xl bg-white flex-col gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex">
                                         <NavLink
-                                            href="/services/design-install"
+                                            href="/services/installation"
                                             className="flex-row  block items-center w-full text-center justify-end  gap-0 "
                                         >
                                             تصميم وتركيب
@@ -183,7 +183,7 @@ export default function Navbar() {
                                             صيانة
                                         </NavLink>
                                         <NavLink
-                                            href="/services/tank-refill"
+                                            href="/services/shipping"
                                             className="flex-row  block items-center w-full text-center  justify-end  gap-0 "
                                         >
                                             شحن الخزانات
@@ -218,13 +218,13 @@ export default function Navbar() {
                                 >
                                     تواصل معنا
                                 </button>
-                                <div className="opacity-0 absolute top-10 z-10 right-[50%] translate-x-[50%] bg-white rounded-b-3xl invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex-col w-[100vw] pt-2">
+                                <div className="opacity-0 absolute top-10 z-10 right-[50%] translate-x-[50%] bg-white rounded-b-3xl invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 -translate-y-2 transition-all duration-300 flex-col w-screen pt-2">
                                     <NavLink
                                         href="https://wa.me/+966543488470"
                                         className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
                                     >
                                         <span>علي واتساب</span>
-                                        <div className="relative w-[20px] h-[20px] text-green-700">
+                                        <div className="relative w-5 h-5 text-green-700">
                                             <Image
                                                 className="w-full h-full"
                                                 sizes="(max-width: 768px) 100vw"
@@ -239,7 +239,7 @@ export default function Navbar() {
                                         className="flex items-center justify-center gap-2 py-2 text-blue-900 hover:text-blue-500"
                                     >
                                         <span>عبر البريد</span>
-                                        <div className="relative w-[20px] h-[20px]">
+                                        <div className="relative w-5 h-5">
                                             <Image
                                                 className="w-full h-full"
                                                 sizes="(max-width: 768px) 100vw"
@@ -283,7 +283,7 @@ export default function Navbar() {
                                                 >
                                                     <span>علي واتساب</span>
 
-                                                    <div className="relative w-[20px] h-[20px] text-green-700">
+                                                    <div className="relative w-5 h-5 text-green-700">
                                                         <Image
                                                             className="w-full h-full"
                                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -301,7 +301,7 @@ export default function Navbar() {
                                                 >
                                                     <span>علي الايميل</span>
 
-                                                    <div className="relative w-[20px] h-[20px] text-green-700">
+                                                    <div className="relative w-5 h-5 text-green-700">
                                                         <Image
                                                             className="w-full h-full"
                                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"

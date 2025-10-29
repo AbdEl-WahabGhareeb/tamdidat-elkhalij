@@ -124,9 +124,12 @@ export default function Services() {
                             الالتزام التام بمعايير السلامة المحلية والدولية.
                         </p>
 
-                        <div className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
-                            <Link href="/">إعرف أكثر...</Link>
-                        </div>
+                        <Link
+                            href="/services/installation"
+                            className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                        >
+                            إعرف أكثر...
+                        </Link>
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
@@ -147,7 +150,7 @@ export default function Services() {
                 <div className="mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
                     <div className=" flex flex-col lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
                         <div className="image lg:translate-x-10 xl:translate-x-0 w-full lg:w-2/5 h-full">
-                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-[320px] lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
+                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-80 lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
                                         className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -197,9 +200,12 @@ export default function Services() {
                         </div>
                     </div>
 
-                    <div className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
-                        <Link href="/">إعرف أكثر...</Link>
-                    </div>
+                    <Link
+                        href="/services/shipping"
+                        className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                    >
+                        إعرف أكثر...
+                    </Link>
                 </div>
 
                 <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
@@ -246,9 +252,12 @@ export default function Services() {
                             واحترافية.
                         </p>
 
-                        <div className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300">
-                            <Link href="/">إعرف أكثر...</Link>
-                        </div>
+                        <Link
+                            href="/services/maintenance"
+                            className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                        >
+                            إعرف أكثر...
+                        </Link>
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">

@@ -105,8 +105,8 @@ export default function Footer() {
 
                         <div className="icons w-4/5 mx-auto md:w-full flex pt-3 md:pt-10 md:pe-12 gap-3 justify-center items-end mt-5 flex-col">
                             <div className="flex gap-3 flex-row-reverse items-center justify-center">
-                                <div className="bg-blue-900 w-[40px] h-[40px] flex items-center justify-center rounded-full text-white p-2">
-                                    <div className="relative w-[20px]  text-white h-[20px]">
+                                <div className="bg-blue-900 w-10 h-10 flex items-center justify-center rounded-full text-white p-2">
+                                    <div className="relative w-5 text-white h-5">
                                         <Image
                                             className="w-full h-full text-white"
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -125,7 +125,7 @@ export default function Footer() {
                             </div>
 
                             <div className="flex gap-3 flex-row-reverse items-center justify-center">
-                                <div className="bg-blue-900 w-[40px] h-[40px] flex items-center justify-center rounded-full text-white p-2">
+                                <div className="bg-blue-900 w-10 h-10 flex items-center justify-center rounded-full text-white p-2">
                                     <Mail />
                                 </div>
                                 <p className="text-base text-end font-medium">
@@ -140,7 +140,7 @@ export default function Footer() {
                                     Arabia
                                 </p>
 
-                                <div className="bg-blue-900 w-[40px] h-[40px] flex items-center justify-center rounded-full text-white p-2">
+                                <div className="bg-blue-900 w-10 h-10 flex items-center justify-center rounded-full text-white p-2">
                                     <MapPin />
                                 </div>
                             </div>
