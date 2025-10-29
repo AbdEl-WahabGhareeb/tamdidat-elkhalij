@@ -9,19 +9,27 @@ export const securityHeaders = {
   'X-XSS-Protection': '1; mode=block',
   // Prevent MIME type sniffing
   'X-Content-Type-Options': 'nosniff',
+  // HTTP Strict Transport Security
+  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
   // Strict Content Security Policy
   'Content-Security-Policy': 
     "default-src 'self'; " +
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.googletagmanager.com; " +
-    "style-src 'self' 'unsafe-inline'; " +
-    "img-src 'self' data: https:; " +
-    "font-src 'self'; " +
-    "connect-src 'self' *.google-analytics.com *.googleapis.com; " +
-    "frame-src 'self';",
+    "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com https://www.gstatic.com; " +
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+    "img-src 'self' data: https: https://www.google-analytics.com https://www.google.com https://www.google.com.sa https://www.google.ae https://googleads.g.doubleclick.net; " +
+    "font-src 'self' https://fonts.gstatic.com; " +
+    "connect-src 'self' https://www.google-analytics.com https://*.googleapis.com https://*.google.com https://*.doubleclick.net; " +
+    "frame-src 'self' https://www.google.com https://bid.g.doubleclick.net; " +
+    "object-src 'none'; " +
+    "base-uri 'self';",
   // Referrer Policy
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   // Permissions Policy
-  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()'
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+  // Cross-Origin Resource Policy
+  'Cross-Origin-Resource-Policy': 'same-site',
+  // Cross-Origin Opener Policy
+  'Cross-Origin-Opener-Policy': 'same-origin'
 }
 
 // Security middleware function
@@ -33,21 +41,54 @@ export function applySecurity(request: NextRequest) {
     response.headers.set(key, value)
   })
 
-  // Check for suspicious query parameters
+  // Check for suspicious patterns
   const url = new URL(request.url)
-  const suspiciousParams = ['eval', 'script', '<script', 'javascript:', 'data:']
-  const hasMailiciousParams = suspiciousParams.some(param => 
-    url.search.toLowerCase().includes(param.toLowerCase())
+  
+  // Expanded list of suspicious patterns
+  const suspiciousPatterns = [
+    'eval', 'script', '<script', 'javascript:', 'data:',
+    'vbscript:', 'onload=', 'onerror=', 'onclick=',
+    'onmouseover=', 'alert(', 'prompt(', 'confirm(',
+    '../', './/', '\\', '%00', '%0d', '%0a'
+  ]
+
+  // Check URL parts
+  const urlToCheck = `${url.pathname}${url.search}${url.hash}`.toLowerCase()
+  const hasMaliciousContent = suspiciousPatterns.some(pattern => 
+    urlToCheck.includes(pattern.toLowerCase())
   )
 
-  if (hasMailiciousParams) {
-    return new NextResponse('Access Denied', { status: 403 })
+  if (hasMaliciousContent) {
+    return new NextResponse('Access Denied', { 
+      status: 403,
+      headers: {
+        'Content-Type': 'text/plain',
+        ...securityHeaders
+      }
+    })
+  }
+
+  // Validate HTTP method
+  const allowedMethods = ['GET', 'POST', 'HEAD']
+  if (!allowedMethods.includes(request.method.toUpperCase())) {
+    return new NextResponse('Method Not Allowed', { 
+      status: 405,
+      headers: {
+        'Allow': allowedMethods.join(', '),
+        ...securityHeaders
+      }
+    })
   }
 
   // Validate Origin header for CORS
   const origin = request.headers.get('origin')
   if (origin) {
-    const allowedOrigins = ['https://your-domain.com'] // Add your domains
+    const allowedOrigins = [
+      'https://taamco.com',
+      'https://www.taamco.com',
+      'https://www.google.com',
+      'https://googleads.g.doubleclick.net'
+    ]
     if (!allowedOrigins.includes(origin)) {
       return new NextResponse('Invalid Origin', { status: 403 })
     }
