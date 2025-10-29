@@ -184,7 +184,9 @@ export default function MainSlider() {
                                 priority
                                 loading="eager"
                                 fill
-                                src="/assets/General.png"
+                                src="/assets/General.jpg"
+                                width={1920}
+                                height={1080}
                                 alt="تمديدات الخليج - الشركة الرائدة في تصميم وتنفيذ وصيانة شبكات الغاز"
                             />
                         </div>
@@ -199,6 +201,8 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/Home.jpg"
+                                width={1920}
+                                height={1080}
                                 alt="خدمات تمديدات الغاز للمشاريع السكنية - الفلل والعمارات السكنية"
                             />
                         </div>
