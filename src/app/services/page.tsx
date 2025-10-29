@@ -19,9 +19,9 @@ export default function Services() {
     return (
         <>
             <div className="px-12 container mx-auto" dir="rtl">
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mt-36 mb-10">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mt-36 mb-10">
                     حلول غاز آمنة تلبي احتياجاتك السكنية والتجارية والصناعية
-                </h2>
+                </h1>
                 <div className="relative h-[300px]  w-full lg:h-[600px] mb-16">
                     <Image
                         className="object-cover w-full h-full rounded-3xl px-0"
