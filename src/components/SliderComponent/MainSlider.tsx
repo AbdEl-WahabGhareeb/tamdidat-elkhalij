@@ -45,8 +45,8 @@ export default function MainSlider() {
                                     المملكة العربية السعودية.
                                 </span>
                                 <span className="mb-3 block">
-                                        نعمل بخبرة طويلة ومعدات حديثة لتوفير
-                                        أعلى مستويات الجودة والسلامة لكل عميل.
+                                    نعمل بخبرة طويلة ومعدات حديثة لتوفير أعلى
+                                    مستويات الجودة والسلامة لكل عميل.
                                 </span>
                                 <span>
                                     خدماتنا متوفرة للمشآت السكنية المشاريع
@@ -185,7 +185,6 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/mainslider/general.jpg"
-                   
                                 alt="تمديدات الخليج - الشركة الرائدة في تصميم وتنفيذ وصيانة شبكات الغاز"
                             />
                         </div>
@@ -200,7 +199,6 @@ export default function MainSlider() {
                                 loading="eager"
                                 fill
                                 src="/assets/mainslider/home.jpg"
-                
                                 alt="خدمات تمديدات الغاز للمشاريع السكنية - الفلل والعمارات السكنية"
                             />
                         </div>

@@ -1,7 +1,7 @@
-import About from "@/components/AboutComponent/About";
+import AboutComp from "@/components/AboutComponent/AboutComp";
 import Footer from "@/components/FooterComponent/Footer";
 import OurClients from "@/components/OurClients/OurClientsComponent";
-import Services from "@/components/ServesicesComponent/Services";
+import ServicesComp from "@/components/ServesicesComponent/ServicesComp";
 import MainSlider from "@/components/SliderComponent/MainSlider";
 
 export default function Home() {
@@ -12,10 +12,10 @@ export default function Home() {
                 <MainSlider />
             </div>
             <div>
-                <About />
+                <AboutComp />
             </div>
             <div className="bg-gray-100">
-                <Services />
+                <ServicesComp />
             </div>
             <div>
                 <OurClients />
