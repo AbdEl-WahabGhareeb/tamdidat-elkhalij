@@ -9,11 +9,7 @@ export const PERMANENT_REDIRECTS: RedirectMap = new Map<string, string>([
     ["/contact", "/about"],
     ["/home", "/"],
 
-    // Handle old service URLs
-    ["/services/gas-installation", "/services/residential"],
-    ["/services/gas-maintenance", "/services/maintenance"],
-    ["/services/commercial-services", "/services/commercial"],
-    ["/services/industrial-services", "/services/industrial"],
+
 
     // Handle Arabic URL variations
     ["/خدماتنا", "/services"],
