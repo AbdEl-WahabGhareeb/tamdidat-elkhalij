@@ -56,15 +56,6 @@ export default function Navbar() {
                                 </NavLink>
                             </NavigationMenuItem>
 
-                            <NavigationMenuItem>
-                                <NavLink
-                                    href="/projects"
-                                    className={`pb-0 text-lg font-semibold hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 inline-flex w-max items-center justify-center rounded-md bg-background px-4 py-2 hover:bg-accent focus:bg-accent disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1}`}
-                                >
-                                    المشاريع
-                                </NavLink>
-                            </NavigationMenuItem>
-
                             <NavigationMenuItem className="relative">
                                 <NavigationMenuTrigger className="p-0 flex-row text-lg font-semibold items-center justify-center gap-0 hover:text-blue-600 transition-colors duration-300 focus:text-blue-600 data-[active=true]:text-blue-600 data-[active=true]:focus:text-blue-600 ">
                                     <NavLink
@@ -191,12 +182,7 @@ export default function Navbar() {
                                     </li>
                                 </ul>
                             </div>
-                            <NavLink
-                                href="/projects"
-                                className="text-lg font-semibold text-center py-2 hover:text-blue-600 transition-colors duration-300"
-                            >
-                                المشاريع
-                            </NavLink>
+
                             <NavLink
                                 href="/about"
                                 className="text-lg font-semibold text-center border-b-2 md:border-0 pb-5 pt-2 hover:text-blue-600 transition-colors duration-300"
