@@ -67,7 +67,7 @@ export default function Navbar() {
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="w-[130px] absolute z-50 -translate-x-1/6">
                                     <ul className="flex w-[130px] gap-4 justify-end">
-                                        <li>
+                                        <li className="w-full">
                                             <NavigationMenuLink asChild>
                                                 <NavLink
                                                     href="/services/installation"
@@ -78,18 +78,18 @@ export default function Navbar() {
                                             </NavigationMenuLink>
                                             <NavigationMenuLink asChild>
                                                 <NavLink
-                                                    href="/services/maintenance"
-                                                    className="flex-row items-center  justify-end  gap-0 "
-                                                >
-                                                    صيانة
-                                                </NavLink>
-                                            </NavigationMenuLink>
-                                            <NavigationMenuLink asChild>
-                                                <NavLink
                                                     href="/services/shipping"
                                                     className="flex-row items-center  justify-end  gap-0 "
                                                 >
                                                     شحن الخزانات
+                                                </NavLink>
+                                            </NavigationMenuLink>
+                                            <NavigationMenuLink asChild>
+                                                <NavLink
+                                                    href="/services/maintenance"
+                                                    className="flex-row items-center  justify-end  gap-0 "
+                                                >
+                                                    صيانة
                                                 </NavLink>
                                             </NavigationMenuLink>
                                         </li>

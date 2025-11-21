@@ -337,7 +337,7 @@ export default function OurClients() {
                 </div>
 
                 <div ref={statsRef} className="bg-image relative mt-4">
-                    <div className="absolute top-0 left-0 px-16 content-start right-0 bottom-0 z-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center text-white text-center p-4">
+                    <div className="absolute top-0 left-0 px-16 right-0 bottom-0 z-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center text-white text-center p-4">
                         <div className="first text-center">
                             <p className="text-4xl font-bold mb-4">
                                 +{firstCount}

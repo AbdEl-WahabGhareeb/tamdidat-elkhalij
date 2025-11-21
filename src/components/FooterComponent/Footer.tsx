@@ -148,8 +148,8 @@ export default function Footer() {
                                 <p className="font-bold mb-4 text-xl text-blue-900">
                                     يمكنكم ايضا زيارة
                                 </p>
-                                <ul className="flex font-semibold ">
-                                    <li className="w-full">
+                                <ul className="flex justify-start items-center font-semibold ">
+                                    <li className="w-1/4">
                                         <Link
                                             className="hover:text-blue-400 w-1/3 transition-all "
                                             href="/services"
@@ -157,15 +157,8 @@ export default function Footer() {
                                             الخدمات
                                         </Link>
                                     </li>
-                                    <li className="w-full">
-                                        <Link
-                                            className="hover:text-blue-400 w-1/3 transition-all "
-                                            href="/projects"
-                                        >
-                                            المشاريع
-                                        </Link>
-                                    </li>
-                                    <li className="w-full">
+                                
+                                    <li className="w-1/4">
                                         <Link
                                             className="hover:text-blue-400 w-1/3 transition-all "
                                             href="/about"

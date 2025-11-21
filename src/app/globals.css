@@ -136,7 +136,17 @@ html {
     }
     body {
         @apply bg-background text-foreground;
-        font-family: var(--font-cairo, 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial) !important;
+        font-family: var(
+            --font-cairo,
+            "Cairo",
+            "Noto Sans Arabic",
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial
+        ) !important;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -144,9 +154,11 @@ html {
 
 @theme {
     --shadow-special: 1px 1px 20px #0000006a;
-    --text-shadow-special: -1px -1px  #fff , 1px 1px  #fff,-1px 1px #fff,1px -1px #fff;
+    --text-shadow-special: -1px -1px #fff, 1px 1px #fff, -1px 1px #fff,
+        1px -1px #fff;
     --shadow-services: 10px 10px 10px #0000001a;
+    --shadow-counter: 5px 5px 10px #0000001a, 5px 5px 10px #0000001a,
+        -5px -5px 10px #0000001a, -5px -5px 10px #0000001a;
     --shadow-accordion: 0 -4px 10px #0000002a;
     --rounded-service-large: 1.25rem;
 }
-

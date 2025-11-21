@@ -51,7 +51,7 @@ export default function ServicesComp() {
                                         variant="outline"
                                         className="hover:bg-blue-500 absolute left-3 bottom-3 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
-                                            <Link href="/services/design-install">اعرف أكثر...</Link>
+                                            <Link href="/services/installation">اعرف أكثر...</Link>
                                     </Button>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export default function ServicesComp() {
                                         variant="outline"
                                         className="hover:bg-blue-500 absolute left-3 bottom-3 rounded-2xl text-white bg-blue-900 transition-colors duration-300 hover:text-white py-3 cursor-pointer w-1/3"
                                     >
-                                            <Link href="/services/tank-refill">اعرف أكثر...</Link>
+                                            <Link href="/services/shipping">اعرف أكثر...</Link>
                                     </Button>
                                 </div>
                             </div>
