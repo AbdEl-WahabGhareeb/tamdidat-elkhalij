@@ -18,11 +18,11 @@ export { metadata };
 export default function Services() {
     return (
         <>
-            <div className="px-12 container mx-auto" dir="rtl">
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mt-36 mb-10">
+            <div className="px-0 sm:px-12 container mx-auto" dir="rtl">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mt-24 sm:mt-28 mb-10">
                     حلول غاز آمنة تلبي احتياجاتك السكنية والتجارية والصناعية
                 </h1>
-                <div className="relative h-[300px]  w-full lg:h-[600px] mb-16">
+                <div className="relative h-[300px]  w-full lg:h-[600px] mb-5 sm:mb-16">
                     <Image
                         className="object-cover w-full h-full rounded-3xl px-0"
                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
@@ -31,10 +31,10 @@ export default function Services() {
                         alt="under-construction page image"
                     />
                 </div>
-                <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-8">
+                <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 sm:mb-8">
                     مقدمة
                 </p>
-                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
+                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-5 sm:mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
                     <div className="text lg:w-3/5">
                         <h3 className="text-2xl font-semibold mb-3">
                             خدماتنا المتكاملة في مجال أنظمة الغاز
@@ -70,11 +70,11 @@ export default function Services() {
                     </div>
                 </div>
 
-                <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-8">
+                <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 sm:mb-8">
                     خدماتنا الرئيسية
                 </p>
 
-                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
+                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-10 sm:mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
                     <div className="text lg:w-3/5">
                         <h3 className="text-2xl font-semibold mb-3">
                             تصميم وتركيب أنظمة الغاز
@@ -147,7 +147,7 @@ export default function Services() {
                     </div>
                 </div>
 
-                <div className="mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
+                <div className="mb-10 sm:mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
                     <div className=" flex flex-col lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
                         <div className="image lg:translate-x-10 xl:translate-x-0 w-full lg:w-2/5 h-full">
                             <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-80 lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
@@ -208,7 +208,7 @@ export default function Services() {
                     </Link>
                 </div>
 
-                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
+                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-10 sm:mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
                     <div className="text lg:w-3/5">
                         <h3 className="text-2xl font-semibold mb-3">
                             صيانة شبكات الغاز
