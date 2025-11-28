@@ -43,8 +43,8 @@ export default function Footer() {
                                         alt="شعار شركة تمديدات الخليج في تذييل الصفحة"
                                     />
                                 </div>
-                                <h2 className="text-[1.8rem] leading-4 text-shadow-special md:text-[1.6rem] font-bold text-blue-900">
-                                    تمديدات الخليج
+                                <h2 className="text-[1.1rem] leading-4 text-shadow-special md:text-[1rem] font-bold text-blue-900">
+                                    تمديدات الخليج المبتكرة
                                 </h2>
                             </div>
                             <div className="desc mb-4 text-base w-full">

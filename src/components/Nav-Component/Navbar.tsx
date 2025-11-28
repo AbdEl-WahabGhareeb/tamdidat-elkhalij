@@ -36,8 +36,8 @@ export default function Navbar() {
                                 />
                             </div>
 
-                            <h1 className="xl:text-lg lg:text-md font-bold text-center text-blue-900">
-                                تمديدات الخليج
+                            <h1 className="xl:text-[11px] text-[11px] font-bold text-center text-blue-900">
+                                تمديدات الخليج المبتكرة
                             </h1>
                         </div>
                     </Link>

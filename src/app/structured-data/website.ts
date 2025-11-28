@@ -4,7 +4,7 @@ export const websiteSchema = {
     '@id': 'https://taamco.com/#website',
     url: 'https://taamco.com',
     name: 'تمديدات الخليج',
-    description: 'شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في تصميم وتنفيذ وصيانة شبكات الغاز',
+    description: 'شركة تمديدات الخليج المبتكرة هي شركة سعودية متخصصة في تصميم وتنفيذ وصيانة شبكات الغاز',
     publisher: {
         '@id': 'https://taamco.com/#organization'
     },

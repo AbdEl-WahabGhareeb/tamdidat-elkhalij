@@ -1,3 +1,4 @@
+import Footer from "@/components/FooterComponent/Footer";
 import Image from "next/image";
 import React from "react";
 
@@ -353,6 +354,7 @@ export default function IndustrialServices() {
                     </div>
                 </div>
             </div>
+            <Footer /> 
         </>
     );
 }

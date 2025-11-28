@@ -21,7 +21,7 @@ export function getAboutStructuredData(): AboutData {
         '@context': 'https://schema.org',
         '@type': ['Organization', 'LocalBusiness'],
         name: 'تمديدات الخليج',
-        description: 'شركة تمديدات الخليج المحدودة، شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في المملكة العربية السعودية',
+        description: 'شركة تمديدات الخليج المبتكرة، شركة رائدة في تصميم وتنفيذ وصيانة شبكات الغاز في المملكة العربية السعودية',
         foundingDate: '2015', // Replace with actual founding date
         founder: {
             '@type': 'Person',

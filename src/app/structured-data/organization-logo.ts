@@ -17,7 +17,7 @@ export const organizationLDJson = {
         height: 112,
         caption: 'تمديدات الخليج'
     },
-    description: 'شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في تصميم وتنفيذ وصيانة شبكات الغاز وشحن خزانات الغاز للمنازل والمنشآت التجارية والصناعية.',
+    description: 'شركة تمديدات الخليج المبتكرة هي شركة سعودية متخصصة في تصميم وتنفيذ وصيانة شبكات الغاز وشحن خزانات الغاز للمنازل والمنشآت التجارية والصناعية.',
     sameAs: [
         'https://www.facebook.com/tamdidat.elkhalij',
         'https://twitter.com/tamdidat_elkhalij',

@@ -18,7 +18,7 @@ export default function AboutComp() {
                             loading="eager"
                             fill
                             src="/assets/about.png"
-                            alt="صورة تعريفية عن شركة تمديدات الخليج المحدودة وخدماتها المتخصصة"
+                            alt="صورة تعريفية عن شركة تمديدات الخليج المبتكرة وخدماتها المتخصصة"
                         />
                     </div>
                 </div>
@@ -29,7 +29,7 @@ export default function AboutComp() {
                         <div className="w-full mt-2 px-3 h-[5px] bg-blue-900"></div>
                     </h2>
                     <p className=" leading-10 my-4 lg:mt-8 lg:text-lg xl:text-xl font-semibold">
-                        شركة تمديدات الخليج المحدودة هي شركة سعودية متخصصة في
+                        شركة تمديدات الخليج المبتكرة هي شركة سعودية متخصصة في
                         تصميم وتنفيذ وصيانة شبكات الغاز وشحن خزانات الغاز
                         للمنازل والمنشآت التجارية والصناعية.
                     </p>
