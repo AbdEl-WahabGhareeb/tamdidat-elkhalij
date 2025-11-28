@@ -21,7 +21,7 @@ export default function About() {
                         sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                         fill
                         src="/assets/services/services-main.svg"
-                        alt="under-construction page image"
+                        alt="صورة توضح خدمات تمديدات الخليج المتكاملة في مجال الغاز"
                     />
                 </div>
 

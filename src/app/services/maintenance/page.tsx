@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 export const metadata = {
-    title: "خدمات الصيانة - تمديدات الخليج",
-    description:
-        "خدمات صيانة أنظمة الغاز من تمديدات الخليج - صيانة دورية وطارئة لجميع أنظمة الغاز",
+    title: "صيانة شبكات الغاز - خدمات صيانة دورية وعلاجية من تمديدات الخليج",
+    description: "خدمات صيانة شاملة لأنظمة الغاز من تمديدات الخليج - صيانة وقائية وعلاجية وطارئة مع كشف تسريبات احترافي. اتصل بنا لضمان سلامة نظامك.",
+    keywords: ["صيانة الغاز", "كشف تسريبات الغاز", "صيانة دورية", "شبكات الغاز", "تمديدات الخليج"],
 };
 
 export default function MaintenanceServices() {
@@ -58,7 +58,7 @@ export default function MaintenanceServices() {
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
                                                 src="/assets/services/maintenance/preventive-maintenance.svg"
-                                                alt="under-construction page image"
+                                                alt="خدمات الصيانة الوقائية والفحص الدوري الشامل لشبكات الغاز"
                                             />
                                         </div>
                                     </li>

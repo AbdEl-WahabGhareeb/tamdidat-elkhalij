@@ -4,6 +4,8 @@ import "./globals.css";
 import { DefaultLoadingFallback } from "@/components/layout/LoadingBoundary";
 import { organizationLDJson } from './structured-data/organization-logo';
 import { websiteSchema } from './structured-data/website';
+import { localBusinessSchema } from './structured-data/local-business';
+import { faqSchema } from './structured-data/faq-schema';
 import ClientAnalytics from '@/components/ClientAnalytics';
 import { generateMetadata } from './metadata-generator';
 
@@ -46,7 +48,9 @@ export default function RootLayout({
                             '@context': 'https://schema.org',
                             '@graph': [
                                 organizationLDJson,
-                                websiteSchema
+                                websiteSchema,
+                                localBusinessSchema,
+                                faqSchema
                             ]
                         })
                     }}

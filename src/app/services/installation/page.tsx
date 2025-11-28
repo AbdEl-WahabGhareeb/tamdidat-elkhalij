@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 export const metadata = {
-    title: "الخدمات الصناعية - تمديدات الخليج",
-    description:
-        "خدمات تمديدات الغاز الصناعية من تمديدات الخليج - حلول متخصصة للمصانع والمنشآت الصناعية",
+    title: "تصميم وتركيب شبكات الغاز - خدمات احترافية من تمديدات الخليج",
+    description: "خدمات تصميم وتركيب أنظمة الغاز المتكاملة من تمديدات الخليج - تصميم هندسي دقيق وتركيب احترافي بأعلى معايير السلامة والجودة. اتصل بنا الآن.",
+    keywords: ["تصميم شبكات الغاز", "تركيب شبكات الغاز", "أنظمة غاز متكاملة", "غاز مركزي", "تمديدات الخليج"],
 };
 
 export default function IndustrialServices() {
@@ -62,7 +62,7 @@ export default function IndustrialServices() {
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
                                                 src="/assets/services/installation/elaborate-design.svg"
-                                                alt="Elaborate design image"
+                                                alt="الصورة توضح التصميم الهندسي الدقيق لشبكات الغاز من تمديدات الخليج"
                                             />
                                         </div>
                                     </li>
