@@ -61,8 +61,8 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
-                                                alt="under-construction page image"
+                                                src="/assets/services/installation/elaborate-design.svg"
+                                                alt="Elaborate design image"
                                             />
                                         </div>
                                     </li>
@@ -95,7 +95,7 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/professional-installation.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -127,7 +127,7 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/delivery.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -162,7 +162,7 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/analysis.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -191,7 +191,7 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/engineering-design.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -220,7 +220,7 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/implementation.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -249,7 +249,7 @@ export default function IndustrialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/testing.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -285,7 +285,7 @@ export default function IndustrialServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/houses.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
@@ -315,7 +315,7 @@ export default function IndustrialServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/commercial.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
@@ -343,7 +343,7 @@ export default function IndustrialServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                                src="/assets/services/installation/industrial.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>

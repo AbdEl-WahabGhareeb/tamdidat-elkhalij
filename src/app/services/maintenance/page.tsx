@@ -35,24 +35,21 @@ export default function MaintenanceServices() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16 gap-4 ">
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 mb-3">
-صيانة وقائية                                </p>
+                                    صيانة وقائية{" "}
+                                </p>
 
                                 <ul className="gap-2 flex flex-col ">
                                     <li className="list-none">
-فحص دوري شامل للشبكات
-
+                                        فحص دوري شامل للشبكات
                                     </li>
                                     <li className="list-none">
-كشف التسريبات باستخدام أحدث الأجهزة
-
+                                        كشف التسريبات باستخدام أحدث الأجهزة
                                     </li>
                                     <li className="list-none">
-تنظيف وصيانة المعدات بانتظام
-
+                                        تنظيف وصيانة المعدات بانتظام
                                     </li>
                                     <li className="list-none">
-استبدال القطع المعطبة مسبقاً
-
+                                        استبدال القطع المعطبة مسبقاً
                                     </li>
                                     <li className="mt-5">
                                         <div className="relative w-full h-60 rounded-3xl">
@@ -60,7 +57,7 @@ export default function MaintenanceServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/maintenance/preventive-maintenance.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -70,24 +67,21 @@ export default function MaintenanceServices() {
 
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 mb-3">
-صيانة علاجية                                </p>
+                                    صيانة علاجية{" "}
+                                </p>
 
                                 <ul className="gap-2 flex flex-col">
                                     <li className="list-none me-5">
-إصلاح الأعطال الفورية
-
+                                        إصلاح الأعطال الفورية
                                     </li>
                                     <li className="list-none">
-استبدال القطع التالفة بأصلية
-
+                                        استبدال القطع التالفة بأصلية
                                     </li>
                                     <li className="list-none">
-معايرة الأجهزة والعدادات
-
+                                        معايرة الأجهزة والعدادات
                                     </li>
                                     <li className="list-none">
-اختبار الأداء بعد الإصلاح
-
+                                        اختبار الأداء بعد الإصلاح
                                     </li>
                                     <li className="mt-5">
                                         <div className="relative w-full h-60 rounded-3xl">
@@ -95,7 +89,7 @@ export default function MaintenanceServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/maintenance/fixing.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -105,24 +99,21 @@ export default function MaintenanceServices() {
 
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 mb-3">
-صيانة طارئة                                </p>
+                                    صيانة طارئة{" "}
+                                </p>
 
                                 <ul className="gap-2 flex flex-col">
                                     <li className="list-none">
-خدمة 24/7 لطوارئ الغاز
-
+                                        خدمة 24/7 لطوارئ الغاز
                                     </li>
                                     <li className="list-none">
-فريق طوارئ متخصص
-
+                                        فريق طوارئ متخصص
                                     </li>
                                     <li className="list-none">
-استجابة خلال 60 دقيقة
-
+                                        استجابة خلال 60 دقيقة
                                     </li>
                                     <li className="list-none">
-حلول فورية وآمنة
-
+                                        حلول فورية وآمنة
                                     </li>
                                     <li className="mt-5">
                                         <div className="relative w-full h-60 rounded-3xl">
@@ -130,7 +121,7 @@ export default function MaintenanceServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/maintenance/emergency-maintenance.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -140,31 +131,25 @@ export default function MaintenanceServices() {
                         </div>
 
                         <p className="text-xl font-bold leading-8 text-center mb-3 mt-3">
-برامج الصيانة
+                            برامج الصيانة
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 mb-2">
-الباقة الأساسية
+                                    الباقة الأساسية
                                 </p>
 
                                 <ul className="gap-2 flex flex-col ">
                                     <li className="list-none">
-فحص ربع سنوي شامل
-
+                                        فحص ربع سنوي شامل
+                                    </li>
+                                    <li className="list-none">كشف التسريبات</li>
+                                    <li className="list-none">
+                                        تقرير مفصل عن الحالة
                                     </li>
                                     <li className="list-none">
-كشف التسريبات
-
-                                    </li>
-                                    <li className="list-none">
-تقرير مفصل عن الحالة
-
-                                    </li>
-                                    <li className="list-none">
-خصم 10% على قطع الغيار
-
+                                        خصم 10% على قطع الغيار
                                     </li>
                                     <li className="mt-5">
                                         <div className="relative w-full h-60 rounded-3xl">
@@ -172,7 +157,7 @@ export default function MaintenanceServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/maintenance/main-package.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -182,25 +167,19 @@ export default function MaintenanceServices() {
 
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 mb-2">
-الباقة المتقدمة
+                                    الباقة المتقدمة
                                 </p>
 
                                 <ul className="gap-2 flex flex-col">
                                     <li className="list-none me-5">
-فحص شهري شامل
-
+                                        فحص شهري شامل
                                     </li>
                                     <li className="list-none">
-صيانة وقائية كاملة
-
+                                        صيانة وقائية كاملة
                                     </li>
+                                    <li className="list-none">تنظيف النظام</li>
                                     <li className="list-none">
-تنظيف النظام
-
-                                    </li>
-                                    <li className="list-none">
-خصم 20% على قطع الغيار
-
+                                        خصم 20% على قطع الغيار
                                     </li>
                                     <li className="mt-5">
                                         <div className="relative w-full h-60 rounded-3xl">
@@ -208,7 +187,7 @@ export default function MaintenanceServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/maintenance/advanced-package.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -218,25 +197,17 @@ export default function MaintenanceServices() {
 
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 mb-2">
-الباقة الشاملة
+                                    الباقة الشاملة
                                 </p>
 
                                 <ul className="gap-2 flex flex-col">
+                                    <li className="list-none">فحص أسبوعي</li>
                                     <li className="list-none">
-فحص أسبوعي
-
+                                        صيانة وقائية متكاملة
                                     </li>
+                                    <li className="list-none">مراقبة مستمرة</li>
                                     <li className="list-none">
-صيانة وقائية متكاملة
-
-                                    </li>
-                                    <li className="list-none">
-مراقبة مستمرة
-
-                                    </li>
-                                    <li className="list-none">
-صيانة طارئة مجانية
-
+                                        صيانة طارئة مجانية
                                     </li>
                                     <li className="mt-5">
                                         <div className="relative w-full h-60 rounded-3xl">
@@ -244,7 +215,7 @@ export default function MaintenanceServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/maintenance/pack.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -254,31 +225,27 @@ export default function MaintenanceServices() {
                         </div>
 
                         <p className="text-xl font-bold leading-8 text-center mb-3 mt-3">
-خدمات الصيانة المتخصصة
+                            خدمات الصيانة المتخصصة
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
                             <div className=" bg-[#F2F2F2] rounded-3xl  shadow-services p-2">
                                 <p className="text-base font-bold leading-8 text-center mb-2">
-صيانة الشبكات المنزلية
+                                    صيانة الشبكات المنزلية
                                 </p>
                                 <div className="flex items-center justify-center">
                                     <ul className="gap-2 flex flex-col w-7/12">
                                         <li className="list-none">
-فحص المواقد والدفايات
-
+                                            فحص المواقد والدفايات
                                         </li>
                                         <li className="list-none">
-صيانة الأنابيب والتوصيلات
-
+                                            صيانة الأنابيب والتوصيلات
                                         </li>
                                         <li className="list-none">
-كشف التسريبات الخفية
-
+                                            كشف التسريبات الخفية
                                         </li>
                                         <li className="list-none">
-تنظيف الفلاتر والمرشحات
-
+                                            تنظيف الفلاتر والمرشحات
                                         </li>
                                     </ul>
 
@@ -287,7 +254,7 @@ export default function MaintenanceServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                            src="/assets/services/maintenance/home-maintenance.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
@@ -296,25 +263,21 @@ export default function MaintenanceServices() {
 
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8 text-center mb-2">
-صيانة الشبكات التجارية
+                                    صيانة الشبكات التجارية
                                 </p>
                                 <div className="flex items-center justify-center">
                                     <ul className="gap-2 flex flex-col w-7/12">
                                         <li className="list-none">
-صيانة أنظمة المطاعم
-
+                                            صيانة أنظمة المطاعم
                                         </li>
                                         <li className="list-none">
-فحص أنظمة الفنادق
-
+                                            فحص أنظمة الفنادق
                                         </li>
                                         <li className="list-none">
-صيانة المجمعات التجارية
-
+                                            صيانة المجمعات التجارية
                                         </li>
                                         <li className="list-none">
-برامج صيانة مكثفة
-
+                                            برامج صيانة مكثفة
                                         </li>
                                     </ul>
 
@@ -323,7 +286,7 @@ export default function MaintenanceServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                            src="/assets/services/maintenance/com-maintenance.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
@@ -332,25 +295,21 @@ export default function MaintenanceServices() {
 
                             <div className=" bg-[#F2F2F2] rounded-3xl shadow-services p-3">
                                 <p className="text-base font-bold leading-8  text-center mb-2">
-صيانة الشبكات الصناعية
+                                    صيانة الشبكات الصناعية
                                 </p>
                                 <div className="flex items-center justify-center">
                                     <ul className="gap-2 flex flex-col w-7/12">
                                         <li className="list-none">
-صيانة محطات التوزيع
-
+                                            صيانة محطات التوزيع
                                         </li>
                                         <li className="list-none">
-فحص أنظمة المصانع
-
+                                            فحص أنظمة المصانع
                                         </li>
                                         <li className="list-none">
-صيانة خطوط الغاز الرئيسية
-
+                                            صيانة خطوط الغاز الرئيسية
                                         </li>
                                         <li className="list-none">
-برامج صيانة متخصصة
-
+                                            برامج صيانة متخصصة
                                         </li>
                                     </ul>
 
@@ -359,7 +318,7 @@ export default function MaintenanceServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                            src="/assets/services/maintenance/industerial.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>

@@ -57,7 +57,7 @@ export default function ResidentialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/fast-service.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -89,7 +89,7 @@ export default function ResidentialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/safe-qualified.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -121,7 +121,7 @@ export default function ResidentialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/follow-up.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -159,7 +159,7 @@ export default function ResidentialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/periodic-shipping.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -191,7 +191,7 @@ export default function ResidentialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/ordered-shipping.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -223,7 +223,7 @@ export default function ResidentialServices() {
                                                 className="object-cover w-full h-full rounded-3xl "
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/emergency.svg"
                                                 alt="under-construction page image"
                                             />
                                         </div>
@@ -262,7 +262,7 @@ export default function ResidentialServices() {
                                             className="object-cover w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/quality-control.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
@@ -291,10 +291,10 @@ export default function ResidentialServices() {
 
                                     <div className="relative h-32 rounded-3xl w-5/12">
                                         <Image
-                                            className="object-cover w-full h-full rounded-3xl "
+                                            className="object-contaiin w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/safety-first.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
@@ -323,10 +323,10 @@ export default function ResidentialServices() {
 
                                     <div className="relative h-32 rounded-3xl w-5/12">
                                         <Image
-                                            className="object-cover w-full h-full rounded-3xl "
+                                            className="object-contain w-full h-full rounded-3xl "
                                             sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                             fill
-                                            src="/assets/services/services-4.svg"
+                                                src="/assets/services/shipping/tech-support.svg"
                                             alt="under-construction page image"
                                         />
                                     </div>
