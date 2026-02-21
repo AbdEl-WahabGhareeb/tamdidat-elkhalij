@@ -37,8 +37,8 @@ export const metadata = {
             },
             {
                 url: FALLBACK_OG_IMAGE,
-                width: 1200,
-                height: 630,
+                width: 800,
+                height: 600,
                 alt: "تمديدات الخليج المبتكرة",
                 type: "image/jpeg",
                 secureUrl: FALLBACK_OG_IMAGE,
