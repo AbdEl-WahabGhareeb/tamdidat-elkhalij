@@ -121,41 +121,29 @@ export const metadata: Metadata = {
         canonical: SITE_URL,
     },
     openGraph: {
-        title: "تمديدات الخليج - خدمات تصميم وتنفيذ وصيانة شبكات الغاز",
-        description:
-            "شركة تمديدات الخليج - خبراء في تصميم وتنفيذ وصيانة شبكات الغاز في المملكة العربية السعودية",
+        type: "website",
+        locale: "ar_SA",
+        title: "تمديدات الخليج المبتكرة - خدمات تصميم وتركيب وصيانة شبكات الغاز",
+        description: "شركة سعودية رائدة متخصصة في تصميم وتركيب وصيانة شبكات الغاز. خدمات متكاملة وفريق معتمد بخبرة أكثر من 15 عاماً.",
         url: SITE_URL,
-        siteName: "تمديدات الخليج",
+        siteName: "تمديدات الخليج المبتكرة",
         images: [
             {
                 url: `${SITE_URL}/assets/og-image.jpg`,
                 width: 1200,
                 height: 630,
-                alt: "تمديدات الخليج - خدمات الغاز المتكاملة",
+                alt: "تمديدات الخليج المبتكرة - خدمات الغاز المتكاملة",
+                type: "image/jpeg",
+                secureUrl: `${SITE_URL}/assets/og-image.jpg`,
             },
         ],
-        locale: "ar_SA",
-        type: "website",
-    },
-    robots: {
-        index: true,
-        follow: true,
-        googleBot: {
-            index: true,
-            follow: true,
-            "max-video-preview": -1,
-            "max-image-preview": "large",
-            "max-snippet": -1,
-        },
-    },
-    verification: {
-        google: "WrItQ08BRXtWf6oCMt3qJBj16zucGd1oRKttlFafcWs",
     },
     twitter: {
         card: "summary_large_image",
-        title: "تمديدات الخليج - خدمات تصميم وتنفيذ وصيانة شبكات الغاز",
-        description:
-            "شركة تمديدات الخليج - خبراء في تصميم وتنفيذ وصيانة شبكات الغاز في المملكة العربية السعودية",
+        site: "@tamdidat_elkhalij",
+        creator: "@tamdidat_elkhalij",
+        title: "تمديدات الخليج المبتكرة - خدمات تمديد الغاز",
+        description: "شركة سعودية رائدة في تصميم وتركيب وصيانة شبكات الغاز - خدمات متكاملة",
         images: [`${SITE_URL}/assets/og-image.jpg`],
     },
 };

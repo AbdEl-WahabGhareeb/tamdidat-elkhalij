@@ -3,14 +3,15 @@ import { generateAlternateLinks, SITE_URL } from '@/lib/i18n';
 
 export function generateMetadata(path: string = '/'): Metadata {
   const alternateLinks = generateAlternateLinks(path);
+  const ogImage = `${SITE_URL}/assets/og-image.jpg`;
 
   return {
     metadataBase: new URL(SITE_URL),
     title: {
-      template: '%s | تمديدات الخليج',
-      default: 'تمديدات الخليج - خدمات تمديد الغاز في السعودية | تصميم وتركيب وصيانة'
+      template: '%s | تمديدات الخليج المبتكرة',
+      default: 'تمديدات الخليج المبتكرة - خدمات تمديد الغاز في السعودية | تصميم وتركيب وصيانة'
     },
-    description: 'تمديدات الخليج - شركة سعودية رائدة في تصميم وتركيب وصيانة شبكات الغاز. خدمات متكاملة للمشاريع السكنية والتجارية والصناعية مع معايير جودة عالمية. اتصل بنا الآن.',
+    description: 'تمديدات الخليج المبتكرة - شركة سعودية رائدة في تصميم وتركيب وصيانة شبكات الغاز. خدمات متكاملة للمشاريع السكنية والتجارية والصناعية مع معايير جودة عالمية. اتصل بنا الآن.',
     keywords: [
       'تمديدات الغاز',
       'شبكات الغاز',
@@ -26,11 +27,11 @@ export function generateMetadata(path: string = '/'): Metadata {
       'تامكو',
       'taamco'
     ],
-    publisher: 'تمديدات الخليج',
-    applicationName: 'تمديدات الخليج',
+    publisher: 'تمديدات الخليج المبتكرة',
+    applicationName: 'تمديدات الخليج المبتكرة',
     generator: 'Next.js',
     referrer: 'origin-when-cross-origin',
-    authors: [{ name: 'تمديدات الخليج' }],
+    authors: [{ name: 'تمديدات الخليج المبتكرة' }],
     formatDetection: {
       email: true,
       address: true,
@@ -63,26 +64,27 @@ export function generateMetadata(path: string = '/'): Metadata {
       locale: 'ar_SA',
       alternateLocale: ['en_US'],
       url: SITE_URL,
-      siteName: 'تمديدات الخليج',
-      title: 'تمديدات الخليج - خدمات تمديد الغاز في السعودية',
-      description: 'شركة سعودية متخصصة في تصميم وتركيب وصيانة شبكات الغاز والخدمات المتكاملة',
+      siteName: 'تمديدات الخليج المبتكرة',
+      title: 'تمديدات الخليج المبتكرة - خدمات تمديد الغاز في السعودية',
+      description: 'شركة سعودية رائدة متخصصة في تصميم وتركيب وصيانة شبكات الغاز والخدمات المتكاملة. فريق معتمد وخبرة تزيد عن 15 عاماً.',
       images: [
         {
-          url: `${SITE_URL}/assets/og-image.jpg`,
+          url: ogImage,
           width: 1200,
           height: 630,
-          alt: 'شركة تمديدات الخليج - خدمات الغاز المتكاملة',
+          alt: 'تمديدات الخليج المبتكرة - خدمات الغاز المتكاملة',
           type: 'image/jpeg',
+          secureUrl: ogImage,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'تمديدات الخليج - خدمات تمديد الغاز',
-      description: 'شركة سعودية رائدة في تصميم وتركيب وصيانة شبكات الغاز - خدمات متكاملة',
-      images: [`${SITE_URL}/assets/og-image.jpg`],
-      creator: '@tamdidat_elkhalij',
       site: '@tamdidat_elkhalij',
+      creator: '@tamdidat_elkhalij',
+      title: 'تمديدات الخليج المبتكرة - خدمات تمديد الغاز',
+      description: 'شركة سعودية رائدة في تصميم وتركيب وصيانة شبكات الغاز - خدمات متكاملة',
+      images: [ogImage],
     },
   };
 }
