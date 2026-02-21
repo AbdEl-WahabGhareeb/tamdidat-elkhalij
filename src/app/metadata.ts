@@ -128,13 +128,13 @@ export const siteMetadata = {
         siteName: "تمديدات الخليج",
         images: [
             {
-                url: "https://taamco.com/assets/og-image.png",
+                url: "https://taamco.com/assets/og-image.jpg",
                 width: 1200,
                 height: 630,
                 alt: "تمديدات الخليج - خدمات تمديد الغاز المركزي",
             },
             {
-                url: "https://taamco.com/assets/icon-512x512.png",
+                url: "https://taamco.com/assets/og-image-512x512.jpg",
                 width: 512,
                 height: 512,
                 alt: "شعار تمديدات الخليج",
