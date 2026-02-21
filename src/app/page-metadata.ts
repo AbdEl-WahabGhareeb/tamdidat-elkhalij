@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 const SITE_URL = "https://taamco.com";
+const OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -123,18 +124,26 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "ar_SA",
+        url: SITE_URL,
         title: "تمديدات الخليج المبتكرة - خدمات تصميم وتركيب وصيانة شبكات الغاز",
         description: "شركة سعودية رائدة متخصصة في تصميم وتركيب وصيانة شبكات الغاز. خدمات متكاملة وفريق معتمد بخبرة أكثر من 15 عاماً.",
-        url: SITE_URL,
         siteName: "تمديدات الخليج المبتكرة",
         images: [
             {
-                url: `${SITE_URL}/assets/og-image.jpg`,
+                url: OG_IMAGE,
                 width: 1200,
                 height: 630,
                 alt: "تمديدات الخليج المبتكرة - خدمات الغاز المتكاملة",
                 type: "image/jpeg",
-                secureUrl: `${SITE_URL}/assets/og-image.jpg`,
+                secureUrl: OG_IMAGE,
+            },
+            {
+                url: `${SITE_URL}/assets/og-image.png`,
+                width: 800,
+                height: 600,
+                alt: "تمديدات الخليج المبتكرة",
+                type: "image/png",
+                secureUrl: `${SITE_URL}/assets/og-image.png`,
             },
         ],
     },
@@ -144,6 +153,6 @@ export const metadata: Metadata = {
         creator: "@tamdidat_elkhalij",
         title: "تمديدات الخليج المبتكرة - خدمات تمديد الغاز",
         description: "شركة سعودية رائدة في تصميم وتركيب وصيانة شبكات الغاز - خدمات متكاملة",
-        images: [`${SITE_URL}/assets/og-image.jpg`],
+        images: [OG_IMAGE],
     },
 };

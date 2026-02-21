@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 
 const SITE_URL = 'https://taamco.com';
+const ABOUT_OG_IMAGE = `${SITE_URL}/assets/about-og.jpg`;
+const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -12,23 +14,36 @@ export const metadata: Metadata = {
     },
     openGraph: {
         type: 'website',
+        locale: 'ar_SA',
+        url: `${SITE_URL}/about`,
+        siteName: 'تمديدات الخليج المبتكرة',
         title: 'عن تمديدات الخليج - شركة الغاز المتكاملة',
         description: 'شركة سعودية رائدة في خدمات تصميم وتركيب وصيانة شبكات الغاز مع فريق متخصص معتمد',
-        url: `${SITE_URL}/about`,
-        locale: 'ar_SA',
         images: [
             {
-                url: `${SITE_URL}/assets/about-og.jpg`,
+                url: ABOUT_OG_IMAGE,
                 width: 1200,
                 height: 630,
-                alt: 'شركة تمديدات الخليج - الشركة الرائدة في خدمات الغاز'
-            }
+                alt: 'شركة تمديدات الخليج - الشركة الرائدة في خدمات الغاز',
+                type: 'image/jpeg',
+                secureUrl: ABOUT_OG_IMAGE,
+            },
+            {
+                url: FALLBACK_OG_IMAGE,
+                width: 1200,
+                height: 630,
+                alt: 'تمديدات الخليج المبتكرة',
+                type: 'image/jpeg',
+                secureUrl: FALLBACK_OG_IMAGE,
+            },
         ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'عن تمديدات الخليج',
+        site: '@tamdidat_elkhalij',
+        creator: '@tamdidat_elkhalij',
+        title: 'عن تمديدات الخليج - شركة الغاز السعودية',
         description: 'شركة سعودية متخصصة في خدمات الغاز المتكاملة',
-        images: [`${SITE_URL}/assets/about-og.jpg`],
+        images: [ABOUT_OG_IMAGE, FALLBACK_OG_IMAGE],
     }
 };

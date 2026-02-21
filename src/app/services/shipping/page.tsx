@@ -2,10 +2,49 @@ import Footer from "@/components/FooterComponent/Footer";
 import Image from "next/image";
 import React from "react";
 
+const SITE_URL = "https://taamco.com";
+const OG_IMAGE = `${SITE_URL}/assets/services/shipping/og-image.jpg`;
+const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
+
 export const metadata = {
+    metadataBase: new URL(SITE_URL),
     title: "شحن خزانات الغاز - خدمة توصيل 24/7 من تمديدات الخليج",
     description: "خدمة شحن خزانات الغاز من تمديدات الخليج - توصيل آمن وفوري 24 ساعة. غاز عالي الجودة ومعدات حديثة. اتصل بنا الآن لطلب الشحن.",
     keywords: ["شحن خزانات الغاز", "خدمة توصيل الغاز", "غاز مركزي", "تعبئة الغاز", "تمديدات الخليج"],
+    openGraph: {
+        type: 'website',
+        locale: 'ar_SA',
+        url: `${SITE_URL}/services/shipping`,
+        siteName: 'تمديدات الخليج المبتكرة',
+        title: 'شحن خزانات الغاز - توصيل 24/7 من تمديدات الخليج',
+        description: 'خدمة شحن وتوصيل آمنة وفورية لخزانات الغاز بمعايير جودة عالمية',
+        images: [
+            {
+                url: OG_IMAGE,
+                width: 1200,
+                height: 630,
+                alt: 'خدمة شحن خزانات الغاز',
+                type: 'image/jpeg',
+                secureUrl: OG_IMAGE,
+            },
+            {
+                url: FALLBACK_OG_IMAGE,
+                width: 1200,
+                height: 630,
+                alt: 'تمديدات الخليج المبتكرة',
+                type: 'image/jpeg',
+                secureUrl: FALLBACK_OG_IMAGE,
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        site: '@tamdidat_elkhalij',
+        creator: '@tamdidat_elkhalij',
+        title: 'شحن خزانات الغاز - خدمة توصيل 24/7',
+        description: 'توصيل آمن وفوري لخزانات الغاز بمعايير حماية عالية',
+        images: [OG_IMAGE, FALLBACK_OG_IMAGE],
+    }
 };
 
 export default function ResidentialServices() {

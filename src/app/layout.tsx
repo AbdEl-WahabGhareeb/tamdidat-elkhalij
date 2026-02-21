@@ -45,9 +45,28 @@ export default function RootLayout({
                 <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+                
+                {/* Essential Social Media Meta Tags */}
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ar_SA" />
+                <meta property="og:locale:alternate" content="en_US" />
                 <meta property="og:site_name" content="تمديدات الخليج المبتكرة" />
+                
+                {/* WhatsApp / Facebook Sharing */}
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:type" content="image/jpeg" />
+                
+                {/* Twitter Card Optimization */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:creator" content="@tamdidat_elkhalij" />
+                <meta name="twitter:site" content="@tamdidat_elkhalij" />
+                
+                {/* Additional Optimization for Social Sharing */}
+                <meta name="format-detection" content="telephone=yes" />
+                <meta name="format-detection" content="email=yes" />
+                <meta name="format-detection" content="address=yes" />
+                
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{

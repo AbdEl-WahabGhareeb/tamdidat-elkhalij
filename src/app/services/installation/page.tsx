@@ -2,10 +2,49 @@ import Footer from "@/components/FooterComponent/Footer";
 import Image from "next/image";
 import React from "react";
 
+const SITE_URL = "https://taamco.com";
+const OG_IMAGE = `${SITE_URL}/assets/services/installation/og-image.jpg`;
+const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
+
 export const metadata = {
+    metadataBase: new URL(SITE_URL),
     title: "تصميم وتركيب شبكات الغاز - خدمات احترافية من تمديدات الخليج",
     description: "خدمات تصميم وتركيب أنظمة الغاز المتكاملة من تمديدات الخليج - تصميم هندسي دقيق وتركيب احترافي بأعلى معايير السلامة والجودة. اتصل بنا الآن.",
     keywords: ["تصميم شبكات الغاز", "تركيب شبكات الغاز", "أنظمة غاز متكاملة", "غاز مركزي", "تمديدات الخليج"],
+    openGraph: {
+        type: 'website',
+        locale: 'ar_SA',
+        url: `${SITE_URL}/services/installation`,
+        siteName: 'تمديدات الخليج المبتكرة',
+        title: 'تصميم وتركيب شبكات الغاز - تمديدات الخليج',
+        description: 'خدمات تصميم وتركيب أنظمة الغاز المتكاملة بأعلى معايير السلامة والجودة',
+        images: [
+            {
+                url: OG_IMAGE,
+                width: 1200,
+                height: 630,
+                alt: 'خدمة تصميم وتركيب شبكات الغاز',
+                type: 'image/jpeg',
+                secureUrl: OG_IMAGE,
+            },
+            {
+                url: FALLBACK_OG_IMAGE,
+                width: 1200,
+                height: 630,
+                alt: 'تمديدات الخليج المبتكرة',
+                type: 'image/jpeg',
+                secureUrl: FALLBACK_OG_IMAGE,
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        site: '@tamdidat_elkhalij',
+        creator: '@tamdidat_elkhalij',
+        title: 'تصميم وتركيب شبكات الغاز - تمديدات الخليج',
+        description: 'خدمات احترافية لتصميم وتركيب أنظمة الغاز المتكاملة',
+        images: [OG_IMAGE, FALLBACK_OG_IMAGE],
+    }
 };
 
 export default function IndustrialServices() {

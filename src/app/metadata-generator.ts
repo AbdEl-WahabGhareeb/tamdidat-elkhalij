@@ -76,6 +76,14 @@ export function generateMetadata(path: string = '/'): Metadata {
           type: 'image/jpeg',
           secureUrl: ogImage,
         },
+        {
+          url: `${SITE_URL}/assets/og-image.png`,
+          width: 800,
+          height: 600,
+          alt: 'تمديدات الخليج',
+          type: 'image/png',
+          secureUrl: `${SITE_URL}/assets/og-image.png`,
+        },
       ],
     },
     twitter: {
