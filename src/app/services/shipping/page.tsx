@@ -29,8 +29,8 @@ export const metadata = {
         images: [
             {
                 url: OG_IMAGE,
-                width: 800,
-                height: 350,
+                width: 1200,
+                height: 630,
                 alt: "خدمة شحن خزانات الغاز",
                 type: "image/jpeg",
                 secureUrl: OG_IMAGE,
@@ -38,7 +38,7 @@ export const metadata = {
             {
                 url: FALLBACK_OG_IMAGE,
                 width: 800,
-                height: 350,
+                height: 600,
                 alt: "تمديدات الخليج المبتكرة",
                 type: "image/jpeg",
                 secureUrl: FALLBACK_OG_IMAGE,
