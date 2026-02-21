@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const SITE_URL = "https://taamco.com";
-const OG_IMAGE = `${SITE_URL}/assets/services/shipping/fast-service.svg`;
+const OG_IMAGE = `${SITE_URL}/assets/services/shipping/og-image.jpg`;
 const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
 
 export const metadata = {
