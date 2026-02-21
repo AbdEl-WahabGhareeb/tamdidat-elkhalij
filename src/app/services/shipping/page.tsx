@@ -4,7 +4,7 @@ import React from "react";
 
 const SITE_URL = "https://taamco.com";
 const OG_IMAGE = `${SITE_URL}/assets/services/shipping/og-image.jpg`;
-const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.png`;
+const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
 
 export const metadata = {
     metadataBase: new URL(SITE_URL),
@@ -29,16 +29,16 @@ export const metadata = {
         images: [
             {
                 url: OG_IMAGE,
-                width: 600,
-                height: 300,
+                width: 800,
+                height: 350,
                 alt: "خدمة شحن خزانات الغاز",
                 type: "image/jpeg",
                 secureUrl: OG_IMAGE,
             },
             {
                 url: FALLBACK_OG_IMAGE,
-                width: 600,
-                height: 300,
+                width: 800,
+                height: 350,
                 alt: "تمديدات الخليج المبتكرة",
                 type: "image/jpeg",
                 secureUrl: FALLBACK_OG_IMAGE,
