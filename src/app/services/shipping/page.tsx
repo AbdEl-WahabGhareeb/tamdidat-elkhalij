@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const SITE_URL = "https://taamco.com";
-const OG_IMAGE = `${SITE_URL}/assets/services/shipping/fast-service.svg`;
+const OG_IMAGE = `${SITE_URL}/assets/services/shipping/og-image.jpg`;
 const FALLBACK_OG_IMAGE = `${SITE_URL}/assets/og-image.jpg`;
 
 export const metadata = {
@@ -37,8 +37,8 @@ export const metadata = {
             },
             {
                 url: FALLBACK_OG_IMAGE,
-                width: 800,
-                height: 600,
+                width: 1200,
+                height: 630,
                 alt: "تمديدات الخليج المبتكرة",
                 type: "image/jpeg",
                 secureUrl: FALLBACK_OG_IMAGE,
