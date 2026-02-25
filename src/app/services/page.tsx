@@ -123,7 +123,7 @@ export default function Services() {
                                 اختبارات الضغط قبل التشغيل.
                             </p>
 
-                            <p className="text-base font-semibold leading-8 mb-0 md:lg-16">
+                            <p className="text-base font-semibold leading-8 mb-0 lg:mb-16">
                                 كل مشروع يتم تحت إشراف مهندسين وفنيين معتمدين
                                 وبالتنسيق مع الدفاع المدني والجهات المختصة. مع
                                 الالتزام التام بمعايير السلامة المحلية والدولية.
