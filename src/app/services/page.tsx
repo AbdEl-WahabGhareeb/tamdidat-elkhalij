@@ -57,7 +57,7 @@ export default function Services() {
                     </div>
 
                     <div className="image w-full lg:w-2/5 h-3/4 py-10 order-2 lg:pe-16">
-                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 ms-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[350px] bg-blue-900 rounded-[45px]">
+                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 ms-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[350px] bg-green-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
                                     className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -131,7 +131,7 @@ export default function Services() {
                         </div>
 
                         <div className="image lg:w-4/12 lg:translate-y-1/2 xl:translate-y-3/12 w-full order-2 h-3/4 lg:py-0 py-10 lg:pe-20">
-                            <div className="relative w-full me-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[400px] ms-auto bg-blue-900 rounded-[45px]">
+                            <div className="relative w-full me-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[400px] ms-auto bg-green-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
                                         className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -147,7 +147,7 @@ export default function Services() {
 
                     <Link
                         href="/services/installation"
-                        className="text-white order-3 mt-0  me-auto w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                        className="text-white order-3 mt-0  me-auto w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 font-bold bg-green-900 px-6 py-4 rounded-lg hover:bg-green-400 transition-colors duration-300"
                     >
                         إعرف أكثر...
                     </Link>
@@ -156,7 +156,7 @@ export default function Services() {
                 <div className="mb-10 sm:mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
                     <div className=" flex flex-col pt-0 lg:pt-10 lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
                         <div className="image mt-10 lg:mt-0 order-2 lg:order-1 lg:translate-x-10 xl:translate-x-0 w-full lg:w-2/5 h-full">
-                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-80 lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
+                            <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-80 lg:-translate-x-8 lg:h-[350px] bg-green-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
                                         className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -208,7 +208,7 @@ export default function Services() {
 
                     <Link
                         href="/services/shipping"
-                        className="text-white w-[130px] order-3 sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 mt-0 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                        className="text-white w-[130px] order-3 sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 mt-0 font-bold bg-green-900 px-6 py-4 rounded-lg hover:bg-green-400 transition-colors duration-300"
                     >
                         إعرف أكثر...
                     </Link>
@@ -262,7 +262,7 @@ export default function Services() {
                         </div>
 
                         <div className="image lg:w-4/12 lg:translate-y-1/2 xl:translate-y-3/12 w-full order-2 h-3/4 lg:py-0 py-10 lg:pe-20">
-                            <div className="relative w-full me-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[400px] ms-auto bg-blue-900 rounded-[45px]">
+                            <div className="relative w-full me-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[400px] ms-auto bg-green-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
                                         className="object-cover w-full h-full rounded-[45px] md:px-0"
@@ -278,7 +278,7 @@ export default function Services() {
 
                     <Link
                         href="/services/maintenance"
-                        className="text-white order-3 mt-0  me-auto w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                        className="text-white order-3 mt-0  me-auto w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 font-bold bg-green-900 px-6 py-4 rounded-lg hover:bg-green-400 transition-colors duration-300"
                     >
                         إعرف أكثر...
                     </Link>
@@ -358,7 +358,7 @@ export default function Services() {
                         </Accordion>
                     </div>
 
-                    <div className="w-full flex justify-start items-center gap-1 px-5 md:px-16 bg-blue-900 text-white -translate-y-3">
+                    <div className="w-full flex justify-start items-center gap-1 px-5 md:px-16 bg-green-900 text-white -translate-y-3">
                         <p className="text-[10.99px] md:text-xl sm:text-base">
                             يمكنكم الاطلاع على مزيد من الأسئلة من خلال زيارة
                         </p>
