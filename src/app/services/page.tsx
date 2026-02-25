@@ -31,11 +31,13 @@ export default function Services() {
                         alt="under-construction page image"
                     />
                 </div>
+
                 <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-5 sm:mb-8">
                     مقدمة
                 </p>
+
                 <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-5 sm:mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
-                    <div className="text lg:w-3/5">
+                    <div className="text order-1 lg:w-3/5">
                         <h3 className="text-2xl font-semibold mb-3">
                             خدماتنا المتكاملة في مجال أنظمة الغاز
                         </h3>
@@ -55,7 +57,7 @@ export default function Services() {
                         </p>
                     </div>
 
-                    <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-16">
+                    <div className="image w-full lg:w-2/5 h-3/4 py-10 order-2 lg:pe-16">
                         <div className="relative lg:bottom-1/2 w-full lg:w-10/12 ms-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[350px] bg-blue-900 rounded-[45px]">
                             <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                 <Image
@@ -74,82 +76,87 @@ export default function Services() {
                     خدماتنا الرئيسية
                 </p>
 
-                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-10 sm:mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
-                    <div className="text lg:w-3/5">
-                        <h3 className="text-2xl font-semibold mb-3">
-                            تصميم وتركيب أنظمة الغاز
-                        </h3>
-                        <h4 className="text-xl font-semibold mb-3">
-                            حلول هندسية متكاملة تلبي أعلى معايير الجودة والسلامة
-                        </h4>
-                        <p className="text-base font-semibold leading-8 mb-1">
-                            مميزات الخدمة
-                        </p>
-                        <ul className="mb-10 ms-5">
-                            <li className="list-disc me-5">
-                                دراسة متطلبات المشروع وتحليل الاحتياجات الدقيقة.
-                            </li>
-                            <li className="list-disc me-5">
-                                تصميم هندسي متكامل يواكب أحدث التقنيات.
-                            </li>
-                            <li className="list-disc me-5">
-                                استخدام مواد وتجهيزات معتمدة وذات جودة عالية.
-                            </li>
-                            <li className="list-disc me-5">
-                                تنفيذ التركيب بكوادر فنية معتمدة ومدربة.
-                            </li>
-                            <li className="list-disc me-5">
-                                اختبارات شاملة للسلامة والكفاءة بعد التركيب.
-                            </li>
-                            <li className="list-disc me-5">
-                                تقديم ملف تسليم متكامل للمشروع.
-                            </li>
-                        </ul>
+                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-10 sm:mb-16 flex flex-col h-fit justify-between items-start lg:items-center py-10">
+                    <div className="text order-1 lg:w-full flex flex-col lg:flex-row lg:justify-between">
+                        <div className="lg:w-7/12">
+                            <h3 className="text-2xl font-semibold mb-3">
+                                تصميم وتركيب أنظمة الغاز
+                            </h3>
+                            <h4 className="text-xl font-semibold mb-3">
+                                حلول هندسية متكاملة تلبي أعلى معايير الجودة
+                                والسلامة
+                            </h4>
+                            <p className="text-base font-semibold leading-8 mb-1">
+                                مميزات الخدمة
+                            </p>
+                            <ul className="mb-10 ms-5">
+                                <li className="list-disc me-5">
+                                    دراسة متطلبات المشروع وتحليل الاحتياجات
+                                    الدقيقة.
+                                </li>
+                                <li className="list-disc me-5">
+                                    تصميم هندسي متكامل يواكب أحدث التقنيات.
+                                </li>
+                                <li className="list-disc me-5">
+                                    استخدام مواد وتجهيزات معتمدة وذات جودة
+                                    عالية.
+                                </li>
+                                <li className="list-disc me-5">
+                                    تنفيذ التركيب بكوادر فنية معتمدة ومدربة.
+                                </li>
+                                <li className="list-disc me-5">
+                                    اختبارات شاملة للسلامة والكفاءة بعد التركيب.
+                                </li>
+                                <li className="list-disc me-5">
+                                    تقديم ملف تسليم متكامل للمشروع.
+                                </li>
+                            </ul>
 
-                        <p className="text-base font-semibold leading-8 mb-3">
-                            نقدم خدمات تصميم وتركيب شبكات الغاز للمنازل، الفلل،
-                            المنشآت التجارية، والمصانع باستخدام مواد معتمدة
-                            ومعايير هندسية دقيقة.
-                        </p>
+                            <p className="text-base font-semibold leading-8 mb-3">
+                                نقدم خدمات تصميم وتركيب شبكات الغاز للمنازل،
+                                الفلل، المنشآت التجارية، والمصانع باستخدام مواد
+                                معتمدة ومعايير هندسية دقيقة.
+                            </p>
 
-                        <p className="text-base font-semibold leading-8 mb-3">
-                            يشمل عملنا إعداد المخططات، اختيار المواسير المناسبة،
-                            تركيب العدادات والصمامات، وإجراء اختبارات الضغط قبل
-                            التشغيل.
-                        </p>
+                            <p className="text-base font-semibold leading-8 mb-3">
+                                يشمل عملنا إعداد المخططات، اختيار المواسير
+                                المناسبة، تركيب العدادات والصمامات، وإجراء
+                                اختبارات الضغط قبل التشغيل.
+                            </p>
 
-                        <p className="text-base font-semibold leading-8 mb-16">
-                            كل مشروع يتم تحت إشراف مهندسين وفنيين معتمدين
-                            وبالتنسيق مع الدفاع المدني والجهات المختصة. مع
-                            الالتزام التام بمعايير السلامة المحلية والدولية.
-                        </p>
+                            <p className="text-base font-semibold leading-8 mb-0 md:lg-16">
+                                كل مشروع يتم تحت إشراف مهندسين وفنيين معتمدين
+                                وبالتنسيق مع الدفاع المدني والجهات المختصة. مع
+                                الالتزام التام بمعايير السلامة المحلية والدولية.
+                            </p>
+                        </div>
 
-                        <Link
-                            href="/services/installation"
-                            className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
-                        >
-                            إعرف أكثر...
-                        </Link>
-                    </div>
-
-                    <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
-                        <div className="relative ms-auto lg:bottom-1/2 w-full lg:w-10/12  h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[310px] bg-blue-900 rounded-[45px]">
-                            <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
-                                <Image
-                                    className="object-cover w-full h-full rounded-[45px] md:px-0"
-                                    sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                                    fill
-                                    src="/assets/services/services-3.svg"
-                                    alt="under-construction page image"
-                                />
+                        <div className="image lg:w-4/12 lg:translate-y-1/2 xl:translate-y-3/12 w-full order-2 h-3/4 lg:py-0 py-10 lg:pe-20">
+                            <div className="relative w-full me-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[400px] ms-auto bg-blue-900 rounded-[45px]">
+                                <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
+                                    <Image
+                                        className="object-cover w-full h-full rounded-[45px] md:px-0"
+                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                        fill
+                                        src="/assets/services/services-3.svg"
+                                        alt="under-construction page image"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <Link
+                        href="/services/installation"
+                        className="text-white order-3 mt-0  me-auto w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                    >
+                        إعرف أكثر...
+                    </Link>
                 </div>
 
                 <div className="mb-10 sm:mb-16 rounded-3xl shadow-services py-10 h-fit px-5 md:px-16 bg-[#F2F2F2]">
-                    <div className=" flex flex-col lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
-                        <div className="image lg:translate-x-10 xl:translate-x-0 w-full lg:w-2/5 h-full">
+                    <div className=" flex flex-col pt-0 lg:pt-10 lg:pb-3 lg:flex-row justify-between items-start lg:items-center py-10">
+                        <div className="image mt-10 lg:mt-0 order-2 lg:order-1 lg:translate-x-10 xl:translate-x-0 w-full lg:w-2/5 h-full">
                             <div className="relative w-full xl:w-8/12 lg:w-11/12 lg:-translate-y-1/12  h-[300px] sm:h-[450px] xl:h-80 lg:-translate-x-8 lg:h-[350px] bg-blue-900 rounded-[45px]">
                                 <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
                                     <Image
@@ -163,7 +170,7 @@ export default function Services() {
                             </div>
                         </div>
 
-                        <div className="text lg:w-3/5 mt-10 lg:mt-0">
+                        <div className="text order-1 lg:order-2 lg:w-3/5 lg:mt-10 mt-0 ">
                             <h3 className="text-2xl font-semibold mb-3">
                                 شحن خزانات الغاز
                             </h3>
@@ -202,77 +209,80 @@ export default function Services() {
 
                     <Link
                         href="/services/shipping"
-                        className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                        className="text-white w-[130px] order-3 sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 mt-0 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
                     >
                         إعرف أكثر...
                     </Link>
                 </div>
 
-                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-10 sm:mb-16 flex flex-col  lg:flex-row h-fit justify-between items-start lg:items-center py-10">
-                    <div className="text lg:w-3/5">
-                        <h3 className="text-2xl font-semibold mb-3">
-                            صيانة شبكات الغاز
-                        </h3>
-                        <h4 className="text-xl font-semibold mb-3">
-                            برامج صيانة شاملة تضمن استمرارية التشغيل الآمن
-                        </h4>
-                        <p className="text-base font-semibold leading-8 mb-1">
-                            مميزات الخدمة
-                        </p>
-                        <ul className="mb-10 ms-5">
-                            <li className="list-disc me-5">
-                                فحص دوري شامل لأنظمة الغاز
-                            </li>
-                            <li className="list-disc me-5">
-                                تصميم هندسي متكامل يواكب أحدث التقنيات
-                            </li>
-                            <li className="list-disc me-5">
-                                كشف التسريبات وإصلاحها باستخدام أحدث الأجهزة
-                            </li>
-                            <li className="list-disc me-5">
-                                صيانة وقائية مخططة تمنع الأعطال قبل حدوثها
-                            </li>
-                            <li className="list-disc me-5">
-                                صيانة طارئة على مدار 24/7
-                            </li>
-                            <li className="list-disc me-5">
-                                تقارير مفصلة عن حالة النظام بعد الصيانة
-                            </li>
-                        </ul>
+                <div className=" px-5 md:px-16 bg-[#F2F2F2] rounded-3xl shadow-services mb-10 sm:mb-16 flex flex-col h-fit justify-between items-start lg:items-center py-10">
+                    <div className="text order-1 lg:w-full lg:justify-between flex flex-col lg:flex-row">
+                        <div className="lg:w-7/12">
+                            <h3 className="text-2xl font-semibold mb-3">
+                                صيانة شبكات الغاز
+                            </h3>
+                            <h4 className="text-xl font-semibold mb-3">
+                                برامج صيانة شاملة تضمن استمرارية التشغيل الآمن
+                            </h4>
+                            <p className="text-base font-semibold leading-8 mb-1">
+                                مميزات الخدمة
+                            </p>
+                            <ul className="mb-10 ms-5">
+                                <li className="list-disc me-5">
+                                    فحص دوري شامل لأنظمة الغاز
+                                </li>
+                                <li className="list-disc me-5">
+                                    تصميم هندسي متكامل يواكب أحدث التقنيات
+                                </li>
+                                <li className="list-disc me-5">
+                                    كشف التسريبات وإصلاحها باستخدام أحدث الأجهزة
+                                </li>
+                                <li className="list-disc me-5">
+                                    صيانة وقائية مخططة تمنع الأعطال قبل حدوثها
+                                </li>
+                                <li className="list-disc me-5">
+                                    صيانة طارئة على مدار 24/7
+                                </li>
+                                <li className="list-disc me-5">
+                                    تقارير مفصلة عن حالة النظام بعد الصيانة
+                                </li>
+                            </ul>
 
-                        <p className="text-base font-semibold leading-8 mb-3">
-                            نقدم خدمات الصيانة الدورية والطارئة لشبكات الغاز
-                            المنزلية والصناعية، لضمان التشغيل الآمن والمستقر.
-                        </p>
+                            <p className="text-base font-semibold leading-8 mb-3">
+                                نقدم خدمات الصيانة الدورية والطارئة لشبكات الغاز
+                                المنزلية والصناعية، لضمان التشغيل الآمن
+                                والمستقر.
+                            </p>
 
-                        <p className="text-base font-semibold leading-8 mb-16">
-                            تشمل الصيانة فحص المواسير، اختبار الصمامات، التأكد
-                            من عدم وجود تسريبات، وتنظيف الأنظمة بشكل وقائي. فريق
-                            الدعم الفني متاح دائمًا لمعالجة أي أعطال بسرعة
-                            واحترافية.
-                        </p>
+                            <p className="text-base font-semibold leading-8 mb-0 lg:mb-16">
+                                تشمل الصيانة فحص المواسير، اختبار الصمامات،
+                                التأكد من عدم وجود تسريبات، وتنظيف الأنظمة بشكل
+                                وقائي. فريق الدعم الفني متاح دائمًا لمعالجة أي
+                                أعطال بسرعة واحترافية.
+                            </p>
+                        </div>
 
-                        <Link
-                            href="/services/maintenance"
-                            className="text-white w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
-                        >
-                            إعرف أكثر...
-                        </Link>
-                    </div>
-
-                    <div className="image w-full lg:w-2/5 h-3/4 py-10 lg:pe-20">
-                        <div className="relative lg:bottom-1/2 w-full lg:w-10/12 me-auto  h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[350px] ms-auto bg-blue-900 rounded-[45px]">
-                            <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
-                                <Image
-                                    className="object-cover w-full h-full rounded-[45px] md:px-0"
-                                    sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                                    fill
-                                    src="/assets/services/services-5.svg"
-                                    alt="under-construction page image"
-                                />
+                        <div className="image lg:w-4/12 lg:translate-y-1/2 xl:translate-y-3/12 w-full order-2 h-3/4 lg:py-0 py-10 lg:pe-20">
+                            <div className="relative w-full me-auto h-[300px] sm:h-[450px] lg:h-[300px] xl:h-[400px] ms-auto bg-blue-900 rounded-[45px]">
+                                <div className="absolute z-10 w-full h-full lg:top-8 lg:left-8 rounded-[45px] border-4 border-white bg-white ">
+                                    <Image
+                                        className="object-cover w-full h-full rounded-[45px] md:px-0"
+                                        sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
+                                        fill
+                                        src="/assets/services/services-5.svg"
+                                        alt="under-construction page image"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <Link
+                        href="/services/maintenance"
+                        className="text-white order-3 mt-0  me-auto w-[130px] sm:w-[200px] md:w-[220px] lg:w-[300px] text-sm md:text-base flex justify-center items-center cursor-pointer lg:mt-10 font-bold bg-blue-900 px-6 py-4 rounded-lg hover:bg-blue-400 transition-colors duration-300"
+                    >
+                        إعرف أكثر...
+                    </Link>
                 </div>
 
                 <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-8">

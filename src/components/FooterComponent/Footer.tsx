@@ -3,6 +3,7 @@ import { Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import NavLink from "../Nav-Component/NavLink";
 
 export default function Footer() {
     return (
@@ -116,29 +117,38 @@ export default function Footer() {
                                         />
                                     </div>
                                 </div>
-                                <p
-                                    className="text-base text-end font-medium"
-                                    dir="ltr"
+                                <NavLink
+                                    href="https://wa.me/+966551635304"
+                                    className="flex items-center justify-center gap-2 py-2 text-white hover:text-blue-500"
                                 >
-                                    +9665 4348 8470
-                                </p>
+                                    <span>35304 5516 966+</span>
+                                </NavLink>
                             </div>
 
                             <div className="flex gap-3 flex-row-reverse items-center justify-center">
                                 <div className="bg-blue-900 w-10 h-10 flex items-center justify-center rounded-full text-white p-2">
                                     <Mail />
                                 </div>
-                                <p className="text-base text-end font-medium">
-                                    info@taamco.com
-                                </p>
+                                <NavLink
+                                    href="mailto:info@taamco.com"
+                                    className="flex items-center justify-center gap-2 py-2 text-white hover:text-blue-500"
+                                >
+                                    <span>info@taamco.com</span>
+                                </NavLink>
                             </div>
 
                             <div className="flex gap-3 items-start justify-end">
-                                <p className="text-base text-end md:w-4/5 font-medium">
-                                    JCRB4490, 4490 Amir Bin Salama, 8944 Al
-                                    Rehab Dist. Jeddah 23345 ,Kingdom of Saudi
-                                    Arabia
-                                </p>
+                                <NavLink
+                                    href="https://www.google.com/maps/search/JDSC7433,+7433+Muteb,+3193+As+Safa+Dist.+Jeddah+23454,+Kingdom+of+Saudi+Arabia"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-start text-left justify-center gap-2 py-2 text-white hover:text-blue-500"
+                                >
+                                    <span>
+                                        JDSC7433, 7433 Muteb, 3193 As Safa Dist.
+                                        Jeddah 23454 ,Kingdom of Saudi Arabia
+                                    </span>
+                                </NavLink>
 
                                 <div className="bg-blue-900 w-10 h-10 flex items-center justify-center rounded-full text-white p-2">
                                     <MapPin />
@@ -157,7 +167,7 @@ export default function Footer() {
                                             الخدمات
                                         </Link>
                                     </li>
-                                
+
                                     <li className="w-1/4">
                                         <Link
                                             className="hover:text-blue-400 w-1/3 transition-all "
