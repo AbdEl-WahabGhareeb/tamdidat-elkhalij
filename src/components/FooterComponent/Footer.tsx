@@ -119,7 +119,9 @@ export default function Footer() {
                                 </div>
                                 <NavLink
                                     href="https://wa.me/+966551635304"
-                                    className="flex items-center justify-center gap-2 py-2 text-white hover:text-blue-500"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center cursor-pointer justify-center gap-2 py-2 text-white hover:text-blue-500"
                                 >
                                     <span>35304 5516 966+</span>
                                 </NavLink>
@@ -131,7 +133,9 @@ export default function Footer() {
                                 </div>
                                 <NavLink
                                     href="mailto:info@taamco.com"
-                                    className="flex items-center justify-center gap-2 py-2 text-white hover:text-blue-500"
+                                       target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center cursor-pointer justify-center gap-2 py-2 text-white hover:text-blue-500"
                                 >
                                     <span>info@taamco.com</span>
                                 </NavLink>
@@ -142,7 +146,7 @@ export default function Footer() {
                                     href="https://www.google.com/maps/search/JDSC7433,+7433+Muteb,+3193+As+Safa+Dist.+Jeddah+23454,+Kingdom+of+Saudi+Arabia"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-start text-left justify-center gap-2 py-2 text-white hover:text-blue-500"
+                                    className="flex items-start cursor-pointer text-left justify-center gap-2 py-2 text-white hover:text-blue-500"
                                 >
                                     <span>
                                         JDSC7433, 7433 Muteb, 3193 As Safa Dist.
