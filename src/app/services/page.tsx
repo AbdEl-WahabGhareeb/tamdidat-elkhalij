@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/accordion";
 
 import { metadata } from "./page-metadata";
-// import Footer from "@/components/FooterComponent/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/FooterComponent/Footer";
