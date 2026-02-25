@@ -27,7 +27,6 @@ const nextConfig = {
     compress: true,
     poweredByHeader: false,
     reactStrictMode: true,
-    swcMinify: true,
 
     // Add resource hints and preloads
     async headers() {

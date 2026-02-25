@@ -42,7 +42,6 @@ const nextConfig: NextConfig = {
     // Basic configuration
     poweredByHeader: false,
     reactStrictMode: true,
-    swcMinify: true,
 
     // Image optimization
     images: {
