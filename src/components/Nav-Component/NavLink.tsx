@@ -8,7 +8,6 @@ interface NavLinkProps {
     className?: string;
     target?: string;
     rel?: string;
-    [key: string]: any;
 }
 
 export default function NavLink({ href, children, className, target, rel, ...props }: NavLinkProps) {

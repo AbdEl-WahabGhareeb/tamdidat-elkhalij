@@ -1,6 +1,3 @@
-import { organizationLDJson } from './organization-logo';
-import { websiteSchema } from './website';
-
 export const searchResultsLogo = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
