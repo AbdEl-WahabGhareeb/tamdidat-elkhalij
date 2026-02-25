@@ -84,7 +84,7 @@ export default function Footer() {
                                                 className="w-full h-full text-white"
                                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
                                                 fill
-                                                src="/assets/X.png"
+                                                src="/assets/x.svg"
                                                 alt="رابط حساب تويتر لشركة تمديدات الخليج"
                                             />
                                         </div>
