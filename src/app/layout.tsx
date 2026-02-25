@@ -41,10 +41,9 @@ export default function RootLayout({
     return (
         <html lang="ar" dir="rtl" className="scroll-smooth">
             <head>
-                <meta name="theme-color" content="#1e3a8a" />
-                <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+                <meta name="mobile-web-app-capable" content="yes" />
                 
                 {/* Essential Social Media Meta Tags */}
                 <meta property="og:type" content="website" />
