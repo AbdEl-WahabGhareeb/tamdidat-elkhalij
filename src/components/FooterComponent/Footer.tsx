@@ -133,7 +133,7 @@ export default function Footer() {
                                 </div>
                                 <NavLink
                                     href="mailto:info@taamco.com"
-                                       target="_blank"
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center cursor-pointer justify-center gap-2 py-2 text-white hover:text-blue-500"
                                 >
@@ -189,7 +189,21 @@ export default function Footer() {
                 <div className="bg-white w-full h-0.5 z-10 relative"></div>
 
                 <div className="flex container md:px-10 mx-auto flex-col text-center md:flex-row gap-3 justify-between items-center py-3 text-white relative z-10">
-                    <p className="text-lg">سياسة الخصوصية | شروط الاستخدام</p>
+                    <div className="flex gap-3 items-center text-lg">
+                        <Link
+                            className="hover:text-blue-400 transition-all"
+                            href="/privacy-policy"
+                        >
+                            سياسة الخصوصية
+                        </Link>
+                        <span>|</span>
+                        <Link
+                            className="hover:text-blue-400 transition-all"
+                            href="/terms"
+                        >
+                            شروط الاستخدام
+                        </Link>
+                    </div>{" "}
                     <p className="text-xl mb-2">
                         تمديدات الخليج © جميع الحقوق محفوظة 2025
                     </p>
