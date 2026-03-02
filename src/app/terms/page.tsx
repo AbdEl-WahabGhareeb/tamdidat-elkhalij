@@ -1,6 +1,7 @@
 import React from "react";
 
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "شروط الاستخدام | تمديدات الخليج المبتكرة",
@@ -68,12 +69,12 @@ export default function Terms() {
                 <li>
                     <strong>الموقع الإلكتروني</strong> يشير إلى تمديدات الخليج
                     المبتكرة، ويمكن الوصول إليه عبر{" "}
-                    <a
+                    <Link
                         href="https://www.taamco.com"
                         className="text-blue-600 hover:underline"
                     >
                         www.taamco.com
-                    </a>
+                    </Link>
                     .
                 </li>
                 <li>
@@ -196,21 +197,21 @@ export default function Terms() {
             <ul className="list-disc list-inside space-y-2">
                 <li>
                     البريد الإلكتروني:{" "}
-                    <a
+                    <Link
                         href="mailto:info@taamco.com"
                         className="text-blue-600 hover:underline"
                     >
                         info@taamco.com
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     الهاتف:{" "}
-                    <a
+                    <Link
                         href="tel:+966551635304"
                         className="text-blue-600 hover:underline"
                     >
                         966+ 55 163 5304
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </main>
@@ -243,7 +244,7 @@ export default function Terms() {
 //         <li><strong>Service</strong> refers to the Website.</li>
 //         <li><strong>Terms and Conditions</strong> means these Terms and Conditions that govern Your access to and use of the Service.</li>
 //         <li><strong>Third-Party Social Media Service</strong> means any services or content provided by a third party that is linked to through the Service.</li>
-//         <li><strong>Website</strong> refers to تمديدات الخليج المبتكرة, accessible from <a href="https://www.taamco.com" className="text-blue-600 hover:underline">www.taamco.com</a>.</li>
+//         <li><strong>Website</strong> refers to تمديدات الخليج المبتكرة, accessible from <Link href="https://www.taamco.com" className="text-blue-600 hover:underline">www.taamco.com</Link>.</li>
 //         <li><strong>You</strong> means the individual accessing or using the Service.</li>
 //       </ul>
 
@@ -322,15 +323,15 @@ export default function Terms() {
 //       <ul className="list-disc list-inside space-y-2">
 //         <li>
 //           Email:{" "}
-//           <a href="mailto:info@taamco.com" className="text-blue-600 hover:underline">
+//           <Link href="mailto:info@taamco.com" className="text-blue-600 hover:underline">
 //             info@taamco.com
-//           </a>
+//           </Link>
 //         </li>
 //         <li>
 //           Phone:{" "}
-//           <a href="tel:+966551635304" className="text-blue-600 hover:underline">
+//           <Link href="tel:+966551635304" className="text-blue-600 hover:underline">
 //             +966 55 163 5304
-//           </a>
+//           </Link>
 //         </li>
 //       </ul>
 //     </main>
