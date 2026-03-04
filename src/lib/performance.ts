@@ -38,7 +38,9 @@ export const batchDOMOperations = (callback: () => DOMOperationsResult) => {
         requestAnimationFrame(() => {
             // Read phase
             const { measurements, updates } = callback();
-            console.debug('DOM measurements:', measurements);
+            if (process.env.NODE_ENV === 'development') {
+                console.debug('DOM measurements:', measurements);
+            }
             
             requestAnimationFrame(() => {
                 // Write phase
@@ -47,7 +49,9 @@ export const batchDOMOperations = (callback: () => DOMOperationsResult) => {
         });
     } else {
         const { measurements, updates } = callback();
-        console.debug('DOM measurements:', measurements);
+        if (process.env.NODE_ENV === 'development') {
+            console.debug('DOM measurements:', measurements);
+        }
         updates.forEach(update => update());
     }
 };

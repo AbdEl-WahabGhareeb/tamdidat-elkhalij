@@ -2,7 +2,8 @@ import { type NextRequest, NextResponse } from 'next/server';
 
 const allowedOrigins = [
     'https://tamdidat-elkhalij.com',
-    'https://www.tamdidat-elkhalij.com'
+    'https://www.tamdidat-elkhalij.com',
+    ...(process.env.NODE_ENV === 'development' ? ['http://localhost:3000', 'http://localhost'] : [])
 ];
 
 export function applySecurity(request: NextRequest): NextResponse {
@@ -50,8 +51,20 @@ export function validateFileUpload(file: { type: string, size: number }): boolea
   return allowedTypes.includes(file.type) && file.size <= maxSize;
 }
 
-// Rate limiting implementation
+// Rate limiting implementation with automatic cleanup
 const rateLimit = new Map<string, { count: number; timestamp: number }>()
+
+// Cleanup old entries every 5 minutes
+if (typeof global !== 'undefined') {
+  setInterval(() => {
+    const now = Date.now()
+    for (const [ip, record] of rateLimit.entries()) {
+      if (now - record.timestamp > 5 * 60 * 1000) {
+        rateLimit.delete(ip)
+      }
+    }
+  }, 5 * 60 * 1000)
+}
 
 export function checkRateLimit(ip: string, limit = 100, window = 60000): boolean {
   const now = Date.now()

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { notFound } from 'next/navigation';
 
 export default function DebugPage() {
     const [debugInfo, setDebugInfo] = useState({
@@ -12,15 +13,23 @@ export default function DebugPage() {
         metaTags: [] as string[],
         structured: false,
     });
+    const [isDevelopment] = useState(() => process.env.NODE_ENV === 'development');
 
     useEffect(() => {
+        if (!isDevelopment) {
+            notFound();
+            return;
+        }
+
         async function checkResources() {
             // Check robots.txt
             try {
                 const robotsRes = await fetch('/robots.txt');
                 setDebugInfo(prev => ({ ...prev, robotsTxt: robotsRes.ok }));
             } catch (e) {
-                console.error('Error checking robots.txt:', e);
+                if (process.env.NODE_ENV === 'development') {
+                    console.error('Error checking robots.txt:', e);
+                }
             }
 
             // Check sitemap.xml
@@ -28,7 +37,9 @@ export default function DebugPage() {
                 const sitemapRes = await fetch('/sitemap.xml');
                 setDebugInfo(prev => ({ ...prev, sitemapXml: sitemapRes.ok }));
             } catch (e) {
-                console.error('Error checking sitemap.xml:', e);
+                if (process.env.NODE_ENV === 'development') {
+                    console.error('Error checking sitemap.xml:', e);
+                }
             }
 
             // Check HTTPS
@@ -56,7 +67,7 @@ export default function DebugPage() {
         }
 
         checkResources();
-    }, []);
+    }, [isDevelopment]);
 
     return (
         <div className="container mx-auto p-8">

@@ -8,8 +8,10 @@ const config = {
 
 // Error handler for script loading failures
 const handleError = (error: Error) => {
-    console.error('Analytics script failed to load:', error);
-    // You could add additional error reporting here
+    if (process.env.NODE_ENV === 'development') {
+        console.error('Analytics script failed to load:', error);
+    }
+    // In production, silently fail to avoid exposing errors
 };
 
 export default function Analytics() {

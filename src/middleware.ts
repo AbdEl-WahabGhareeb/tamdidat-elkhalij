@@ -9,6 +9,13 @@ export function middleware(request: NextRequest) {
     if (securityResponse.status === 403) {
         return securityResponse;
     }
+    
+    // Add HSTS header for production
+    if (process.env.NODE_ENV === 'production') {
+        const response = NextResponse.next();
+        response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        return response;
+    }
 
     const url = request.nextUrl;
     const { pathname } = url;

@@ -195,8 +195,7 @@ export default function MainSlider() {
                             <Image
                                 className="object-cover inline-block"
                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                                priority
-                                loading="eager"
+                                loading="lazy"
                                 fill
                                 src="/assets/mainslider/home.jpg"
                                 alt="خدمات تمديدات الغاز للمشاريع السكنية - الفلل والعمارات السكنية"
@@ -209,8 +208,7 @@ export default function MainSlider() {
                             <Image
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                                priority
-                                loading="eager"
+                                loading="lazy"
                                 fill
                                 src="/assets/mainslider/resturent1.jpg"
                                 alt="خدمات تمديدات الغاز للمشاريع التجارية - الفنادق والمطاعم والمجمعات التجارية"
@@ -223,8 +221,7 @@ export default function MainSlider() {
                             <Image
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw (max-width: 1200px) 50vw , 25vw"
-                                priority
-                                loading="eager"
+                                loading="lazy"
                                 fill
                                 src="/assets/mainslider/industrial.jpg"
                                 alt="خدمات تمديدات الغاز للمشاريع الصناعية - المصانع والمنشآت الإنتاجية"
@@ -244,7 +241,7 @@ export default function MainSlider() {
 
                         <Link
                             className="hover:bg-transparent rounded-4xl w-1/3 sm:w-1/4 md:w-1/5 text-white border-2 bg-blue-900 transition-colors duration-300 hover:text-white hover:border-2 hover:border-white border-transparent text-base md:text-xl py-4 text-center cursor-pointer"
-                            href="https://wa.me/+966543488470"
+                            href="https://wa.me/+966551635304"
                         >
                             طلب معاينة
                         </Link>
